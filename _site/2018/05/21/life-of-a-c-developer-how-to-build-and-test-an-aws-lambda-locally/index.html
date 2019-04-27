@@ -1,4 +1,247 @@
-<p>Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as <a href="https://twitter.com/mathiasverraes" rel="noopener">Mathias Verraes</a>:</p>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Life of a C# Developer: How to build and test an AWS Lambda locally - joaoasrosa.github.io</title>
+<meta name="description" content="Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as Mathias Verraes:https://twitter.com/mathiasverraes/status/995317295072382976Given that, I decided to share my developer experience building, testing and deploying AWS Lambda functions in the .NET world. Not a &quot;Hello World&quot; example, but rather a real-world scenario, where some services integrate with each other. Since a Serverless function is a tiny piece of code in a much larger process, how can I test the flow on my development machine?ChallengeIn this example, we will have an AWS Lambda that receives a Notification from the Web Application and sends an SMS using a 3rd party provider. The requests and responses to the AWS Lambda function are proxied using AWS API Gateway, given all goodness of HTTP.[caption id=&quot;attachment_1865&quot; align=&quot;aligncenter&quot; width=&quot;1280&quot;] Representation of the interaction between the components[/caption]However, the SMS provider does not have a sandbox which we can use for our acceptance tests, and we do not want to spend all of our credits. Since we want to be sure that our business code handles all the use cases, we need to build the behavior of the SMS provider ourselves. At least the documentation is up to a good standard. :)[caption id=&quot;attachment_1864&quot; align=&quot;aligncenter&quot; width=&quot;546&quot;] Credits to http://www.quickmeme.com[/caption]Use CasesWe identified several uses cases which our business code (AWS Lambda) needs to handle:The account credentials are wrong. The authentication with the SMS provider will fail, and the SMS will not be sentThe account doesn&#39;t have sufficient credits. To execute the operation, some credits will be usedThe SMS is sent. All good, SMS sent, credits deducted, happy daysRainy day. For some reason, the SMS provider doesn&#39;t return an expected result (described in the previous points). Thus we need to catch and handle itTesting StrategyWe want to have the feedback as quickly as we can, with different levels of testing. We have unit testing to make sure the business logic behaves based on the use cases. However, we also have acceptance tests in a Given/When/Then format, having a broader scope than the unit tests.ImplementationGiven the constraints described earlier, and to achieve the level of testing, we need to build a Testing API with the same behavior as the SMS provider.Testing APIThe Testing API needs to be instrumented to behave according to the use case. The easiest route to do it is using an environment variable:switch (Environment.GetEnvironmentVariable(&quot;API_BEHAVIOUR&quot;)){  case &quot;ok&quot;:    return new OkResult();  case &quot;invalid_credentials&quot;:    return new UnauthorizedResult();  case &quot;insufficient_credits&quot;:    return new StatusCodeResult((int) HttpStatusCode.Forbidden);;  default:    return new StatusCodeResult((int) HttpStatusCode.InternalServerError);}Using this approach we can control the response from the Testing API, allowing to assert the correct behavior of the Lambda function.The Testing API is deployed in a Docker container, the same technology used by SAM Local. Reusing the same technology reduces the risk of friction in our development environment. However, it is possible to deploy the Testing API in other hosting technologies.SAM LocalAWS has built and released the Serverless Application Model (SAM) Local tooling. &quot;sam is the AWS CLI tool for managing Serverless applications written with AWS Serverless Application Model (SAM). SAM CLI can be used to test functions locally, start a local API Gateway from a SAM template, validate a SAM template, generate sample payloads for various event sources, and generate a SAM project in your favorite Lambda Runtime.&quot; [1]The AWS Lambda function is triggered by an API Gateway event, sending the notification as SMS to the SMS provider.The template has all the necessary components:AWSTemplateFormatVersion: 2010-09-09Transform: AWS::Serverless-2016-10-31Description: AWS SAM Local blog example">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="joaoasrosa.github.io">
+<meta property="og:title" content="Life of a C# Developer: How to build and test an AWS Lambda locally">
+<meta property="og:url" content="http://localhost:4000/2018/05/21/life-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally/">
+
+
+  <meta property="og:description" content="Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as Mathias Verraes:https://twitter.com/mathiasverraes/status/995317295072382976Given that, I decided to share my developer experience building, testing and deploying AWS Lambda functions in the .NET world. Not a &quot;Hello World&quot; example, but rather a real-world scenario, where some services integrate with each other. Since a Serverless function is a tiny piece of code in a much larger process, how can I test the flow on my development machine?ChallengeIn this example, we will have an AWS Lambda that receives a Notification from the Web Application and sends an SMS using a 3rd party provider. The requests and responses to the AWS Lambda function are proxied using AWS API Gateway, given all goodness of HTTP.[caption id=&quot;attachment_1865&quot; align=&quot;aligncenter&quot; width=&quot;1280&quot;] Representation of the interaction between the components[/caption]However, the SMS provider does not have a sandbox which we can use for our acceptance tests, and we do not want to spend all of our credits. Since we want to be sure that our business code handles all the use cases, we need to build the behavior of the SMS provider ourselves. At least the documentation is up to a good standard. :)[caption id=&quot;attachment_1864&quot; align=&quot;aligncenter&quot; width=&quot;546&quot;] Credits to http://www.quickmeme.com[/caption]Use CasesWe identified several uses cases which our business code (AWS Lambda) needs to handle:The account credentials are wrong. The authentication with the SMS provider will fail, and the SMS will not be sentThe account doesn&#39;t have sufficient credits. To execute the operation, some credits will be usedThe SMS is sent. All good, SMS sent, credits deducted, happy daysRainy day. For some reason, the SMS provider doesn&#39;t return an expected result (described in the previous points). Thus we need to catch and handle itTesting StrategyWe want to have the feedback as quickly as we can, with different levels of testing. We have unit testing to make sure the business logic behaves based on the use cases. However, we also have acceptance tests in a Given/When/Then format, having a broader scope than the unit tests.ImplementationGiven the constraints described earlier, and to achieve the level of testing, we need to build a Testing API with the same behavior as the SMS provider.Testing APIThe Testing API needs to be instrumented to behave according to the use case. The easiest route to do it is using an environment variable:switch (Environment.GetEnvironmentVariable(&quot;API_BEHAVIOUR&quot;)){  case &quot;ok&quot;:    return new OkResult();  case &quot;invalid_credentials&quot;:    return new UnauthorizedResult();  case &quot;insufficient_credits&quot;:    return new StatusCodeResult((int) HttpStatusCode.Forbidden);;  default:    return new StatusCodeResult((int) HttpStatusCode.InternalServerError);}Using this approach we can control the response from the Testing API, allowing to assert the correct behavior of the Lambda function.The Testing API is deployed in a Docker container, the same technology used by SAM Local. Reusing the same technology reduces the risk of friction in our development environment. However, it is possible to deploy the Testing API in other hosting technologies.SAM LocalAWS has built and released the Serverless Application Model (SAM) Local tooling. &quot;sam is the AWS CLI tool for managing Serverless applications written with AWS Serverless Application Model (SAM). SAM CLI can be used to test functions locally, start a local API Gateway from a SAM template, validate a SAM template, generate sample payloads for various event sources, and generate a SAM project in your favorite Lambda Runtime.&quot; [1]The AWS Lambda function is triggered by an API Gateway event, sending the notification as SMS to the SMS provider.The template has all the necessary components:AWSTemplateFormatVersion: 2010-09-09Transform: AWS::Serverless-2016-10-31Description: AWS SAM Local blog example">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-05-21T18:17:21+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2018/05/21/life-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="joaoasrosa.github.io Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">joaoasrosa.github.io</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:joaoasrosa@gmail.com">
+            <meta itemprop="email" content="joaoasrosa@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Life of a C# Developer: How to build and test an AWS Lambda locally">
+    <meta itemprop="description" content="Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as Mathias Verraes:https://twitter.com/mathiasverraes/status/995317295072382976Given that, I decided to share my developer experience building, testing and deploying AWS Lambda functions in the .NET world. Not a &quot;Hello World&quot; example, but rather a real-world scenario, where some services integrate with each other. Since a Serverless function is a tiny piece of code in a much larger process, how can I test the flow on my development machine?ChallengeIn this example, we will have an AWS Lambda that receives a Notification from the Web Application and sends an SMS using a 3rd party provider. The requests and responses to the AWS Lambda function are proxied using AWS API Gateway, given all goodness of HTTP.[caption id=&quot;attachment_1865&quot; align=&quot;aligncenter&quot; width=&quot;1280&quot;] Representation of the interaction between the components[/caption]However, the SMS provider does not have a sandbox which we can use for our acceptance tests, and we do not want to spend all of our credits. Since we want to be sure that our business code handles all the use cases, we need to build the behavior of the SMS provider ourselves. At least the documentation is up to a good standard. :)[caption id=&quot;attachment_1864&quot; align=&quot;aligncenter&quot; width=&quot;546&quot;] Credits to http://www.quickmeme.com[/caption]Use CasesWe identified several uses cases which our business code (AWS Lambda) needs to handle:The account credentials are wrong. The authentication with the SMS provider will fail, and the SMS will not be sentThe account doesn&#39;t have sufficient credits. To execute the operation, some credits will be usedThe SMS is sent. All good, SMS sent, credits deducted, happy daysRainy day. For some reason, the SMS provider doesn&#39;t return an expected result (described in the previous points). Thus we need to catch and handle itTesting StrategyWe want to have the feedback as quickly as we can, with different levels of testing. We have unit testing to make sure the business logic behaves based on the use cases. However, we also have acceptance tests in a Given/When/Then format, having a broader scope than the unit tests.ImplementationGiven the constraints described earlier, and to achieve the level of testing, we need to build a Testing API with the same behavior as the SMS provider.Testing APIThe Testing API needs to be instrumented to behave according to the use case. The easiest route to do it is using an environment variable:switch (Environment.GetEnvironmentVariable(&quot;API_BEHAVIOUR&quot;)){  case &quot;ok&quot;:    return new OkResult();  case &quot;invalid_credentials&quot;:    return new UnauthorizedResult();  case &quot;insufficient_credits&quot;:    return new StatusCodeResult((int) HttpStatusCode.Forbidden);;  default:    return new StatusCodeResult((int) HttpStatusCode.InternalServerError);}Using this approach we can control the response from the Testing API, allowing to assert the correct behavior of the Lambda function.The Testing API is deployed in a Docker container, the same technology used by SAM Local. Reusing the same technology reduces the risk of friction in our development environment. However, it is possible to deploy the Testing API in other hosting technologies.SAM LocalAWS has built and released the Serverless Application Model (SAM) Local tooling. &quot;sam is the AWS CLI tool for managing Serverless applications written with AWS Serverless Application Model (SAM). SAM CLI can be used to test functions locally, start a local API Gateway from a SAM template, validate a SAM template, generate sample payloads for various event sources, and generate a SAM project in your favorite Lambda Runtime.&quot; [1]The AWS Lambda function is triggered by an API Gateway event, sending the notification as SMS to the SMS provider.The template has all the necessary components:AWSTemplateFormatVersion: 2010-09-09Transform: AWS::Serverless-2016-10-31Description: AWS SAM Local blog example">
+    <meta itemprop="datePublished" content="May 21, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Life of a C# Developer: How to build and test an AWS Lambda locally
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as <a href="https://twitter.com/mathiasverraes" rel="noopener">Mathias Verraes</a>:</p>
 <p>https://twitter.com/mathiasverraes/status/995317295072382976</p>
 <p>Given that, I decided to share my developer experience building, testing and deploying AWS Lambda functions in the .NET world. Not a "Hello World" example, but rather a real-world scenario, where some services integrate with each other. Since a Serverless function is a tiny piece of code in a much larger process, <strong>how can I test the flow on my development machine?</strong></p>
 <h2>Challenge</h2>
@@ -89,3 +332,207 @@ Resources:
 <p>This post describes one possible way for .NET developers using AWS technologies. If you have a different but sane approach to achieve the same goal, just shout! ;)</p>
 <h4>References</h4>
 <p>[1] - <a href="https://github.com/awslabs/aws-sam-cli" rel="noopener">https://github.com/awslabs/aws-sam-cli</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-05-21T18:17:21+02:00">May 21, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Life+of+a+C%23+Developer%3A+How+to+build+and+test+an+AWS+Lambda+locally%20http%3A%2F%2Flocalhost%3A4000%2F2018%2F05%2F21%2Flife-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2018%2F05%2F21%2Flife-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2018%2F05%2F21%2Flife-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2018/03/11/how-to-solve-magento-2-upgrade-errors/" class="pagination--pager" title="How to solve Magento 2 upgrade errors
+">Previous</a>
+    
+    
+      <a href="/2018/10/07/what-i-learned-from-live-coding-during-talks/" class="pagination--pager" title="What I learned from live coding during talks
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/01/24/build-and-secure-containers-to-support-your-ci-cd-pipeline/" rel="permalink">Build and secure containers to support your CI/CD pipeline
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+There are 2 systems in any company that are critical: the payroll system, and the CI/CD system. Why? You may ask...If the payroll system doesn't work, peopl...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/01/13/using-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely/" rel="permalink">Using Flyway and GitLab to deploy a MySQL database to AWS RDS securely
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+One of my passions is to be a trainer. Sharing knowledge, meeting new people, be continuously challenged, it fuels my brain, and I'm always learning somethi...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/10/07/what-i-learned-from-live-coding-during-talks/" rel="permalink">What I learned from live coding during talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Last week, Kenny Baas and I, delivered 2 talks with live coding. We were at NextBuild (with From EventStorming to CoDDDing) and Techorama NL (with Improving ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/03/11/how-to-solve-magento-2-upgrade-errors/" rel="permalink">How to solve Magento 2 upgrade errors
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Magento 2 is the leading Open Source Software for e-commerce, with a vibrant community and proper product documentation.
+The development team releases bug fi...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 joaoasrosa.github.io. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

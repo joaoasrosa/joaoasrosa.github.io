@@ -1,4 +1,247 @@
-<p>A few sprints ago my team and I decided to invest heavily in Domain Driven Desing. We already started to develop the new microservices in a DDD fashion, with our domain as the central component. However, we wanted to formalize it and move the old microservices to this new paradigm.</p>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Learning DDD as a team - joaoasrosa.github.io</title>
+<meta name="description" content="A few sprints ago my team and I decided to invest heavily in Domain Driven Desing. We already started to develop the new microservices in a DDD fashion, with our domain as the central component. However, we wanted to formalize it and move the old microservices to this new paradigm.During this period we used several tools and techniques, to aid us to figure out what was the best approach for us. And we are Agile; probe, experiment and evaluate. If it doesn’t work, learn from it and move on!Activities as a development teamWhiteboard sessionsAs a developer, one of the best tools is a pen and paper. As a development team, nothing better than a whiteboard and markers. Before or during the development of a component we gather the team around our whiteboard, and we scatch potential solutions for the problems in hand. It helped the team to focus, and reach a common understanding, making the software implementation easier.Coffee &amp; lunch breaksWe have around 150 software developers, it’s common to take a coffee or have lunch together. Most of the times, during our chats, it drifts to the problems that we are facing. It’s a great informal platform to share our ideas, struggles, and solutions for the problems. As Kevin Boles once wrote: “Smart people learn from their mistakes. Wise peoples learn from other people mistakes”.Craftsmanship sessionsHere at Coolblue, we host private craftsmanship sessions. During the meetings, we have the opportunity to work on a particular problem, sharing our thoughts and discuss possible solutions. It’s more formalized than the coffee &amp; lunch breaks.Event Storming sessionsAnother activity used by our team is Event Storming sessions. We use this activity to help us to match the new business requirements and all the technical debt that we need to catch. This is an opportunity to optimize the work to be carried, minimizing the creative tension between the developers and the business. It also raises the business awareness for software risks, since our domain has goals to help the company grown; to achieve the goals, we need to minimize the risks or acknowledge them. Transparency is the keyword!Lessons LearnedLanguage definitionOne of the challenges is to set the correct language, terms, and definitions. Although we are developing software, we are doing it to achieve a business goal, and given that, the software should be read like a book. Also, the software naming should match the business terms, making everyone lives easier. Please raise the hand, who never found variables names that don’t match the business terms?It’s paramount for the development team to speak the same domain language; it will pay the dividends in the future once, for instance, a refactor is needed, or even when the software goes into maintenance mode.BoundariesAny good resource in this space points to the bounded context as the central pattern for the DDD. When we are building software for a new domain, discovering the bounded context is the first challenge that a development team faces.However, in my experience, in a growing company, the development team needs to be actively looking for changes in the bounded context, since the software should serve the business, not in the other way around. This is a massive challenge, not only requires the ability to have useful metrics in place (especially business KPIs) but also to keep asking if the software continues to have the same positive effect within the user base.Value to the BusinessClose the gap between development and businessIt’s important to keep the development teams as close as possible to the business. Applying DDD techniques, it helps the development team to bring the domain concepts to the center of the software development, closing the gap between the development and the business.Use of the same languageOnce the developers start to use the same domain language as the business, it decreases the time in the discussions between the business and development, since it is not needed to translate technical terms to business terms.Helps the Product Owner to make informed decisionsAll these activities end with valuable insights to the Product Owner. She/He can prioritize the work, based on the team’s feedback and the business necessities. It also reduces the creative tension between the developers, trying to improve the speed of the features delivery.Value to the Development TeamLong-term sustainabilitySoftware long-term sustainability is essential. In other words, creating and deliver software at a high pace, minimizing the technical debt. During my career, I found the DDD concepts and techniques more useful to increase the long-term sustainability of the software, since it uses the same domain language as the business. It helps the development teams to add new features to an existent component since it matches the business processes.Vision and goalsThe activities carried by the development team help to state the vision and goals for the upcoming period. Although its impossible to create a roadmap six-months ahead, due to quick company growth, it empowers the team to help the business to achieve our (domain) goals.Removes ambiguitySometimes we (developers) make assumptions that turn out wrong. Even in an Agile environment, whereby the feedback cycle is the centerpiece, and we work in an iterative process, we prefer to get it right since the beginning. Since we start to focus on DDD, I observed, the team began to remove the ambiguity during the software development process, thus increasing the speed and quality of the deliveries.Clear dependencies &amp; VisibilityWe work in one of the biggest e-commerce companies in the Benelux area, and it’s near impossible for a team to own all the software to cover a business process. During this time we started to improve our documentation, focusing on the boundaries of the software that my team is responsible. It created a clear image of the upstream and downstream dependencies. It helped in the discussions with our peers accountable for the upstream dependencies, whereby we presented documentation in the same (technical) language. Using these artifacts, we are able to discuss the importance of the upstream dependencies, since it raises visibility and awareness for the inter-dependencies between the teams (and software systems).It also raises the visibility since we hanged in our glass walls the software diagrams of our system. As a learning opportunity, we choose to document our software using the C4 model from Simon Brown.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="joaoasrosa.github.io">
+<meta property="og:title" content="Learning DDD as a team">
+<meta property="og:url" content="http://localhost:4000/2017/12/10/learning-ddd-as-a-team/">
+
+
+  <meta property="og:description" content="A few sprints ago my team and I decided to invest heavily in Domain Driven Desing. We already started to develop the new microservices in a DDD fashion, with our domain as the central component. However, we wanted to formalize it and move the old microservices to this new paradigm.During this period we used several tools and techniques, to aid us to figure out what was the best approach for us. And we are Agile; probe, experiment and evaluate. If it doesn’t work, learn from it and move on!Activities as a development teamWhiteboard sessionsAs a developer, one of the best tools is a pen and paper. As a development team, nothing better than a whiteboard and markers. Before or during the development of a component we gather the team around our whiteboard, and we scatch potential solutions for the problems in hand. It helped the team to focus, and reach a common understanding, making the software implementation easier.Coffee &amp; lunch breaksWe have around 150 software developers, it’s common to take a coffee or have lunch together. Most of the times, during our chats, it drifts to the problems that we are facing. It’s a great informal platform to share our ideas, struggles, and solutions for the problems. As Kevin Boles once wrote: “Smart people learn from their mistakes. Wise peoples learn from other people mistakes”.Craftsmanship sessionsHere at Coolblue, we host private craftsmanship sessions. During the meetings, we have the opportunity to work on a particular problem, sharing our thoughts and discuss possible solutions. It’s more formalized than the coffee &amp; lunch breaks.Event Storming sessionsAnother activity used by our team is Event Storming sessions. We use this activity to help us to match the new business requirements and all the technical debt that we need to catch. This is an opportunity to optimize the work to be carried, minimizing the creative tension between the developers and the business. It also raises the business awareness for software risks, since our domain has goals to help the company grown; to achieve the goals, we need to minimize the risks or acknowledge them. Transparency is the keyword!Lessons LearnedLanguage definitionOne of the challenges is to set the correct language, terms, and definitions. Although we are developing software, we are doing it to achieve a business goal, and given that, the software should be read like a book. Also, the software naming should match the business terms, making everyone lives easier. Please raise the hand, who never found variables names that don’t match the business terms?It’s paramount for the development team to speak the same domain language; it will pay the dividends in the future once, for instance, a refactor is needed, or even when the software goes into maintenance mode.BoundariesAny good resource in this space points to the bounded context as the central pattern for the DDD. When we are building software for a new domain, discovering the bounded context is the first challenge that a development team faces.However, in my experience, in a growing company, the development team needs to be actively looking for changes in the bounded context, since the software should serve the business, not in the other way around. This is a massive challenge, not only requires the ability to have useful metrics in place (especially business KPIs) but also to keep asking if the software continues to have the same positive effect within the user base.Value to the BusinessClose the gap between development and businessIt’s important to keep the development teams as close as possible to the business. Applying DDD techniques, it helps the development team to bring the domain concepts to the center of the software development, closing the gap between the development and the business.Use of the same languageOnce the developers start to use the same domain language as the business, it decreases the time in the discussions between the business and development, since it is not needed to translate technical terms to business terms.Helps the Product Owner to make informed decisionsAll these activities end with valuable insights to the Product Owner. She/He can prioritize the work, based on the team’s feedback and the business necessities. It also reduces the creative tension between the developers, trying to improve the speed of the features delivery.Value to the Development TeamLong-term sustainabilitySoftware long-term sustainability is essential. In other words, creating and deliver software at a high pace, minimizing the technical debt. During my career, I found the DDD concepts and techniques more useful to increase the long-term sustainability of the software, since it uses the same domain language as the business. It helps the development teams to add new features to an existent component since it matches the business processes.Vision and goalsThe activities carried by the development team help to state the vision and goals for the upcoming period. Although its impossible to create a roadmap six-months ahead, due to quick company growth, it empowers the team to help the business to achieve our (domain) goals.Removes ambiguitySometimes we (developers) make assumptions that turn out wrong. Even in an Agile environment, whereby the feedback cycle is the centerpiece, and we work in an iterative process, we prefer to get it right since the beginning. Since we start to focus on DDD, I observed, the team began to remove the ambiguity during the software development process, thus increasing the speed and quality of the deliveries.Clear dependencies &amp; VisibilityWe work in one of the biggest e-commerce companies in the Benelux area, and it’s near impossible for a team to own all the software to cover a business process. During this time we started to improve our documentation, focusing on the boundaries of the software that my team is responsible. It created a clear image of the upstream and downstream dependencies. It helped in the discussions with our peers accountable for the upstream dependencies, whereby we presented documentation in the same (technical) language. Using these artifacts, we are able to discuss the importance of the upstream dependencies, since it raises visibility and awareness for the inter-dependencies between the teams (and software systems).It also raises the visibility since we hanged in our glass walls the software diagrams of our system. As a learning opportunity, we choose to document our software using the C4 model from Simon Brown.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2017-12-10T22:04:09+01:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2017/12/10/learning-ddd-as-a-team/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="joaoasrosa.github.io Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">joaoasrosa.github.io</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:joaoasrosa@gmail.com">
+            <meta itemprop="email" content="joaoasrosa@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Learning DDD as a team">
+    <meta itemprop="description" content="A few sprints ago my team and I decided to invest heavily in Domain Driven Desing. We already started to develop the new microservices in a DDD fashion, with our domain as the central component. However, we wanted to formalize it and move the old microservices to this new paradigm.During this period we used several tools and techniques, to aid us to figure out what was the best approach for us. And we are Agile; probe, experiment and evaluate. If it doesn’t work, learn from it and move on!Activities as a development teamWhiteboard sessionsAs a developer, one of the best tools is a pen and paper. As a development team, nothing better than a whiteboard and markers. Before or during the development of a component we gather the team around our whiteboard, and we scatch potential solutions for the problems in hand. It helped the team to focus, and reach a common understanding, making the software implementation easier.Coffee &amp; lunch breaksWe have around 150 software developers, it’s common to take a coffee or have lunch together. Most of the times, during our chats, it drifts to the problems that we are facing. It’s a great informal platform to share our ideas, struggles, and solutions for the problems. As Kevin Boles once wrote: “Smart people learn from their mistakes. Wise peoples learn from other people mistakes”.Craftsmanship sessionsHere at Coolblue, we host private craftsmanship sessions. During the meetings, we have the opportunity to work on a particular problem, sharing our thoughts and discuss possible solutions. It’s more formalized than the coffee &amp; lunch breaks.Event Storming sessionsAnother activity used by our team is Event Storming sessions. We use this activity to help us to match the new business requirements and all the technical debt that we need to catch. This is an opportunity to optimize the work to be carried, minimizing the creative tension between the developers and the business. It also raises the business awareness for software risks, since our domain has goals to help the company grown; to achieve the goals, we need to minimize the risks or acknowledge them. Transparency is the keyword!Lessons LearnedLanguage definitionOne of the challenges is to set the correct language, terms, and definitions. Although we are developing software, we are doing it to achieve a business goal, and given that, the software should be read like a book. Also, the software naming should match the business terms, making everyone lives easier. Please raise the hand, who never found variables names that don’t match the business terms?It’s paramount for the development team to speak the same domain language; it will pay the dividends in the future once, for instance, a refactor is needed, or even when the software goes into maintenance mode.BoundariesAny good resource in this space points to the bounded context as the central pattern for the DDD. When we are building software for a new domain, discovering the bounded context is the first challenge that a development team faces.However, in my experience, in a growing company, the development team needs to be actively looking for changes in the bounded context, since the software should serve the business, not in the other way around. This is a massive challenge, not only requires the ability to have useful metrics in place (especially business KPIs) but also to keep asking if the software continues to have the same positive effect within the user base.Value to the BusinessClose the gap between development and businessIt’s important to keep the development teams as close as possible to the business. Applying DDD techniques, it helps the development team to bring the domain concepts to the center of the software development, closing the gap between the development and the business.Use of the same languageOnce the developers start to use the same domain language as the business, it decreases the time in the discussions between the business and development, since it is not needed to translate technical terms to business terms.Helps the Product Owner to make informed decisionsAll these activities end with valuable insights to the Product Owner. She/He can prioritize the work, based on the team’s feedback and the business necessities. It also reduces the creative tension between the developers, trying to improve the speed of the features delivery.Value to the Development TeamLong-term sustainabilitySoftware long-term sustainability is essential. In other words, creating and deliver software at a high pace, minimizing the technical debt. During my career, I found the DDD concepts and techniques more useful to increase the long-term sustainability of the software, since it uses the same domain language as the business. It helps the development teams to add new features to an existent component since it matches the business processes.Vision and goalsThe activities carried by the development team help to state the vision and goals for the upcoming period. Although its impossible to create a roadmap six-months ahead, due to quick company growth, it empowers the team to help the business to achieve our (domain) goals.Removes ambiguitySometimes we (developers) make assumptions that turn out wrong. Even in an Agile environment, whereby the feedback cycle is the centerpiece, and we work in an iterative process, we prefer to get it right since the beginning. Since we start to focus on DDD, I observed, the team began to remove the ambiguity during the software development process, thus increasing the speed and quality of the deliveries.Clear dependencies &amp; VisibilityWe work in one of the biggest e-commerce companies in the Benelux area, and it’s near impossible for a team to own all the software to cover a business process. During this time we started to improve our documentation, focusing on the boundaries of the software that my team is responsible. It created a clear image of the upstream and downstream dependencies. It helped in the discussions with our peers accountable for the upstream dependencies, whereby we presented documentation in the same (technical) language. Using these artifacts, we are able to discuss the importance of the upstream dependencies, since it raises visibility and awareness for the inter-dependencies between the teams (and software systems).It also raises the visibility since we hanged in our glass walls the software diagrams of our system. As a learning opportunity, we choose to document our software using the C4 model from Simon Brown.">
+    <meta itemprop="datePublished" content="December 10, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Learning DDD as a team
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>A few sprints ago my team and I decided to invest heavily in Domain Driven Desing. We already started to develop the new microservices in a DDD fashion, with our domain as the central component. However, we wanted to formalize it and move the old microservices to this new paradigm.</p>
 <p>During this period we used several tools and techniques, to aid us to figure out what was the best approach for us. And we are Agile; <em><strong>probe, experiment and evaluate</strong></em>. If it doesn’t work, learn from it and move on!</p>
 <h2>Activities as a development team</h2>
 <h3>Whiteboard sessions</h3>
@@ -33,3 +276,207 @@
 <h3>Clear dependencies &amp; Visibility</h3>
 <p>We work in one of the biggest e-commerce companies in the Benelux area, and it’s near impossible for a team to <em><strong>own all the software</strong></em> to cover a business process. During this time we started to improve our documentation, focusing on the boundaries of the software that my team is responsible. It created a clear image of the upstream and downstream dependencies. It helped in the discussions with our peers accountable for the upstream dependencies, whereby we presented documentation in the same (technical) language. Using these artifacts, we are able to discuss the importance of the upstream dependencies, since it raises visibility and awareness for the inter-dependencies between the teams (and software systems).</p>
 <p>It also raises the visibility since we hanged in our glass walls the software diagrams of our system. As a learning opportunity, we choose to document our software using the <a href="https://c4model.com/" rel="noopener">C4 model</a> from <a href="https://twitter.com/simonbrown" rel="noopener">Simon Brown</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-12-10T22:04:09+01:00">December 10, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Learning+DDD+as+a+team%20http%3A%2F%2Flocalhost%3A4000%2F2017%2F12%2F10%2Flearning-ddd-as-a-team%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2017%2F12%2F10%2Flearning-ddd-as-a-team%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2017%2F12%2F10%2Flearning-ddd-as-a-team%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2017/12/09/techdays-nl-2017/" class="pagination--pager" title="TechDays NL 2017
+">Previous</a>
+    
+    
+      <a href="/2017/12/31/when-cake-meets-ndepend/" class="pagination--pager" title="When Cake meets NDepend
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/01/24/build-and-secure-containers-to-support-your-ci-cd-pipeline/" rel="permalink">Build and secure containers to support your CI/CD pipeline
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+There are 2 systems in any company that are critical: the payroll system, and the CI/CD system. Why? You may ask...If the payroll system doesn't work, peopl...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/01/13/using-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely/" rel="permalink">Using Flyway and GitLab to deploy a MySQL database to AWS RDS securely
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+One of my passions is to be a trainer. Sharing knowledge, meeting new people, be continuously challenged, it fuels my brain, and I'm always learning somethi...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/10/07/what-i-learned-from-live-coding-during-talks/" rel="permalink">What I learned from live coding during talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Last week, Kenny Baas and I, delivered 2 talks with live coding. We were at NextBuild (with From EventStorming to CoDDDing) and Techorama NL (with Improving ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/05/21/life-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally/" rel="permalink">Life of a C# Developer: How to build and test an AWS Lambda locally
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as Mathias Verraes:
+https:...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 joaoasrosa.github.io. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

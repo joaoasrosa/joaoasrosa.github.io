@@ -1,4 +1,247 @@
-<p><a href="https://aws.amazon.com/lambda/">AWS Lambda</a> is one of the AWS Compute Services, alongside with <a href="https://aws.amazon.com/ec2/">Amazon EC2</a> or <a href="https://aws.amazon.com/ecs/">Amazon EC2 Container Service</a>. In a nutshell, AWS Lambda is the serverless offer from AWS, allowing "you run code without provisioning or managing servers"[1].</p>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Create an AWS Lambda function from an Octopus Deployment - joaoasrosa.github.io</title>
+<meta name="description" content="AWS Lambda is one of the AWS Compute Services, alongside with Amazon EC2 or Amazon EC2 Container Service. In a nutshell, AWS Lambda is the serverless offer from AWS, allowing &quot;you run code without provisioning or managing servers&quot;[1].In the DevOps spirit, and using Octopus as the Continuous Deployment tool, I couldn&#39;t find a step template to create an AWS Lambda function. If it doesn&#39;t exist, create it and give it away!BackgroundAWS Lambda supports a broad range of technologies, such as Java, Python or NodeJS. The new kid on the block was .NET Core, announced on 1st of December 2016. It was a good announcement for Microsoft tech shops, having another tool in the toolbelt.The tools used for this demo were:Visual Studio 2015 Community EditionAWS Toolkit for Visual StudioAWS Tools for Windows PowershellOctopus Deploy Community EditionVisual Studio and AWS Lambda Function ProjectUsing one of the Visual Studio AWS Lambda templates for the demo, the project was created and committed here. In a nutshell, the AWS Lambda function receives an Amazon S3 event and returns the S3 object Content Type. Simple and straightforward.Continuous Integration ServerYou can use your preferred CI server. In your CI server will need to:Publish the AWS Lambda .NET projectdotnet publish AWSLambdaDemo -c ReleaseZip the published AWS Lambda .NET projectCreate the NuGet package for OctopusOcto.exe pack --id AWSLambdaDemo --version 1.0.0.0Upload the AWS Lambda NuGet package to Octopus ServerNuGet.exe push AWSLambdaDemo.1.0.0.0.nupkg -ApiKey myApiKey -Source https://myOctopusServerThese instructions are generic, and depending on your CI server technology can be done in different ways. You can take them as generic steps, and adapt to your needs. Create AWS Lambda function Octopus step templateThe step template is simple and straightforward. The Powershell script:Checks if the AWS Tools for Windows Powershell is installedGet all the required parameters, such as the access keys, region, function name, among othersValidate the parameters, e. g., if they have a valueExecute the operationFeedback the userThe step template has a prerequisite, it depends on the AWS Tools for Windows Powershell. You need to download and install it on the machines where the step will run.Octopus ProjectTo create the AWS Lambda function, we need to use a pivot machine. At the moment is not possible to publish it directly to AWS.We will use the Octopus out-of-the-box features to deploy the AWSLambdaDemo package to the Pivot Machine, and the new step template to publish the function to AWS.The Demo Octopus Project will look like this:The first step just deploys the upload NuGet AWSLambdaDemo package to a custom location in the Pivot Machine (with the role AWS Lambda Demo).The second step creates the AWS Lambda from the deployed NuGet AWSLambdaDemo package from the custom location.After creating a release (potentially triggered by the CI server), Octopus Server can deploy it.And voilá! A new AWS Lambda function is deployed!Final thoughtsThe step template is under the Octopus Library OSS. You can fork and add new features to it, or open an issue in my fork. All suggestions are welcome.&nbsp;[1] - http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="joaoasrosa.github.io">
+<meta property="og:title" content="Create an AWS Lambda function from an Octopus Deployment">
+<meta property="og:url" content="http://localhost:4000/2017/01/10/create-an-aws-lambda-function-from-an-octopus-deployment/">
+
+
+  <meta property="og:description" content="AWS Lambda is one of the AWS Compute Services, alongside with Amazon EC2 or Amazon EC2 Container Service. In a nutshell, AWS Lambda is the serverless offer from AWS, allowing &quot;you run code without provisioning or managing servers&quot;[1].In the DevOps spirit, and using Octopus as the Continuous Deployment tool, I couldn&#39;t find a step template to create an AWS Lambda function. If it doesn&#39;t exist, create it and give it away!BackgroundAWS Lambda supports a broad range of technologies, such as Java, Python or NodeJS. The new kid on the block was .NET Core, announced on 1st of December 2016. It was a good announcement for Microsoft tech shops, having another tool in the toolbelt.The tools used for this demo were:Visual Studio 2015 Community EditionAWS Toolkit for Visual StudioAWS Tools for Windows PowershellOctopus Deploy Community EditionVisual Studio and AWS Lambda Function ProjectUsing one of the Visual Studio AWS Lambda templates for the demo, the project was created and committed here. In a nutshell, the AWS Lambda function receives an Amazon S3 event and returns the S3 object Content Type. Simple and straightforward.Continuous Integration ServerYou can use your preferred CI server. In your CI server will need to:Publish the AWS Lambda .NET projectdotnet publish AWSLambdaDemo -c ReleaseZip the published AWS Lambda .NET projectCreate the NuGet package for OctopusOcto.exe pack --id AWSLambdaDemo --version 1.0.0.0Upload the AWS Lambda NuGet package to Octopus ServerNuGet.exe push AWSLambdaDemo.1.0.0.0.nupkg -ApiKey myApiKey -Source https://myOctopusServerThese instructions are generic, and depending on your CI server technology can be done in different ways. You can take them as generic steps, and adapt to your needs. Create AWS Lambda function Octopus step templateThe step template is simple and straightforward. The Powershell script:Checks if the AWS Tools for Windows Powershell is installedGet all the required parameters, such as the access keys, region, function name, among othersValidate the parameters, e. g., if they have a valueExecute the operationFeedback the userThe step template has a prerequisite, it depends on the AWS Tools for Windows Powershell. You need to download and install it on the machines where the step will run.Octopus ProjectTo create the AWS Lambda function, we need to use a pivot machine. At the moment is not possible to publish it directly to AWS.We will use the Octopus out-of-the-box features to deploy the AWSLambdaDemo package to the Pivot Machine, and the new step template to publish the function to AWS.The Demo Octopus Project will look like this:The first step just deploys the upload NuGet AWSLambdaDemo package to a custom location in the Pivot Machine (with the role AWS Lambda Demo).The second step creates the AWS Lambda from the deployed NuGet AWSLambdaDemo package from the custom location.After creating a release (potentially triggered by the CI server), Octopus Server can deploy it.And voilá! A new AWS Lambda function is deployed!Final thoughtsThe step template is under the Octopus Library OSS. You can fork and add new features to it, or open an issue in my fork. All suggestions are welcome.&nbsp;[1] - http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2017-01-10T12:27:40+01:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2017/01/10/create-an-aws-lambda-function-from-an-octopus-deployment/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="joaoasrosa.github.io Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">joaoasrosa.github.io</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:joaoasrosa@gmail.com">
+            <meta itemprop="email" content="joaoasrosa@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Create an AWS Lambda function from an Octopus Deployment">
+    <meta itemprop="description" content="AWS Lambda is one of the AWS Compute Services, alongside with Amazon EC2 or Amazon EC2 Container Service. In a nutshell, AWS Lambda is the serverless offer from AWS, allowing &quot;you run code without provisioning or managing servers&quot;[1].In the DevOps spirit, and using Octopus as the Continuous Deployment tool, I couldn&#39;t find a step template to create an AWS Lambda function. If it doesn&#39;t exist, create it and give it away!BackgroundAWS Lambda supports a broad range of technologies, such as Java, Python or NodeJS. The new kid on the block was .NET Core, announced on 1st of December 2016. It was a good announcement for Microsoft tech shops, having another tool in the toolbelt.The tools used for this demo were:Visual Studio 2015 Community EditionAWS Toolkit for Visual StudioAWS Tools for Windows PowershellOctopus Deploy Community EditionVisual Studio and AWS Lambda Function ProjectUsing one of the Visual Studio AWS Lambda templates for the demo, the project was created and committed here. In a nutshell, the AWS Lambda function receives an Amazon S3 event and returns the S3 object Content Type. Simple and straightforward.Continuous Integration ServerYou can use your preferred CI server. In your CI server will need to:Publish the AWS Lambda .NET projectdotnet publish AWSLambdaDemo -c ReleaseZip the published AWS Lambda .NET projectCreate the NuGet package for OctopusOcto.exe pack --id AWSLambdaDemo --version 1.0.0.0Upload the AWS Lambda NuGet package to Octopus ServerNuGet.exe push AWSLambdaDemo.1.0.0.0.nupkg -ApiKey myApiKey -Source https://myOctopusServerThese instructions are generic, and depending on your CI server technology can be done in different ways. You can take them as generic steps, and adapt to your needs. Create AWS Lambda function Octopus step templateThe step template is simple and straightforward. The Powershell script:Checks if the AWS Tools for Windows Powershell is installedGet all the required parameters, such as the access keys, region, function name, among othersValidate the parameters, e. g., if they have a valueExecute the operationFeedback the userThe step template has a prerequisite, it depends on the AWS Tools for Windows Powershell. You need to download and install it on the machines where the step will run.Octopus ProjectTo create the AWS Lambda function, we need to use a pivot machine. At the moment is not possible to publish it directly to AWS.We will use the Octopus out-of-the-box features to deploy the AWSLambdaDemo package to the Pivot Machine, and the new step template to publish the function to AWS.The Demo Octopus Project will look like this:The first step just deploys the upload NuGet AWSLambdaDemo package to a custom location in the Pivot Machine (with the role AWS Lambda Demo).The second step creates the AWS Lambda from the deployed NuGet AWSLambdaDemo package from the custom location.After creating a release (potentially triggered by the CI server), Octopus Server can deploy it.And voilá! A new AWS Lambda function is deployed!Final thoughtsThe step template is under the Octopus Library OSS. You can fork and add new features to it, or open an issue in my fork. All suggestions are welcome.&nbsp;[1] - http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">
+    <meta itemprop="datePublished" content="January 10, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Create an AWS Lambda function from an Octopus Deployment
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><a href="https://aws.amazon.com/lambda/">AWS Lambda</a> is one of the AWS Compute Services, alongside with <a href="https://aws.amazon.com/ec2/">Amazon EC2</a> or <a href="https://aws.amazon.com/ecs/">Amazon EC2 Container Service</a>. In a nutshell, AWS Lambda is the serverless offer from AWS, allowing "you run code without provisioning or managing servers"[1].</p>
 <p>In the DevOps spirit, and using <a href="https://octopus.com/">Octopus</a> as the Continuous Deployment tool, I couldn't find a step template to create an AWS Lambda function. If it doesn't exist, create it and give it away!</p>
 <h2>Background</h2>
 <p>AWS Lambda supports a broad range of technologies, such as Java, Python or NodeJS. The new kid on the block was .NET Core, <a href="https://aws.amazon.com/blogs/compute/announcing-c-sharp-support-for-aws-lambda/">announced</a> on 1<sup>st</sup> of December 2016. It was a good announcement for Microsoft tech shops, having another tool in the toolbelt.</p>
@@ -53,3 +296,207 @@
 <p>The step template is under the <a href="https://github.com/OctopusDeploy/Library">Octopus Library OSS</a>. You can fork and add new features to it, or open an issue in <a href="https://github.com/joaoasrosa/Library">my fork</a>. All suggestions are welcome.</p>
 <p>&nbsp;</p>
 <p>[1] - <a href="http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">http://docs.aws.amazon.com/lambda/latest/dg/welcome.html</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-01-10T12:27:40+01:00">January 10, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Create+an+AWS+Lambda+function+from+an+Octopus+Deployment%20http%3A%2F%2Flocalhost%3A4000%2F2017%2F01%2F10%2Fcreate-an-aws-lambda-function-from-an-octopus-deployment%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2017%2F01%2F10%2Fcreate-an-aws-lambda-function-from-an-octopus-deployment%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2017%2F01%2F10%2Fcreate-an-aws-lambda-function-from-an-octopus-deployment%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2017/01/03/code-development-improvement-with-jetbrains-upsource-configuration-and-first-impressions/" class="pagination--pager" title="Code development improvement with JetBrains UpSource (configuration and first impressions)
+">Previous</a>
+    
+    
+      <a href="/2017/02/04/create-and-push-a-docker-image-from-an-octopus-deployment/" class="pagination--pager" title="Create and Push a Docker Image from an Octopus Deployment
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/01/24/build-and-secure-containers-to-support-your-ci-cd-pipeline/" rel="permalink">Build and secure containers to support your CI/CD pipeline
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+There are 2 systems in any company that are critical: the payroll system, and the CI/CD system. Why? You may ask...If the payroll system doesn't work, peopl...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/01/13/using-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely/" rel="permalink">Using Flyway and GitLab to deploy a MySQL database to AWS RDS securely
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+One of my passions is to be a trainer. Sharing knowledge, meeting new people, be continuously challenged, it fuels my brain, and I'm always learning somethi...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/10/07/what-i-learned-from-live-coding-during-talks/" rel="permalink">What I learned from live coding during talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Last week, Kenny Baas and I, delivered 2 talks with live coding. We were at NextBuild (with From EventStorming to CoDDDing) and Techorama NL (with Improving ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/05/21/life-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally/" rel="permalink">Life of a C# Developer: How to build and test an AWS Lambda locally
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as Mathias Verraes:
+https:...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 joaoasrosa.github.io. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

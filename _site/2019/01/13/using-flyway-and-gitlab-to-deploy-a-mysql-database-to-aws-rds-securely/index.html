@@ -1,4 +1,247 @@
-<p><!-- wp:paragraph --></p>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Using Flyway and GitLab to deploy a MySQL database to AWS RDS securely - joaoasrosa.github.io</title>
+<meta name="description" content="One of my passions is to be a trainer. Sharing knowledge, meeting new people, be continuously challenged, it fuels my brain, and I&#39;m always learning something new. I&#39;m creating a new training for software development teams, and one of the components is a MySQL database. Also, I&#39;m using a public cloud provider (in this case AWS), and Xebia provides accounts to cover training, workshops and our own experiments.All the application and infrastructure definition (code) is in GitLab. It gives a central place with source code and CI/CD. And I can automate everything! :) The stack is not up and running 24/7, and I do not like to repeat myself executing the scripts manually (in the end I&#39;m only human, and I will fail in the script execution). Thus, I have a pipeline to validate and lint the CloudFormation templates, build the app and run the tests, deploy the CloudFormation template, deploy the database and finally deploy the app. Pretty standard nowadays.To deploy the database, I decided to use Flyway. It offers supports to different database technologies, and the Community version (free) has an interesting range of features, the features that I need to deploy the database. It also packs the Flyway CLI in a Docker image, which is precisely what I need for my GitLab pipeline.Great! I can use the Docker image in my pipeline. My pipeline is multi-stage, and in each stage, I use different Docker images, with the tools needed for that particular stage. Separation of concerns, right?My .gitlab-ci.yml looks like this (omitting parts of the script):stages:  - validate  - build  - deploy  - deploy-database">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="joaoasrosa.github.io">
+<meta property="og:title" content="Using Flyway and GitLab to deploy a MySQL database to AWS RDS securely">
+<meta property="og:url" content="http://localhost:4000/2019/01/13/using-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely/">
+
+
+  <meta property="og:description" content="One of my passions is to be a trainer. Sharing knowledge, meeting new people, be continuously challenged, it fuels my brain, and I&#39;m always learning something new. I&#39;m creating a new training for software development teams, and one of the components is a MySQL database. Also, I&#39;m using a public cloud provider (in this case AWS), and Xebia provides accounts to cover training, workshops and our own experiments.All the application and infrastructure definition (code) is in GitLab. It gives a central place with source code and CI/CD. And I can automate everything! :) The stack is not up and running 24/7, and I do not like to repeat myself executing the scripts manually (in the end I&#39;m only human, and I will fail in the script execution). Thus, I have a pipeline to validate and lint the CloudFormation templates, build the app and run the tests, deploy the CloudFormation template, deploy the database and finally deploy the app. Pretty standard nowadays.To deploy the database, I decided to use Flyway. It offers supports to different database technologies, and the Community version (free) has an interesting range of features, the features that I need to deploy the database. It also packs the Flyway CLI in a Docker image, which is precisely what I need for my GitLab pipeline.Great! I can use the Docker image in my pipeline. My pipeline is multi-stage, and in each stage, I use different Docker images, with the tools needed for that particular stage. Separation of concerns, right?My .gitlab-ci.yml looks like this (omitting parts of the script):stages:  - validate  - build  - deploy  - deploy-database">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-01-13T14:37:39+01:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2019/01/13/using-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="joaoasrosa.github.io Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">joaoasrosa.github.io</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:joaoasrosa@gmail.com">
+            <meta itemprop="email" content="joaoasrosa@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Using Flyway and GitLab to deploy a MySQL database to AWS RDS securely">
+    <meta itemprop="description" content="One of my passions is to be a trainer. Sharing knowledge, meeting new people, be continuously challenged, it fuels my brain, and I&#39;m always learning something new. I&#39;m creating a new training for software development teams, and one of the components is a MySQL database. Also, I&#39;m using a public cloud provider (in this case AWS), and Xebia provides accounts to cover training, workshops and our own experiments.All the application and infrastructure definition (code) is in GitLab. It gives a central place with source code and CI/CD. And I can automate everything! :) The stack is not up and running 24/7, and I do not like to repeat myself executing the scripts manually (in the end I&#39;m only human, and I will fail in the script execution). Thus, I have a pipeline to validate and lint the CloudFormation templates, build the app and run the tests, deploy the CloudFormation template, deploy the database and finally deploy the app. Pretty standard nowadays.To deploy the database, I decided to use Flyway. It offers supports to different database technologies, and the Community version (free) has an interesting range of features, the features that I need to deploy the database. It also packs the Flyway CLI in a Docker image, which is precisely what I need for my GitLab pipeline.Great! I can use the Docker image in my pipeline. My pipeline is multi-stage, and in each stage, I use different Docker images, with the tools needed for that particular stage. Separation of concerns, right?My .gitlab-ci.yml looks like this (omitting parts of the script):stages:  - validate  - build  - deploy  - deploy-database">
+    <meta itemprop="datePublished" content="January 13, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Using Flyway and GitLab to deploy a MySQL database to AWS RDS securely
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><!-- wp:paragraph --></p>
 <p>One of my passions is to be a trainer. Sharing knowledge, meeting new people, be continuously challenged, it fuels my brain, and I'm always learning something new. I'm creating a new training for software development teams, and one of the components is a MySQL database. Also, I'm using a public cloud provider (in this case AWS), and Xebia provides accounts to cover training, workshops and our own experiments.</p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:paragraph --></p>
@@ -127,3 +370,207 @@ ENTRYPOINT ["/usr/bin/env"]</code></pre>
 <p><!-- wp:paragraph --></p>
 <p>As we can see, it deploys the database using an encrypted channel. Happy days, the pipeline is a bit more secure than before. :)</p>
 <p><!-- /wp:paragraph --></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-01-13T14:37:39+01:00">January 13, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Using+Flyway+and+GitLab+to+deploy+a+MySQL+database+to+AWS+RDS+securely%20http%3A%2F%2Flocalhost%3A4000%2F2019%2F01%2F13%2Fusing-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2019%2F01%2F13%2Fusing-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F01%2F13%2Fusing-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2018/10/07/what-i-learned-from-live-coding-during-talks/" class="pagination--pager" title="What I learned from live coding during talks
+">Previous</a>
+    
+    
+      <a href="/2019/01/24/build-and-secure-containers-to-support-your-ci-cd-pipeline/" class="pagination--pager" title="Build and secure containers to support your CI/CD pipeline
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/01/24/build-and-secure-containers-to-support-your-ci-cd-pipeline/" rel="permalink">Build and secure containers to support your CI/CD pipeline
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+There are 2 systems in any company that are critical: the payroll system, and the CI/CD system. Why? You may ask...If the payroll system doesn't work, peopl...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/10/07/what-i-learned-from-live-coding-during-talks/" rel="permalink">What I learned from live coding during talks
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Last week, Kenny Baas and I, delivered 2 talks with live coding. We were at NextBuild (with From EventStorming to CoDDDing) and Techorama NL (with Improving ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/05/21/life-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally/" rel="permalink">Life of a C# Developer: How to build and test an AWS Lambda locally
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as Mathias Verraes:
+https:...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2018/03/11/how-to-solve-magento-2-upgrade-errors/" rel="permalink">How to solve Magento 2 upgrade errors
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Magento 2 is the leading Open Source Software for e-commerce, with a vibrant community and proper product documentation.
+The development team releases bug fi...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 joaoasrosa.github.io. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
