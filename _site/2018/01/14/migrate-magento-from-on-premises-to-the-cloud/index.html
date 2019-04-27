@@ -1,0 +1,40 @@
+<p>Last summer a good friend of mine challenged me to help him move his Magento webshop from an on-premises server to the cloud. Also, to upgrade the webshop to the newest version (Magento 2).</p>
+<h2>The starting point</h2>
+<p>The webshop is the online spot for a small streetwear Portuguese shop. The crew supporting the shop is 3 persons, and the online channel is extremely important to the growth.</p>
+<h2>Select a cloud provider</h2>
+<p>[caption id="attachment_1845" align="alignnone" width="768"]<img src="/assets/gettyimages-482252-001-570a81d93df78c7d9edc0d78.jpg" class="alignnone wp-image-1845 size-full" height="511" alt="Clouds. Clouds everywhere!" width="768" /> Ryan Beyer | The Image Bank | Getty Images[/caption]</p>
+<p>The cloud provider offer is huge. We've put some effort into the investigation of the right cloud provider for us. The key points are:</p>
+<ul>
+<li>Maturity. We need a mature cloud platform, and at this moment there are a few providers ticking this box</li>
+<li>The range of services. The plan is to grow, and with that, we need a cloud provider with a variety of services that will allow the platform expansion</li>
+<li>Quality of service. Given today we are used to the Google speed, and Apple minimalistic design, everyone expects the same level of service. We need a cloud provider with a proven record regarding the quality of service, allowing us to serve the audience with the quality they deserve</li>
+<li>Price. A good bang for the buck, providing Return on Investment quickly</li>
+<li>Community. Today we are interconnected, and we tend to share our ideas and engage in discussions. We need a cloud provider with an engaged community, whereby we can Q&amp;A our ideas</li>
+</ul>
+<p>We chose AWS, since it ticks all the boxes, having a good offer for the price tag. The community support is excellent, and we can find useful open source resources from the AWS folks (one of them is described in the next section).</p>
+<p>Also, AWS offers a range of services that allow the webshop to grow sustainably. An example is the AWS Simple Email Service (SES), where it can be used as e-mail service to support the marketing campaigns.</p>
+<h2>Create a playground</h2>
+<p>[caption id="attachment_1847" align="alignnone" width="940"]<img src="/assets/5612_product_detail.jpeg" class="alignnone size-full wp-image-1847" height="658" alt="Create a playground" width="940" /> Playmobil Playground[/caption]</p>
+<p>In order to do a smooth migration, we've created a playground in AWS. We used the <a href="https://docs.aws.amazon.com/quickstart/latest/magento/welcome.html">Magento 2 Quick Start</a> provided by AWS, to build the Magento 2 infrastructure. It allows us to reduce the time to market, and we were able to focus on the webshop content, rather than the infrastructure.</p>
+<p>In our playground, we tested all the variations, namely themes, modules, and integrations. To name a few:</p>
+<ul>
+<li>Composer. It is the PHP package manager, and most of the Magento 2 modules are distributed using it</li>
+<li>Theme. We tested several themes, testing the variations in all the devices</li>
+<li>Performance. We developed our own performance test suite. Given the data from the on-premises usage, we extrapolate the data tenfold and execute the performance tests to discover the resources needed to operate the webshop</li>
+</ul>
+<h2>Migration Plan</h2>
+<p><img src="/assets/0hsfnsw.jpg" class="wp-image-1848 size-full" height="369" alt="Testing code in Production!" width="555" /></p>
+<p>We created a migration plan, to mitigate potential issues when we triggered the migration. We planned to do a hot migration, e. g., put the old webshop in read-only mode until all traffic is redirected to the new webshop.</p>
+<p>To develop this migration plan we read the <a href="http://devdocs.magento.com/guides/v2.0/migration/migration-plan.html">official documentation</a>, where Magento states the steps to migrate a webshop. Our migration plan was based on the official documentation, adding the possibility to recover the old webshop from backups, minimizing the data loss. We did the dry run 3 times before the final move, testing the backup recovering strategy. We wanted to be sure that we covered all the bases, and we were able to recover from backups.</p>
+<h2>Lessons learned</h2>
+<p>[caption id="attachment_1849" align="alignnone" width="760"]<img src="/assets/adobestock_87364193-760x507.jpeg" class="alignnone size-full wp-image-1849" height="507" alt="Phil McKinney Blog" width="760" /> cycle to reach success: try, fail, try again, success[/caption]</p>
+<p>From the migration we learned a few good lessons:</p>
+<ul>
+<li>Create a playground. It is essential to test the webshop in a safe environment. We tested the UI, backup strategy, migration amongst others</li>
+<li>Contribute to the Open Source Community. We used the Magento 2 Quick Start offered by AWS. It is available on <a href="https://github.com/aws-quickstart/quickstart-magento">GitHub</a>, and we made small contributions based on the tweaks that we did in our playground area</li>
+<li>Test, test &amp; test! We tested as much as we could, ranging from the UI, the UX, the modules to the performance. We based our testing targets on assumptions, but the assumptions were generated from data collected over the years</li>
+<li>Create the migration plan. The Magento documentation is in a good shape and provides a solid direction. We used it to our migration plan</li>
+<li>Rehearsal the migration. To mitigate the risks we rehearsal the migration several times, learning the pitfalls and potential issues after the data is migrated to the new platform</li>
+<li>Have a backup plan. We had a plan B if the migration failed. We were able to revert to the old webshop if we needed to, having the capability to inspect and analyze the problem with the migration</li>
+</ul>
+<p>This was the start of our journey. In the upcoming weeks we will post more implementation details, such as monitoring &amp; logging, security measures, build &amp; deployment pipelines, amongst others.</p>

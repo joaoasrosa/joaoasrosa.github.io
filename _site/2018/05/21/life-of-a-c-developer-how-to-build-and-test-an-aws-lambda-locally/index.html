@@ -1,0 +1,91 @@
+<p>Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as <a href="https://twitter.com/mathiasverraes" rel="noopener">Mathias Verraes</a>:</p>
+<p>https://twitter.com/mathiasverraes/status/995317295072382976</p>
+<p>Given that, I decided to share my developer experience building, testing and deploying AWS Lambda functions in the .NET world. Not a "Hello World" example, but rather a real-world scenario, where some services integrate with each other. Since a Serverless function is a tiny piece of code in a much larger process, <strong>how can I test the flow on my development machine?</strong></p>
+<h2>Challenge</h2>
+<p>In this example, we will have an AWS Lambda that receives a Notification from the Web Application and sends an SMS using a 3<sup>rd</sup> party provider. The requests and responses to the AWS Lambda function are proxied using AWS API Gateway, given all goodness of HTTP.</p>
+<p>[caption id="attachment_1865" align="aligncenter" width="1280"]<img class="size-full wp-image-1865 aligncenter" src="/assets/aws-lambda-for-sms.png" alt="AWS Lambda for SMS" width="1280" height="460" /> Representation of the interaction between the components[/caption]</p>
+<p>However, the SMS provider does not have a sandbox which we can use for our acceptance tests, and we do not want to spend all of our credits. Since we want to be sure that our business code handles all the use cases, we need to build the behavior of the SMS provider ourselves. At least the documentation is up to a good standard. :)</p>
+<p>[caption id="attachment_1864" align="aligncenter" width="546"]<img class="size-full wp-image-1864 aligncenter" src="/assets/challenge-accepted-barney-stinson-06.jpg" alt="challenge-accepted-barney-stinson-06" width="546" height="513" /> Credits to <a href="http://www.quickmeme.com" rel="noopener">http://www.quickmeme.com</a>[/caption]</p>
+<h3>Use Cases</h3>
+<p>We identified several uses cases which our business code (AWS Lambda) needs to handle:</p>
+<ol>
+<li>The account credentials are wrong. The authentication with the SMS provider will fail, and the SMS will not be sent</li>
+<li>The account doesn't have sufficient credits. To execute the operation, some credits will be used</li>
+<li>The SMS is sent. All good, SMS sent, credits deducted, happy days</li>
+<li>Rainy day. For some reason, the SMS provider doesn't return an expected result (described in the previous points). Thus we need to catch and handle it</li>
+</ol>
+<h3>Testing Strategy</h3>
+<p>We want to have the feedback as quickly as we can, with different levels of testing. We have unit testing to make sure the business logic behaves based on the use cases. However, we also have acceptance tests in a Given/When/Then format, having a broader scope than the unit tests.</p>
+<h2>Implementation</h2>
+<p>Given the constraints described earlier, and to achieve the level of testing, we need to build a Testing API with the same behavior as the SMS provider.</p>
+<h3>Testing API</h3>
+<p>The Testing API needs to be instrumented to behave according to the use case. The easiest route to do it is using an environment variable:</p>
+<pre><code>switch (Environment.GetEnvironmentVariable("API_BEHAVIOUR"))
+{
+  case "ok":
+    return new OkResult();
+  case "invalid_credentials":
+    return new UnauthorizedResult();
+  case "insufficient_credits":
+    return new StatusCodeResult((int) HttpStatusCode.Forbidden);;
+  default:
+    return new StatusCodeResult((int) HttpStatusCode.InternalServerError);
+}</code></pre>
+<p>Using this approach we can control the response from the Testing API, allowing to assert the correct behavior of the Lambda function.</p>
+<p>The Testing API is deployed in a Docker container, the same technology used by SAM Local. Reusing the same technology reduces the risk of friction in our development environment. However, it is possible to deploy the Testing API in other hosting technologies.</p>
+<h3>SAM Local</h3>
+<p>AWS has built and released the Serverless Application Model (SAM) Local tooling. "<strong><code>sam</code></strong> is the AWS CLI tool for managing Serverless applications written with <a href="https://github.com/awslabs/serverless-application-model" rel="noopener">AWS Serverless Application Model (SAM)</a>. SAM CLI can be used to test functions locally, start a local API Gateway from a SAM template, validate a SAM template, generate sample payloads for various event sources, and generate a SAM project in your favorite Lambda Runtime." [1]</p>
+<p>The AWS Lambda function is triggered by an API Gateway event, sending the notification as SMS to the SMS provider.</p>
+<p>The template has all the necessary components:</p>
+<pre><code>AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: AWS SAM Local blog example
+
+Resources:
+  Lambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: Lambda::Lambda.Function::Handler
+      CodeUri: ./Lambda.zip
+      Runtime: dotnetcore2.0
+      Environment:
+        Variables:
+          SMS_API_URL: http://testing-api:80/
+          SMS_API_USERNAME: foo
+          SMS_API_PASSWORD: bar
+      Events:
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post</code></pre>
+<p>As the template describes, the API Gateway will proxy a POST request to the AWS Lambda, which is responsible for executing the business code.</p>
+<h3>Acceptance Tests</h3>
+<p>The Acceptance Tests aim to test the system behavior based on the specifications. The specifications were coded based on a set of Given/When/Then, where the tests are executed in a black box fashion (e. g. the system is tested without knowledge of the internals).</p>
+<p>For every test run, a report is created. This is the default behavior of the testing framework (<a href="https://github.com/LightBDD/LightBDD" rel="noopener">LightBDD</a>). However, you can implement using your preferred poison. :)</p>
+<p>The Acceptance Tests are responsible for starting the Testing API with the required behavior for the scenario under test; and also starts the SAM Local, calling the API Gateway command (<code>sam local start-api --docker-network testing</code>).</p>
+<h3>Putting Everything Together</h3>
+<p>Since we are in the .NET world, we use <a href="https://cakebuild.net" rel="noopener">Cake</a> to script our local testing. The script allows the build, deploy and test the involved components in the <a href="http://joaorosa.io/2017/10/18/abstract-from-your-ci-use-cake/">same way locally and in the CI server</a>.</p>
+<p>In this case, the script:</p>
+<ol>
+<li>Cleans the files from the previous build (binaries, artifacts, etc.)</li>
+<li>Restores the dependencies (NuGet)</li>
+<li>Builds the solution</li>
+<li>Run the Unit Tests</li>
+<li>Publish the AWS Lambda and the Testing API</li>
+<li>Package the AWS Lambda into a zip file</li>
+<li>Deploys the previously compressed AWS Lambda and the SAM template</li>
+<li>Creates the Docker container image for the Testing API</li>
+<li>Creates the Docker network for the components</li>
+<li>Run the Acceptance Tests</li>
+<li>Removes the Docker network</li>
+<li>Removes the Docker container image</li>
+</ol>
+<p>The steps can be executed locally or on the CI server (see here for <a href="https://travis-ci.org/joaoasrosa/aws-sam-local-blog" rel="noopener">TravisCI</a>. We have some limitations running in AppVeyor).</p>
+<p>You can find the code here: <a href="https://github.com/joaoasrosa/aws-sam-local-blog" rel="noopener">https://github.com/joaoasrosa/aws-sam-local-blog</a></p>
+<h2>Final thoughts</h2>
+<p>Serverless is a great technology, decreasing the necessary maintenance of the cloud components. However, like any technology, we should use it pragmatically. Since it's easy to put our code in a Function (or Lambda depending on the vendor), we can end with multiple asynchronous triggers in the cloud. Remember, back in the day, the use of triggers in the databases? Easy to develop, a pain to maintain. Same with Serverless code...</p>
+<p>To decrease the risk of unintended behavior we need to have a sane CI/CD pipeline with a good level of testing. Also, we need to use the correct tools to allow faster feedback loops, starting in our development environment.</p>
+<p>This post describes one possible way for .NET developers using AWS technologies. If you have a different but sane approach to achieve the same goal, just shout! ;)</p>
+<h4>References</h4>
+<p>[1] - <a href="https://github.com/awslabs/aws-sam-cli" rel="noopener">https://github.com/awslabs/aws-sam-cli</a></p>

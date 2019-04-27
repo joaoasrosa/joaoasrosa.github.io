@@ -1,0 +1,14 @@
+<p>Microsoft is doing a huge effort to bring SQL Server 2016 to Linux. Back in the summer, during the <a href="http://www.sqlsaturday.com/501/eventhome.aspx">Dublin 2016 SQL Saturday #501</a>, <a href="https://twitter.com/mark_azurecat">Mark Souza</a> <a href="https://onedrive.live.com/view.aspx?resid=56E37AA660DF4C78!370&amp;ithint=file%2cpptx&amp;app=PowerPoint&amp;authkey=!AE6OLiox4aT1bNs">presented the SQL Server history</a>. One of the major features is the ability to run SQL Sever 2016 on Linux.</p>
+<p>Since then I added on my TODO list a simple task, test SQL Server in Linux. The best way to do it is using a Docker container, provided by Microsoft. Plus, since the last time that I played with Docker in Windows, they run on Hyper-V instead of VirtualBox. For me this is a huge increment in the product, thus we do not need several virtualization technologies on my development machine.</p>
+<p>After installing the latest version of Docker (at the time of this post is 1.12.5), I start to read the <a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-docker">notes</a> on how to run the SQL Server Docker container. The first thing that jumped was this instruction:</p>
+<pre><code>docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=&lt;YourStrong!Passw0rd&gt;' -p 1433:1433 -v HOSTDIRECTORY:/var/opt/mssql -d microsoft/mssql-server-linux</code></pre>
+<p>Especially the port assignment, since I've SQL Server installed on my development machine using the standard port 1433. I've modified the instruction to be:</p>
+<pre><code>docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=&lt;YourStrong!Passw0rd&gt;' -p 7000:1433 -v C:\Temp\Docker\mssql:/var/opt/mssql -d microsoft/mssql-server-linux</code></pre>
+<p>Where I assigned the public port 7000 to the container port 1433 (SQL Server default), and the container will persist the files in my file system at C:\Temp\Docker\mssql.</p>
+<p>Opening SQL Server Management Studio I can connect using my credentials:</p>
+<p><img class="alignnone size-full wp-image-901" src="/assets/001.png" alt="001" width="412" height="310" /></p>
+<p>After I connect just run the famous command:</p>
+<pre><code>SELECT @@VERSION</code></pre>
+<p>and get the results:</p>
+<p><img class="alignnone size-full wp-image-907" src="/assets/002.png" alt="002" width="736" height="110" /></p>
+<p>I've played around for a few hours, and it is a good candidate to start the test for a production environment. I've tried a few applications and all of them worked without any problem. Good work SQL team, keep them going!</p>
