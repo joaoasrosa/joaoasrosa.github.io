@@ -1,0 +1,111 @@
+---
+layout: post
+title: Why Integration Tests won't save you... or your software
+date: 2019-08-13 14:05:44.000000000 +02:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Code Development
+- Continuous Deployment
+- Continuous Integration
+tags:
+- CI/CD
+- Contract Testing
+- Health Testing
+- Integration Testing
+- Quality
+meta:
+  _wpcom_is_markdown: '1'
+  _thumbnail_id: '1930'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:57:"https://twitter.com/joaoasrosa/status/1161643751011422210";}}
+  _publicize_job_id: '34076424460'
+  timeline_notification: '1565792425'
+  _publicize_done_15638091: '1'
+  _wpas_done_15487188: '1'
+  publicize_twitter_user: joaoasrosa
+author:
+  login: joaoasrosa
+  email: joaoasrosa@gmail.com
+  display_name: João Rosa
+  first_name: ''
+  last_name: ''
+permalink: "/2019/08/13/why-integration-tests-wont-save-you-or-your-software/"
+---
+<p><!-- wp:paragraph --></p>
+<p>Did the title tease you? Great, job is done! Today I will tell you my story about Integration Tests; it came after another knowledge share lunch with my pal <a rel="noreferrer noopener" aria-label="Kenny (abre num novo separador)" href="https://twitter.com/kenny_baas" target="_blank">Kenny</a>.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>By <a target="_blank" rel="noopener" href="https://en.m.wikipedia.org/wiki/Integration_testing">this</a> definition an Integration Test is</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:quote --></p>
+<blockquote class="wp-block-quote"><p>(...) the phase in<span> </span>software testing<span> </span>in which individual software modules are combined and tested as a group. Integration testing is conducted to evaluate the<span> </span>compliance<span> </span>of a system or component with specified<span> </span>functional requirements. It occurs after<span> </span>unit testing<span> </span>and before<span> </span>validation testing. Integration testing takes as its input<span> </span>modules<span> </span>that have been unit tested, groups them in larger aggregates, applies tests defined in an integration<span> </span>test plan<span> </span>to those aggregates, and delivers as its output the integrated system ready for<span> </span>system testing.</p>
+</blockquote>
+<p><!-- /wp:quote --></p>
+<p><!-- wp:paragraph --></p>
+<p>Sounds pretty waterfall, right? It is! also, the implementation approaches that I observed creates huge dependencies between teams, coupling the software release process.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":1930} --></p>
+<figure class="wp-block-image"><img src="{{ site.baseurl }}/assets/adrien-ledoux-mbhuekka5wm-unsplash.jpg" alt="Two different fluids integrating in each other" class="wp-image-1930" /><br />
+<figcaption>Photo by&nbsp;<a href="https://unsplash.com/@adrienl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Adrien Ledoux</a>&nbsp;on&nbsp;<a href="https://unsplash.com/search/photos/integration-tests?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
+</figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading --></p>
+<h2>Everything coupled, a tale of Integration Tests</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>A sound CI/CD pipeline has several steps; which includes validating, build, test, pack and release the software. I won't go into details, given the necessary steps will vary, given languages, frameworks, platforms and release strategies.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>However (always a but), more often than I would like, teams use Integration Tests to (1) assert if the dependencies of software are up and running (software dependencies), and (2) verify if user journeys that crossed multiple domain boundaries (cross-team dependencies).</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>From these reasons, I observed coupling between different systems, teams and domains. Moreover, it is painful to watch the development and release process… The time and effort put in the process and the blurred line between the automated process and manual coordination…</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2>So, what is the alternative do deliver quality software?</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Integration Tests are a <em>symptom</em>, not the <em>cause</em> of the systems and teams coupling! Moreover, before going wild and delete all the Integration Tests from your codebase, I will present <strong>my alternative</strong> to it.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The first testing technique that I use is Contract Testing. Contract Testing is</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:quote --></p>
+<blockquote class="wp-block-quote"><p>(...) a way to ensure that services (such as an API provider and a client) can communicate with each other.</p>
+</blockquote>
+<p><!-- /wp:quote --></p>
+<p><!-- wp:paragraph --></p>
+<p>This definition is provided by <a rel="noreferrer noopener" aria-label="Pact (abre num novo separador)" href="https://docs.pact.io/" target="_blank">Pact</a>, a Contract Testing tool for HTTP based APIs. <strong><span style="text-decoration:underline;">Disclaimer</span></strong>: Contract Testing can be applied to any API, and this blog post is not focused on a (this) tool. I just like their definition! :)</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The contract tests run before deploying to an environment, and they are validated against a broker. It means that I will verify if all my assumptions about the contracts with my direct dependencies are correct. If not, I will stop the CI/CD process.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>However, this doesn't solve all the problems. Contract Testing does not provide an answer to the question: Are my dependencies up and running?</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>To answer to that question, I implement a second technique, Health Testing. Health Testing is</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:quote --></p>
+<blockquote class="wp-block-quote"><p>a way of providing feedback about the direct dependencies of an application in realtime. </p>
+</blockquote>
+<p><!-- /wp:quote --></p>
+<p><!-- wp:paragraph --></p>
+<p>This definition is mine. It means that an application can report (via push or pull mechanisms) the status and metrics of the direct dependencies. When aggregated at the application level, it can have a traffic light pattern, with Green, Yellow and Red. Combined with a proper monitoring tool, we can have realtime visibility of the status of the dependencies.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>This second technique solves an important trap of Integration Tests. Integration Tests provide dependencies feedback at <strong>one point in time</strong>. Health Testing (if properly implemented) <strong><span style="text-decoration:underline;">continuously</span></strong> provide the necessary feedback. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Combining these two techniques has some interesting side effects. First of all, it reduces the executing time of the CI/CD pipeline when compared to the executing times of Integration Tests, given that fewer components are involved. Secondly, Integration Tests tend to be brittle, and it can reduce the number of false positives, increasing team productivity. <br />
+Last but not least, it pushes teams to discuss the boundaries of their systems and their domains. It increases awareness of the context were teams operate, and leads to mean full conversations between everyone involved in the software development process (yes, I'm saying IT and Business).</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3>And what are your thoughts?</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Share with me, in the comments session or via <a href="https://twitter.com/joaoasrosa" target="_blank" rel="noreferrer noopener" aria-label="Twitter (abre num novo separador)">Twitter</a> (DM messages are open).</p>
+<p><!-- /wp:paragraph --></p>
