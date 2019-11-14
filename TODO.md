@@ -1,1 +1,2 @@
 - After migration clean the importer plugin and the artifacts (https://import.jekyllrb.com/docs/installation/)
+- `assets` and `image/assets` are duplicated. Clean it after
