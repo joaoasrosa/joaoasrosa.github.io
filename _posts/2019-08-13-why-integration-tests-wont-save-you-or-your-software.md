@@ -39,7 +39,7 @@ Did the title tease you? Great, job is done! Today I will tell you my story abou
 
 By [this](https://en.m.wikipedia.org/wiki/Integration_testing) definition an Integration Test is
 
-> (...) the phase in software testing in which individual software modules are combined and tested as a group. Integration testing is conducted to evaluate the compliance of a system or component with specified functional requirements. It occurs after  \unit testing and before validation testing. Integration testing takes as its input modules  that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
+> (...) the phase in software testing in which individual software modules are combined and tested as a group. Integration testing is conducted to evaluate the compliance of a system or component with specified functional requirements. It occurs after unit testing and before validation testing. Integration testing takes as its input modules  that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
 
 Sounds pretty waterfall, right? It is! also, the implementation approaches that I observed creates huge dependencies between teams, coupling the software release process.
 
