@@ -41,7 +41,8 @@ Bounded Context is a strategic design pattern described by [Eric Evans](https://
 > 
 > Model expressions, like any other phrase, only have meaning in context.
 
-Quote from [DDD Reference](http://domainlanguage.com/ddd/reference/), from Eric Evans
+{:.image-caption}
+*Quote from [DDD Reference](http://domainlanguage.com/ddd/reference/), from Eric Evans*
 
 However, by the nature of a Big Picture session, we start in a Chaotic Exploration mode, where the language is fuzzy, and boundaries (apparently) don't exist. Thus, as a facilitator, I want to capture as many knowledge as people have, before given structure.
 
@@ -49,7 +50,10 @@ After the Chaotic Exploration, the group enters into the phase known as Enforcin
 
 For those cases, it's good to use some visual anchors, as scaffolding for further exploration. As example:
 
-![Example of a visual anchor for a Big Picture EventStorming session](/images/assets/img_20190905_145030.jpg)  
+![Example of a visual anchor for a Big Picture EventStorming session - © All rights reserved](/images/assets/img_20190905_145030.jpg)
+
+{:.image-caption}
+*Example of a visual anchor for a Big Picture EventStorming session - © All rights reserved*
 
 It is useful for use cases, where the group (or organisation) is in a scale-up mode. Although there are some specialists in some parts of the process, the process doesn't cross silos because they don't exist!
 
