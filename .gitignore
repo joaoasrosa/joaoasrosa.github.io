@@ -55,3 +55,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# mac
+.DS_Store
