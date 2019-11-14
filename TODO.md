@@ -1,0 +1,1 @@
+- After migration clean the importer plugin and the artifacts (https://import.jekyllrb.com/docs/installation/)
