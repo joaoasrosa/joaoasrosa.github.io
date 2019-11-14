@@ -25,11 +25,10 @@ author:
   login: joaoasrosa
   email: joaoasrosa@gmail.com
   display_name: João Rosa
-  first_name: ''
-  last_name: ''
-permalink: "/2019/09/09/test/"
+  first_name: 'João'
+  last_name: 'Rosa'
+permalink: "/2019/09/09/my-eventstorming-learning-use-visual-anchors-before-the-discover-of-bounded-contexts/"
 ---
-
 [EventStorming](https://www.eventstorming.com/) is a visual collaboration technique, invented by [Alberto Brandolini](https://twitter.com/ziobrando). This post will not go into the details of EventStorming, and you can find useful resources on the web. Instead, I will share learning from the many sessions that I facilitated!
 
 One of the forms of EventStorming is Big Picture. It aims to convey the knowledge across different silos, capturing what's in people's minds. During a Big Picture session, it is normal to see Bounded Contexts emerging. Wait, what is a _Bounded Context_?
@@ -50,11 +49,7 @@ After the Chaotic Exploration, the group enters into the phase known as Enforcin
 
 For those cases, it's good to use some visual anchors, as scaffolding for further exploration. As example:
 
-![](/images/assets/img_20190905_145030.jpg)
-
-![](/images/demo/demo-landscape.jpg)
-
-<figcaption>Example of a visual anchor for a Big Picture EventStorming session</figcaption>
+![Example of a visual anchor for a Big Picture EventStorming session](/images/assets/img_20190905_145030.jpg)  
 
 It is useful for use cases, where the group (or organisation) is in a scale-up mode. Although there are some specialists in some parts of the process, the process doesn't cross silos because they don't exist!
 
