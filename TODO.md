@@ -1,3 +1,2 @@
-- After migration clean the importer plugin and the artifacts (https://import.jekyllrb.com/docs/installation/)
-- `assets` and `image/assets` are duplicated. Clean it after
-- Convert posts to markdown: `https://nealbuerger.com/2018/07/Wordpress-To-Jekyll.html`
+- Modernize the speaking page
+- Create a proper Projects page with the OSS that I collaborate with
