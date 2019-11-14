@@ -39,7 +39,7 @@ Given the complex contexts in which the teams operate, it's common to have sever
 
 To promote effective sessions, I started to use a visual technique, inspired by a pattern from [Living Documentation](https://learning.oreilly.com/library/view/living-documentation-continuous/9780134689418/), the **Decision Log**:
 
-![Decision Log - © All rights reserved](/images/assets/img_20190820_143055-2.jpg?w=831)  
+![Decision Log - © All rights reserved](/images/assets/img_20190820_143055-2.jpg)  
 
 The biggest benefit of this visual technique is that it works as a quick aid for past decisions, which can be easily consulted during the session. On top of that, it's analogue, thus keep the focus on the session.
 
