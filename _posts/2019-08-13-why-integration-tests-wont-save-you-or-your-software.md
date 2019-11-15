@@ -39,7 +39,7 @@ Did the title tease you? Great, job is done! Today I will tell you my story abou
 
 By [this](https://en.m.wikipedia.org/wiki/Integration_testing) definition an Integration Test is
 
-> (...) the phase in software testing in which individual software modules are combined and tested as a group. Integration testing is conducted to evaluate the compliance of a system or component with specified functional requirements. It occurs after unit testing and before validation testing. Integration testing takes as its input modules  that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
+> "(...) the phase in software testing in which individual software modules are combined and tested as a group. Integration testing is conducted to evaluate the compliance of a system or component with specified functional requirements. It occurs after unit testing and before validation testing. Integration testing takes as its input modules  that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
 
 Sounds pretty waterfall, right? It is! also, the implementation approaches that I observed creates huge dependencies between teams, coupling the software release process.
 
@@ -64,7 +64,7 @@ Integration Tests are a _symptom_, not the _cause_ of the systems and teams coup
 
 The first testing technique that I use is Contract Testing. Contract Testing is
 
-> (...) a way to ensure that services (such as an API provider and a client) can communicate with each other.
+> "(...) a way to ensure that services (such as an API provider and a client) can communicate with each other.
 
 This definition is provided by [Pact](https://docs.pact.io/), a Contract Testing tool for HTTP based APIs. **Disclaimer**: Contract Testing can be applied to any API, and this blog post is not focused on a (this) tool. I just like their definition! :)
 
@@ -74,7 +74,7 @@ However, this doesn't solve all the problems. Contract Testing does not provide 
 
 To answer to that question, I implement a second technique, Health Testing. Health Testing is
 
-> a way of providing feedback about the direct dependencies of an application in realtime.
+> "a way of providing feedback about the direct dependencies of an application in realtime.
 
 This definition is mine. It means that an application can report (via push or pull mechanisms) the status and metrics of the direct dependencies. When aggregated at the application level, it can have a traffic light pattern, with Green, Yellow and Red. Combined with a proper monitoring tool, we can have realtime visibility of the status of the dependencies.
 

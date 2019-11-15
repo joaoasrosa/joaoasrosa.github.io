@@ -55,7 +55,7 @@ All boxes ticked! Or not...
 
 The pivotal change is shifting the responsibilities of the platform team to the development teams. Well, this calls for a great life lesson from Ben Parker:
 
-> With great power, comes great responsibilities!
+> "With great power, comes great responsibilities!
 
 {:.image-caption}
 *Ben Parker, Spider-Man*
