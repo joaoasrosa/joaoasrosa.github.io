@@ -1,3 +1,0 @@
-- Add the workshops
-- Modernize the speaking page
-- Create a proper Projects page with the OSS that I collaborate with, and the meetups that I run

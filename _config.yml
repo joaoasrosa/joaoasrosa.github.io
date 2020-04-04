@@ -10,12 +10,12 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /project/:slug
-  workshops:
-    output: true
-    permalink: /workshop/:slug
+  # projects:
+  #   output: true
+  #   permalink: /project/:slug
+  # workshops:
+  #   output: true
+  #   permalink: /workshop/:slug
 
 defaults:
   -
@@ -35,18 +35,18 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  -
-    scope:
-      path: ""
-      type: "workshops"
-    values:
-      layout: "workshop"
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "projects"
+  #   values:
+  #     layout: "project"
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "workshops"
+  #   values:
+  #     layout: "workshop"
 
 markdown: kramdown
 
