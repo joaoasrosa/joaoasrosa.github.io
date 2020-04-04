@@ -37,6 +37,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2016/12/06/changing-the-operations-of-a-software-company-part-ii/"
+comments: true
 ---
 In the previous [post](https://joaorosa.io/2016/12/02/changing-the-operations-of-a-software-company-part-i/), I wrote about my experience changing the operations of a Software Company, improving the development process.
 

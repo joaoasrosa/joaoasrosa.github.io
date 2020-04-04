@@ -35,6 +35,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2017/08/10/build-a-net-core-2-0-application-in-appveyor/"
+comments: true
 ---
 [AppVeyor](//www.appveyor.com/) is one of the Continuous Integration Services in the cloud, ready to use, with minimal configuration. It provides a Windows Server image with tooling to build, test and deploy ours .NET applications. Among the baseline software is .NET Core, however, the version is 1.0.4 (at the time of writing this post).
 

@@ -28,6 +28,7 @@ author:
   first_name: 'João'
   last_name: 'Rosa'
 permalink: "/2019/09/09/my-eventstorming-learning-use-visual-anchors-before-the-discover-of-bounded-contexts/"
+comments: true
 ---
 [EventStorming](https://www.eventstorming.com/) is a visual collaboration technique, invented by [Alberto Brandolini](https://twitter.com/ziobrando). This post will not go into the details of EventStorming, and you can find useful resources on the web. Instead, I will share learning from the many sessions that I facilitated!
 

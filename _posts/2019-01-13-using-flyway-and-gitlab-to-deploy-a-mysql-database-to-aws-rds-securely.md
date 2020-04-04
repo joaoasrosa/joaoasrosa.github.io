@@ -40,6 +40,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2019/01/13/using-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely/"
+comments: true
 ---
 One of my passions is to be a trainer. Sharing knowledge, meeting new people, be continuously challenged, it fuels my brain, and I'm always learning something new. I'm creating a new training for software development teams, and one of the components is a MySQL database. Also, I'm using a public cloud provider (in this case AWS), and Xebia provides accounts to cover training, workshops and our own experiments.
 

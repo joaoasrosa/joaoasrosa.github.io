@@ -43,6 +43,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2017/10/01/ndepend-first-impressions-on-a-static-code-analyser/"
+comments: true
 ---
 During my career, I learned on the hardest way how a poor codebase can be harmful to the business. I witness behaviours in teams such as:
 

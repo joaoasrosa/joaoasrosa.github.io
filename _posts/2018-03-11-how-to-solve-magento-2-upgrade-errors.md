@@ -47,6 +47,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2018/03/11/how-to-solve-magento-2-upgrade-errors/"
+comments: true
 ---
 Magento 2 is the leading Open Source Software for e-commerce, with a vibrant community and proper product documentation.
 

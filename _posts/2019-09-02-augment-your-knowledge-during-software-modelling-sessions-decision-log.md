@@ -28,6 +28,7 @@ author:
   first_name: 'João'
   last_name: 'Rosa'
 permalink: "/2019/09/02/augment-your-knowledge-during-software-modelling-sessions-decision-log/"
+comments: true
 ---
 The most important learning during my career is that the act of creating software is a team effort. We can be a one-person team, but there is someone else involved; at least someone to use it.
 

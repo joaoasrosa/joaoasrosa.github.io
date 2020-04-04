@@ -40,6 +40,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2017/12/31/when-cake-meets-ndepend/"
+comments: true
 ---
 As a developer, I'm a big fan of automation. I can't create software where I need to push buttons and run manual scripts, to test & deploy it. To help me automate my software development tasks, I use [Cake](https://anotherlookontech.wordpress.com/2017/10/18/abstract-from-your-ci-use-cake/), "a cross platform build automation system with a C# DSL".
 

@@ -30,6 +30,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2017/12/10/learning-ddd-as-a-team/"
+comments: true
 ---
 A few sprints ago my team and I decided to invest heavily in Domain Driven Desing. We already started to develop the new microservices in a DDD fashion, with our domain as the central component. However, we wanted to formalize it and move the old microservices to this new paradigm.
 

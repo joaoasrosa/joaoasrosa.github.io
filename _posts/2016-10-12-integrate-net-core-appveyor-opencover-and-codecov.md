@@ -44,6 +44,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2016/10/12/integrate-net-core-appveyor-opencover-and-codecov/"
+comments: true
 ---
 As a developer, I need to take a good rest at night. In my line of work the only way to achieve it is using an integrated workflow pipeline, aka Source Code Management (SCM), Continuous Integration (CI) and Continuous Deployment (CD) with some tools in the middle.
 

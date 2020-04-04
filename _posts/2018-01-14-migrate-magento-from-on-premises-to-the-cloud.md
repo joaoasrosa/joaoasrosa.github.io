@@ -36,6 +36,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2018/01/14/migrate-magento-from-on-premises-to-the-cloud/"
+comments: true
 ---
 Last summer a good friend of mine challenged me to help him move his Magento webshop from an on-premises server to the cloud. Also, to upgrade the webshop to the newest version (Magento 2).
 

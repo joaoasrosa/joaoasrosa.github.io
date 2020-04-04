@@ -35,6 +35,7 @@ author:
   first_name: ''
   last_name: ''
 permalink: "/2016/05/22/my-cissp-journey/"
+comments: true
 ---
 In this post I'm writing about my CISSP journey. For those who aren't aware of what CISSP stand for, it's (probably) the most respectful security certification. It's under (ISC)2 portfolio and you can find more information [here](https://www.isc2.org/cissp/default.aspx).
 
