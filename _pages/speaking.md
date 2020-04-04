@@ -24,6 +24,20 @@ I believe in knowledge share, thus I try to be on stage and share my thoughts. Y
 
 You can also invite me to speak at your event.
 
+## 2020
+
+### McKinsey DevOpsDay: IT Transformation @ ABN AMRO, Online (March 2019)
+
+DevOps transformation @ ABN AMRO ([slides](https://speakerdeck.com/joaoasrosa/it-transformation-at-abn-amro))
+
+### Software Circus, Amsterdam, The Netherlands (February 2019)
+
+Advanced EventStorming community workshop ([event](https://www.meetup.com/en-AU/Software-Circus/events/267877245/))
+
+### ABN AMRO: Retail Banking Demo Day, Amsterdam, The Netherlands (February 2019)
+
+DevOps program @ ABN AMRO for Retail Banking organisation
+
 ## 2019
 
 ### O'Reilly Software Architecture Conference, Berlin, Germany (November 2019)
