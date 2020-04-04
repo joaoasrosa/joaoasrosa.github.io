@@ -13,6 +13,9 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
+  workshops:
+    output: true
+    permalink: /workshop/:slug
 
 defaults:
   -
@@ -38,6 +41,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: ""
+      type: "workshops"
+    values:
+      layout: "workshop"
 
 markdown: kramdown
 
