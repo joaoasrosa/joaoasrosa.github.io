@@ -46,7 +46,7 @@ EventStorming for Domain-Driven Design modeling (workshop)
 
 ### DevOps Summit, Amsterdam, The Netherlands (October 2019)
 
-A DevOps journey: why the sociotechnical architecture is important ([slides](https://speakerdeck.com/joaoasrosa/from-eventstorming-to-coddding-javaland-2019), [video](https://www.youtube.com/watch?v=FBcpBl1vccc&t=173s)
+A DevOps journey: why the sociotechnical architecture is important ([slides](https://speakerdeck.com/joaoasrosa/from-eventstorming-to-coddding-javaland-2019), [video](https://www.youtube.com/watch?v=FBcpBl1vccc&t=173s))
 
 ### Techorama NL, Edé, The Netherlands (October 2019)
 
