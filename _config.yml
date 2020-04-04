@@ -1,7 +1,7 @@
 site: joaorosa.io | João Rosa Blog
 
-url: https://joaorosa.io
-baseurl: https://joaorosa.io
+url: 
+baseurl: 
 
 collections:
   pages:
