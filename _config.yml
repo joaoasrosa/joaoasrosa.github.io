@@ -1,6 +1,6 @@
 site: joaorosa.io | João Rosa Blog
 
-url: 
+url: https://www.joaorosa.io
 baseurl: 
 
 collections:
@@ -16,6 +16,9 @@ collections:
   # workshops:
   #   output: true
   #   permalink: /workshop/:slug
+  # speaking:
+  #   output: true
+  #   permalink: /speaking/:slug
 
 defaults:
   -
