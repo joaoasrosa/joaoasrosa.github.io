@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<section class="intro">
+
+	<div class="wrap">
+
+		<h1>{{ page.title }}</h1>
+		<p><a href="{{page.website}}">{{page.conference}}</a> at {{page.location}} on {{ page.date | date: "%-d %B %Y" }}</p>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<p>
+			<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;">
+				<iframe src="{{ page.slides }}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe>
+			</div>
+		</p>
+
+		<h3>Abstract</h3>
+		<p>{{ page.description }}</p>
+
+	</div>
+
+</section>
