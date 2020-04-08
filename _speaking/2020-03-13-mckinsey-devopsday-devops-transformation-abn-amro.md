@@ -1,5 +1,5 @@
 ---
-title: 'Towards Autonomously aligned teams with Domain-Driven Design and EventStorming'
+title: 'Devops transformation @ ABN AMRO'
 description: >
  The presentation summarises the IT Transformation at ABN AMRO bank. ABN AMRO is a Dutch bank and is on a DevOps transformation. The goal is to streamline the software development process, decreasing the lead time. At the same time, increasing the value delivered to the clients.
 conference: 'McKinsey DevOpsDay'
