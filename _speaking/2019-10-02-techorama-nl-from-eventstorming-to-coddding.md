@@ -1,5 +1,5 @@
 ---
-title: 'From EventSotrming to CoDDDings'
+title: 'From EventSotrming to CoDDDing'
 description: >
  To really understand what our users need so that we can build the right thing, we want to have a first-hand experience of 'real-life stories' before we model and create our software. To quote Alberto Brandolini "it is not the domain expert's knowledge that goes into production, it is the developer's assumption of that knowledge that goes into production". EventStorming is a visual technique that minimizes assumptions by engaging in collaborative deliberate learning across different disciplines. This helps to solve complex business problems in the most effective way.
  <br />
