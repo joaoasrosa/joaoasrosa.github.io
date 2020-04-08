@@ -16,5 +16,5 @@ type: 'workshop'
 location: 'Edé, The Netherlands'
 website: 'https://2018.jfall.nl/'
 date: 2018-11-07 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/b03f0df33a404709884972405632110a/slide_0.jpg?11172538'
+featured_image: 'https://2018.jfall.nl/wp-content/uploads/2016/11/1440x698-1.jpg'
 ---
