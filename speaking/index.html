@@ -21,12 +21,13 @@ featured_image: /images/demo/demo-landscape.jpg
 </section>
 <section class="portfolio">
 
+	<div class="wrap">
+
 	{% assign talks = site.speaking | sort: date | reverse %}
 	{% for talk in talks %}
 		{% capture this_year %}{{ talk.date | date: "%Y" }}{% endcapture %}
 		{% capture next_year %}{{ talk.next.date | date: "%Y" }}{% endcapture %}
 		
-		<div class="wrap">
 			
 			{% if this_year != next_year or forloop.first %}
 			<h2 id="{{ this_year }}-ref">{{this_year}}</h2>
