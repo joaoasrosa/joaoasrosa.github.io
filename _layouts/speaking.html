@@ -22,6 +22,12 @@ layout: default
 			</p>
 		{% endif %}
 
+		{% if page.videoUrl %}
+			<p>
+				{% include skillscast-player.html id=page.videoUrl %}
+			</p>
+		{% endif %}
+
 		{% if page.slides %}
 			<p>
 				{% include speakerdeck-player.html slides=page.slides %}
