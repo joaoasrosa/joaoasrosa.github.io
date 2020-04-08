@@ -13,5 +13,5 @@ location: 'Edé, The Netherlands'
 website: 'https://techorama.nl/'
 slides: 'https://speakerdeck.com/player/4a513269d92f462f9e11ade74992c403'
 date: 2018-10-03 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/4a513269d92f462f9e11ade74992c403/preview_slide_28.jpg?10905649'
+featured_image: 'https://speakerd.s3.amazonaws.com/presentations/4a513269d92f462f9e11ade74992c403/slide_0.jpg?10905621'
 ---
