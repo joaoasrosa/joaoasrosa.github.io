@@ -9,6 +9,7 @@ description: >
  <br />
  In this technical session, Kenny & João demonstrates and explains what property-based testing is, and how to implement it in C# with FsCheck and Java with JUnit-Quickcheck. If you are interested in improving your unit testing, so you don’t have to worry much about test data anymore, but more about the problem your code is solving, this talk is for you!
 conference: 'Codemotion Rome'
+type: 'talk'
 location: 'Rome, Italy'
 website: 'https://events.codemotion.com/conferences/rome/2019/'
 slides: 'https://speakerdeck.com/player/47adc00a65a74edaae10e15aa83ef2fb'

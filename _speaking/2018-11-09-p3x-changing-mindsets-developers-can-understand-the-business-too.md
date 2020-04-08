@@ -9,6 +9,7 @@ description: >
  <br />
  In this session, João will show you how to engage the development team and the business using DDD tools and techniques, using Behaviour Driven Development as the central piece to bring everyone closer. If you have a similar experience, or you want to emerge into DDD & BDD, the session is for you!
 conference: 'P3X - People, Product & Process eXchange'
+type: 'talk'
 location: 'London, United Kingdom'
 website: 'https://skillsmatter.com/conferences/10367-p3x-people-product-process-exchange-2018'
 slides: 'https://speakerdeck.com/player/e5c57e21a31b4c3ead6849c259c7d003'

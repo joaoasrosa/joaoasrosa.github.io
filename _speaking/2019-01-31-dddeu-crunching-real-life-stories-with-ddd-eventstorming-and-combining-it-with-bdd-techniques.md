@@ -6,6 +6,7 @@ description: >
  <br />
  In this hands-on session, we start with a Process EventStorming. We will use Example Mapping to get more insights into our process. Eventually, I will show you how the outcome can drive our Software Modelling EventStorming and create Executable Specifications. This way we can create a ubiquitous domain language that we can use in our application and test code. You don't need a laptop for this session as the focus is on the discovery phase.
 conference: 'DDD Europe'
+type: 'hands-on'
 location: 'Amsterdam, The Netherlands'
 website: 'https://dddeurope.com/2019/'
 date: 2019-01-31 00:00:00

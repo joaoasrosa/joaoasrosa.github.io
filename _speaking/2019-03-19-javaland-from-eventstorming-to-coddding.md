@@ -9,6 +9,7 @@ description: >
  <br />
  Join us in this talk in which we show the basic principles of EventStorming. We will cover the different forms of EventStorming and in which situation they best can be applied. And, we will show how you can leverage DDD (Domain-Driven Design) patterns in an EventStorming software modeling session that will ultimately result in coding TDD (Test Driven Development) style!
 conference: 'Javaland'
+type: 'talk'
 location: 'Brühl, Germany'
 website: 'https://www.javaland.eu/en/javaland-2019/'
 slides: 'https://speakerdeck.com/player/518a66126fdc4fb2a39fac15e0fef2e8'

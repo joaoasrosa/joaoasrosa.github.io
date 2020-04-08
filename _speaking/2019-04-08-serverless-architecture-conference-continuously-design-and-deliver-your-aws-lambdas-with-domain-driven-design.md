@@ -9,6 +9,7 @@ description: >
  <br />
  Join us in this workshop where we leverage the Bounded Context pattern from Domain-Driven Design. We will design the boundaries using EventStorming, leverage Test Driven Development to code our AWS Lambdas, and use GitLab with SAM and CloudFormation to continuous testing and continuous delivery of our application. So if you don’t want to make a mess of all your lambda’s, and want your models to stay connected with the way the business thinks about them, this is the perfect workshop for you!
 conference: 'Serverless Architecture Conference'
+type: 'workshop'
 location: 'The Hague, The Netherlands'
 website: 'https://serverless-architecture.io/'
 date: 2019-04-08 00:00:00

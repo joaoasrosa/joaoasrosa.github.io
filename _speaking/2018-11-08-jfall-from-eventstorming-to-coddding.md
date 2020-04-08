@@ -9,6 +9,7 @@ description: >
  <br />
  Join us in this talk in which we show the basic principles of EventStorming. We will cover the different forms of EventStorming and in which situation they best can be applied. And, we will show how you can leverage DDD (Domain-Driven Design) patterns in an EventStorming software modelling session that will ultimately result in coding TDD (Test Driven Development) style!
 conference: 'JFall'
+type: 'talk'
 location: 'Edé, The Netherlands'
 website: 'https://jfall.nl/'
 slides: 'https://speakerdeck.com/player/b03f0df33a404709884972405632110a'

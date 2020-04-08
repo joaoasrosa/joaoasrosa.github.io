@@ -9,6 +9,7 @@ description: >
  <br/>
  Join us in this talk in which we show the basic principles of Event Storming. We will cover the different forms of Event Storming and in which situation they best can be applied. And, we will show how you can leverage DDD (Domain-Driven Design) patterns in an Event Storming software modelling session that will ultimately result in coding TDD (Test Driven Development) style!
 conference: 'Next Build'
+type: 'talk'
 location: 'Eindhoven, The Netherlands'
 website: 'https://www.nextbuild.nl/'
 slides: 'https://speakerdeck.com/player/3604f6b1ad044aa9b192d5619b6fbfcf'
