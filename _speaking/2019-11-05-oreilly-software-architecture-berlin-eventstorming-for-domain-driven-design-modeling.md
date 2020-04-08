@@ -5,7 +5,7 @@ description: >
  <br />
  <br />
  Kenny Baas-Schwegler and João Rosa explore the essentials of event storming and how it can help you gain the necessary insights to deliver quality software. With your newly acquired domain knowledge, you can start modeling multiple models for the same problem with domain-driven design patterns. This way of visualizing gives you the power to quickly iterate over different models and figure out which will be the best to use. You’ll leave with the confidence to start your coding journey in test-driven development (TDD) style.
-conference: 'O'Reilly Software Architecture Conference'
+conference: 'O''Reilly Software Architecture Conference'
 type: 'workshop'
 location: 'Berlin, Germany'
 website: 'https://conferences.oreilly.com/software-architecture/sa-eu-2019'
