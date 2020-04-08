@@ -16,9 +16,9 @@ collections:
   # workshops:
   #   output: true
   #   permalink: /workshop/:slug
-  # speaking:
-  #   output: true
-  #   permalink: /speaking/:slug
+  speaking:
+    output: true
+    permalink: /speaking/:slug
 
 defaults:
   -
