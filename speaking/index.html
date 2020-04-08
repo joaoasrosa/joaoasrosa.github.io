@@ -21,14 +21,15 @@ featured_image: /images/demo/demo-landscape.jpg
 </section>
 <section class="portfolio">
 
-	{% for talk in site.speaking  %}
+	{% assign talks = site.speaking | sort: date | reverse %}
+	{% for talk in talks %}
 		{% capture this_year %}{{ talk.date | date: "%Y" }}{% endcapture %}
-		{% capture previous_year %}{{ talk.previous.date | date: "%Y" }}{% endcapture %}
+		{% capture next_year %}{{ talk.next.date | date: "%Y" }}{% endcapture %}
 		
 		<div class="wrap">
 			
-			{% if this_year != previous_year %}
-			<h2 id="{{ next_year }}-ref">{{this_year}}</h2>
+			{% if this_year != next_year or forloop.first %}
+			<h2 id="{{ this_year }}-ref">{{this_year}}</h2>
 			{% endif %}	
 
 			<div class="portfolio-item">
@@ -100,8 +101,4 @@ EventStorming; Deliberate, Collaborative Learning Between Multiple Disciplines (
 ### Virtual Domain-Driven Design (June 2019)
 
 Impact Mapping to manage change and strategic design  ([video](https://www.youtube.com/watch?v=7u-EtXVKR5g))
-
-### Serverless Architecture Conference, The Hague, The Netherlands (April 2019)
-
-Continuously design and deliver your AWS Lambda’s with Domain-Driven Design (workshop)
 
