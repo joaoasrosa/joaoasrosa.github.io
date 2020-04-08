@@ -23,13 +23,13 @@ featured_image: /images/demo/demo-landscape.jpg
 
 	{% for talk in site.speaking  %}
 		{% capture this_year %}{{ talk.date | date: "%Y" }}{% endcapture %}
-		{% capture next_year %}{{ talk.previous.date | date: "%Y" }}{% endcapture %}
+		{% capture previous_year %}{{ talk.previous.date | date: "%Y" }}{% endcapture %}
 		
 		<div class="wrap">
-
-			{% if forloop.first %}
-			<h2 id="{{ this_year }}-ref">{{this_year}}</h2>
-			{% endif %}
+			
+			{% if this_year != previous_year %}
+			<h2 id="{{ next_year }}-ref">{{this_year}}</h2>
+			{% endif %}	
 
 			<div class="portfolio-item">
 
@@ -48,14 +48,6 @@ featured_image: /images/demo/demo-landscape.jpg
 				</a>
 	
 			</div>
-
-			{% if forloop.last %}
-
-			{% else %}
-				{% if this_year != next_year %}
-				<h2 id="{{ next_year }}-ref">{{next_year}}</h2>
-				{% endif %}
-			{% endif %}
 		{% endfor %}
 
 
@@ -121,6 +113,3 @@ Improving design and code quality with Property-based testing ([slides](https://
 
 From EventStorming to CoDDDing ([slides](https://speakerdeck.com/joaoasrosa/from-eventstorming-to-coddding-javaland-2019))
 
-### DDD Europe, Amsterdam, The Netherlands (January 2019)
-
-Crunching 'real-life stories' with DDD EventStorming and combining it with BDD techniques (hands-on)
