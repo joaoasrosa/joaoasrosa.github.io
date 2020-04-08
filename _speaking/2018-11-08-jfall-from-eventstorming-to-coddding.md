@@ -1,0 +1,18 @@
+---
+title: 'From EventStorming to CoDDDing'
+description: >
+ To really understand what our users need so that we can build the right thing, we want to have a first-hand experience of ‘real-life stories’ before we model and create our software. To quote Alberto Brandolini “it is not the domain expert’s knowledge that goes into production, it is the developer’s assumption of that knowledge that goes into production”. EventStorming is a visual technique that minimizes assumptions by engaging in collaborative deliberate learning across different disciplines. This helps to solve complex business problems in the most effective way.
+ <br />
+ <br />
+ Although the learning of the domain helps us to understand the domain better, EventStorming can be quite an overwhelming experience. Developers can be left with the question of how to turn a few stickies on a wall into working code.
+ <br />
+ <br />
+ Join us in this talk in which we show the basic principles of EventStorming. We will cover the different forms of EventStorming and in which situation they best can be applied. And, we will show how you can leverage DDD (Domain-Driven Design) patterns in an EventStorming software modelling session that will ultimately result in coding TDD (Test Driven Development) style!
+conference: 'JFall'
+location: 'Edé, The Netherlands'
+website: 'https://jfall.nl/'
+slides: 'https://speakerdeck.com/player/b03f0df33a404709884972405632110a'
+video: 'g4NqI9r25B0'
+date: 2018-11-08 00:00:00
+featured_image: 'https://speakerd.s3.amazonaws.com/presentations/b03f0df33a404709884972405632110a/slide_0.jpg?11172538'
+---
