@@ -28,7 +28,6 @@ featured_image: /images/left-panel/speaking.jpg
 		{% capture this_year %}{{ talk.date | date: "%Y" }}{% endcapture %}
 		{% capture next_year %}{{ talk.next.date | date: "%Y" }}{% endcapture %}
 		
-			
 			{% if this_year != next_year or forloop.first %}
 			<h2 id="{{ this_year }}-ref">{{this_year}}</h2>
 			{% endif %}	
