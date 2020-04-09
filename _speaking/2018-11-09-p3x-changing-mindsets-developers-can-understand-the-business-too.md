@@ -1,7 +1,7 @@
 ---
-title: 'From EventStorming to CoDDDing'
+title: 'Changing mindsets: developers can understand the business too!'
 description: >
- In the Domain Driven Design world everyone points to the ubiquitous language as paramount to the success of the project. However, often the developers fall under the pitfall of the technical jargon; the business assumes the developers have all the necessary business knowledge, given incomplete requirements; combining all these communication problems leads to frustration, missed opportunities and ultimately to project failure.
+ In the Domain-Driven Design world everyone points to the ubiquitous language as paramount to the success of the project. However, often the developers fall under the pitfall of the technical jargon; the business assumes the developers have all the necessary business knowledge, given incomplete requirements; combining all these communication problems leads to frustration, missed opportunities and ultimately to project failure.
  <br />
  <br />
  Given the miscommunications and misunderstandings between the development and the business, several questions arise: how can you learn to communicate and closely cooperate with the business, or even better be part of the same team? Also, how can you help the business to deliver a clear vision?
