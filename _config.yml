@@ -14,15 +14,15 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
+  speaking:
+    output: true
+    permalink: /speaking/:slug
   # projects:
   #   output: true
   #   permalink: /project/:slug
   # workshops:
   #   output: true
   #   permalink: /workshop/:slug
-  speaking:
-    output: true
-    permalink: /speaking/:slug
 
 defaults:
   -
