@@ -2,7 +2,7 @@
 layout: default
 title: Writing
 subtitle: What I've been working on lately.
-description: Journal is a stunning personal blog Jekyll theme with an image-focused design.
+description: Books, book review, articles, white papers, interviews.
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
@@ -21,26 +21,31 @@ featured_image: /images/demo/demo-landscape.jpg
 
 	<div class="wrap">
 
-		{% for artifact in site.writing reversed %}
+	{% assign writing = site.writing | sort: date | reverse %}
+	{% for artifact in writing %}
+		{% capture this_type %}{{ artifact.type }}{% endcapture %}
+		{% capture next_type %}{{ artifact.next.type }}{% endcapture %}
+		
+			{% if this_type != next_type or forloop.first %}
+			<h2 id="{{ this_type }}-ref">{{this_type}}</h2>
+			{% endif %}	
 
-		<div class="portfolio-item">
+			<div class="portfolio-item">
 
-			<a class="portfolio-item__link" href="{{ artifact.url | relative_url }}">
-
-				<div class="portfolio-item__image" style="background-image: url({{ artifact.featured_image | relative_url }});"></div>
-
-				<div class="portfolio-item__content">
-					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ artifact.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ artifact.subtitle }}</p>
+				<a class="portfolio-item__link" href="{{ artifact.url | relative_url }}">
+	
+					<div class="portfolio-item__image" style="background-image: url({{ artifact.featured_image | relative_url }});"></div>
+	
+					<div class="portfolio-item__content">
+						<div class="portfolio-item__info">
+							<h2 class="portfolio-item__title">{{ artifact.title }}</h2>
+							<p class="portfolio-item__subtitle">{{ artifact.type }}</p>
+						</div>
 					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		{% endfor %}
+				</a>
+	
+			</div>
+	{% endfor %}
 
 	</div>
 
