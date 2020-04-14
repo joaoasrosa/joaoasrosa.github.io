@@ -27,3 +27,4 @@ https://www.flaticon.com/br/icone-gratis/treinamento_943398?term=learning&page=1
 
 Images:
 https://unsplash.com/photos/Oaqk7qqNh_c -> Photo by Patrick Tomasso on Unsplash
+https://unsplash.com/photos/YjWW9-VJlw4 -> Photo by Liam Truong on Unsplash
