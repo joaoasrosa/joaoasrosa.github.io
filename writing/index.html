@@ -27,7 +27,7 @@ featured_image: /images/demo/demo-landscape.jpg
 		{% capture next_type %}{{ artifact.next.type }}{% endcapture %}
 		
 			{% if this_type != next_type or forloop.first %}
-			<h2 id="{{ this_type }}-ref">{{this_type}}</h2>
+			<h2 id="{{ this_type }}-ref">{{ this_type | capitalize}}</h2>
 			{% endif %}	
 
 			<div class="portfolio-item">
@@ -39,7 +39,7 @@ featured_image: /images/demo/demo-landscape.jpg
 					<div class="portfolio-item__content">
 						<div class="portfolio-item__info">
 							<h2 class="portfolio-item__title">{{ artifact.title }}</h2>
-							<p class="portfolio-item__subtitle">{{ artifact.type }}</p>
+							<p class="portfolio-item__subtitle">{{ artifact.type | capitalize }}</p>
 						</div>
 					</div>
 				</a>

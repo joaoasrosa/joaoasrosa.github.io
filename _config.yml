@@ -51,18 +51,24 @@ defaults:
   #     type: "projects"
   #   values:
   #     layout: "project"
-  # -
-  #   scope:
-  #     path: ""
-  #     type: "workshops"
-  #   values:
-  #     layout: "workshop"
+  -
+    scope:
+      path: ""
+      type: "workshops"
+    values:
+      layout: "workshop"
   -
     scope:
       path: ""
       type: "speaking"
     values:
       layout: "speaking"
+  -
+    scope:
+      path: ""
+      type: "writing"
+    values:
+      layout: "writing"
 
 markdown: kramdown
 
