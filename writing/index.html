@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Workshops
+title: Writing
 subtitle: What I've been working on lately.
 description: Journal is a stunning personal blog Jekyll theme with an image-focused design.
 featured_image: /images/demo/demo-landscape.jpg
@@ -21,18 +21,18 @@ featured_image: /images/demo/demo-landscape.jpg
 
 	<div class="wrap">
 
-		{% for workshop in site.workshops reversed %}
+		{% for artifact in site.writing reversed %}
 
 		<div class="portfolio-item">
 
-			<a class="portfolio-item__link" href="{{ project.url | relative_url }}">
+			<a class="portfolio-item__link" href="{{ artifact.url | relative_url }}">
 
-				<div class="portfolio-item__image" style="background-image: url({{ workshop.featured_image | relative_url }});"></div>
+				<div class="portfolio-item__image" style="background-image: url({{ artifact.featured_image | relative_url }});"></div>
 
 				<div class="portfolio-item__content">
 					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ workshop.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ workshop.subtitle }}</p>
+						<h2 class="portfolio-item__title">{{ artifact.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ artifact.subtitle }}</p>
 					</div>
 				</div>
 
