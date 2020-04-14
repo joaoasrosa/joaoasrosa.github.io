@@ -85,7 +85,6 @@ jekyll_analytics:
     anonymizeIp: false      
 
 webmaster_verifications:
-  google: 1234
   bing: 1234
   alexa: 1234
   yandex: 3273a397f926cef8
