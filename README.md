@@ -24,3 +24,6 @@ https://www.flaticon.com/br/icone-gratis/escrevendo_2554282?term=write&page=1&po
 https://www.flaticon.com/br/icone-gratis/treinamento_943398?term=learning&page=1&position=63
 
 Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>
+
+Images:
+https://unsplash.com/photos/Oaqk7qqNh_c -> Photo by Patrick Tomasso on Unsplash
