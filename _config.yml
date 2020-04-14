@@ -1,4 +1,8 @@
-site: joaorosa.io | João Rosa Blog
+title: joaorosa.io | João Rosa thougths
+site: joaorosa.io | João Rosa thougths
+
+author:
+  twitter: joaoasrosa
 
 url: https://www.joaorosa.io
 baseurl: 
@@ -70,6 +74,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-analytics
+  - jekyll-seo-tag
 
 paginate: 6
 paginate_path: "/blog/page:num/"
@@ -78,4 +83,10 @@ jekyll_analytics:
   GoogleAnalytics:          
     id: UA-163111697-1          
     anonymizeIp: false      
-  
+
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 3273a397f926cef8
+  baidu: 1234
