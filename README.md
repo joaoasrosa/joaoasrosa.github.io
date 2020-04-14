@@ -14,3 +14,5 @@ Embeded slide deck resources: https://iframely.com/embed/
 Updated the `_portfolio.scss` file to have the items in grid mode.
 
 Group collections by year: https://stackoverflow.com/questions/19086284/jekyll-liquid-templating-how-to-group-blog-posts-by-year
+
+Cookie consent: https://jekyllcodex.org/without-plugin/cookie-consent/
