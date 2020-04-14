@@ -4,22 +4,10 @@
 
 // - - - - - - - - - - - - - - - - - -
 
-@media only screen and (min-width: 768px) {
-    .home__intro {
-        height: 800px;
-        background-position: 0px -700px;
-        background-image: url('/images/homepage/profile_picture.jpg');
-    }
-}
-
 .home__intro__content {
     text-align: center;
     margin: auto;
     padding: 70px 0;
-}
-
-.home__intro__content h1, h2, h3 {
-    color: black;
 }
 
 .home__passion{
