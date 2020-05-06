@@ -1,6 +1,10 @@
 leadership vs management
 - why we need both
 - my shorfalls
+- what can you expect from me
+    questions
+    guidance
+    support
 
 values
 - courage
