@@ -17,6 +17,8 @@ Group collections by year: https://stackoverflow.com/questions/19086284/jekyll-l
 
 Cookie consent: https://jekyllcodex.org/without-plugin/cookie-consent/
 
+Convert images to webp: https://developers.google.com/speed/webp/docs/using
+
 Icons:
 https://www.flaticon.com/br/icone-gratis/networking_567536?term=networking&page=1&position=76
 https://www.flaticon.com/br/icone-gratis/publico_1067029?term=audience&page=1&position=9
