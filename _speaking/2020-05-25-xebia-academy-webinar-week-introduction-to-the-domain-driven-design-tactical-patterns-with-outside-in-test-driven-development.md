@@ -5,7 +5,7 @@ description: >
 conference: 'Xebia Academy Webinar Week'
 type: 'talk'
 location: 'Online'
-website: 'https://pages.xebia.com/academy-webinar/outside-in-test-driven-development'
+website: 'https://community.xebia.academy/share/dCn5e1BP4avKPt9v'
 slides: 'https://speakerdeck.com/player/bb751a75c89e4b8a9a9d38a41cb8e7a4'
 video: '7DDaEJUGfm8'
 date: 2020-05-25 00:00:00
