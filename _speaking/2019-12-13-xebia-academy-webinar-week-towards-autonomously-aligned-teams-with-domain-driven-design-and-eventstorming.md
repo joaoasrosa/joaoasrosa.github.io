@@ -8,7 +8,7 @@ description: >
 conference: 'Xebia Academy Webinar Week'
 type: 'talk'
 location: 'Online'
-website: 'https://pages.xebia.com/webinarweek2019'
+website: 'https://community.xebia.academy/share/LdfD3i-4YlAh_C-b'
 slides: 'https://speakerdeck.com/player/f5360cb6f66046aaa6aa61b4a3e701f0'
 date: 2019-12-13 00:00:00
 featured_image: 'https://speakerd.s3.amazonaws.com/presentations/f5360cb6f66046aaa6aa61b4a3e701f0/slide_0.jpg?14492073'
