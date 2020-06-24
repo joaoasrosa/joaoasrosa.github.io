@@ -1,7 +1,3 @@
 My projects or projects where I contribute:
 
-Cake NDepend – Cake Build Addin to invoke the NDepend Code Quality tool
-Cake Build – Cake Build is a C# DSL to streamline your builds, running in a multi-OS scenario
-AWS Quickstart Magento – AWS Quickstart Magento is the bootstrap to deploy Magento 2.x on AWS infrastructure. Enhancements to installation scripts
-Octopus Deploy Library – The Octopus Deploy Library with common scripts from day to day tasks that aren’t included in the core product. Bug fixing and enhancements to a few templates
 Notepad++ XML TreeView Plugin – A Notepad++ plugin to display an XML document as treeview. Useful when working with large documents, has some features, such as, select a node in the treeview and the correspondent text is selected. Writing in C#, the plugin can be downloaded and enabled using the Notepad++ Plugin Manager
