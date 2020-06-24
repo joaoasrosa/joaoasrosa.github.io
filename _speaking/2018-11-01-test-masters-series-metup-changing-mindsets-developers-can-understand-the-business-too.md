@@ -14,5 +14,5 @@ location: 'Amsterdam, The Netherlands'
 website: 'https://www.meetup.com/Test-Masters-Series/events/255197006/'
 slides: 'https://speakerdeck.com/player/e82e3cbe7be4484bb1fe08f223b8ee8c'
 date: 2018-11-01 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/e82e3cbe7be4484bb1fe08f223b8ee8c/slide_0.jpg?15259328'
+featured_image: 'images/speaking/2018-11-01-test-masters-series-metup-changing-mindsets-developers-can-understand-the-business-too.webp'
 ---
