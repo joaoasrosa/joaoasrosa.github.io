@@ -10,5 +10,5 @@ type: 'workshop'
 location: 'Berlin, Germany'
 website: 'https://conferences.oreilly.com/software-architecture/sa-eu-2019'
 date: 2019-11-05 00:00:00
-featured_image: 'https://cdn.oreillystatic.com/en/assets/1/event/301/saconfeu_2019_1368x605.jpg'
+featured_image: 'images/speaking/2019-11-05-oreilly-software-architecture-berlin-eventstorming-for-domain-driven-design-modeling.webp'
 ---
