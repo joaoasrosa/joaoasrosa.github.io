@@ -1,6 +1,5 @@
 My projects or projects where I contribute:
 
-Heuristics pet project – homegrown heuristics that I collect over the years
 Context Mapper CLI – CLI tool to generate diagrams based on DDD patterns
 Cake NDepend – Cake Build Addin to invoke the NDepend Code Quality tool
 Cake Build – Cake Build is a C# DSL to streamline your builds, running in a multi-OS scenario
