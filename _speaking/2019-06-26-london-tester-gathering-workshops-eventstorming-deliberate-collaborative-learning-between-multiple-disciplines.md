@@ -10,5 +10,5 @@ type: 'workshop'
 location: 'London, United Kingdom'
 website: 'https://www.ministryoftesting.com/'
 date: 2019-06-26 00:00:00
-featured_image: 'https://www.ministryoftesting.com/assets/mot-white-logo-e31ee9e6eabed8e72d3b9a7043803d7dc55767a53801caecd2d97a78c82a37ac.png'
+featured_image: 'images/speaking/2019-06-26-london-tester-gathering-workshops-eventstorming-deliberate-collaborative-learning-between-multiple-disciplines.webp'
 ---
