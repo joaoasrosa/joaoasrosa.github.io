@@ -15,5 +15,5 @@ website: 'https://www.devopssummitamsterdam.com/'
 slides: 'https://speakerdeck.com/player/571706d9a13d42ad82f8fda42cbd83d2'
 video: 'FBcpBl1vccc'
 date: 2019-10-08 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/571706d9a13d42ad82f8fda42cbd83d2/slide_0.jpg?13812768'
+featured_image: 'images/speaking/2019-10-08-devops-summit-amsterdam-a-devops-journey-why-the-sociotechnical-architecture-is-important.webp'
 ---
