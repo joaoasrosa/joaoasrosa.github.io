@@ -14,5 +14,5 @@ location: 'Brühl, Germany'
 website: 'https://www.javaland.eu/en/javaland-2019/'
 slides: 'https://speakerdeck.com/player/518a66126fdc4fb2a39fac15e0fef2e8'
 date: 2019-03-19 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/518a66126fdc4fb2a39fac15e0fef2e8/slide_0.jpg?12126474'
+featured_image: 'images/speaking/2019-03-19-javaland-from-eventstorming-to-coddding.webp'
 ---
