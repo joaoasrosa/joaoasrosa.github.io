@@ -13,5 +13,5 @@ type: 'workshop'
 location: 'The Hague, The Netherlands'
 website: 'https://serverless-architecture.io/'
 date: 2019-04-08 00:00:00
-featured_image: 'https://serverless-architecture.io/wp-content/uploads/2019/10/SLA_SE20_Website_Header_54605_v5.jpg'
+featured_image: 'images/speaking/2019-04-08-serverless-architecture-conference-continuously-design-and-deliver-your-aws-lambdas-with-domain-driven-design.webp'
 ---
