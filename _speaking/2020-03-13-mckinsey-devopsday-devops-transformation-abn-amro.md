@@ -8,5 +8,5 @@ location: 'Online'
 website: 'https://www.linkedin.com/feed/update/urn:li:activity:6637675140391989248/'
 slides: 'https://speakerdeck.com/player/497a607f415e4974bc0e467b7442acf2'
 date: 2020-03-13 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/497a607f415e4974bc0e467b7442acf2/slide_0.jpg?15203069'
+featured_image: 'images/speaking/2020-03-13-mckinsey-devopsday-devops-transformation-abn-amro.webp'
 ---
