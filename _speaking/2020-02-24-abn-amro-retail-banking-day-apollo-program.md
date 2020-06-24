@@ -10,5 +10,5 @@ type: 'talk'
 location: 'Amsterdam, The Netherlands'
 website: 'https://abnamro.nl/'
 date: 2020-02-24 00:00:00
-featured_image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Devops.svg/1200px-Devops.svg.png'
+featured_image: 'images/speaking/2020-02-24-abn-amro-retail-banking-day-apollo-program.webp'
 ---
