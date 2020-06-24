@@ -14,5 +14,5 @@ location: 'Eindhoven, The Netherlands'
 website: 'https://www.nextbuild.nl/'
 slides: 'https://speakerdeck.com/player/3604f6b1ad044aa9b192d5619b6fbfcf'
 date: 2018-09-29 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/3604f6b1ad044aa9b192d5619b6fbfcf/slide_0.jpg?10905736'
+featured_image: 'images/speaking/2018-09-29-next-build-from-eventstorming-to-coddding.webp'
 ---
