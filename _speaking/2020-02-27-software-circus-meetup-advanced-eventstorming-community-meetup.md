@@ -13,5 +13,5 @@ type: 'workshop'
 location: 'Amsterdan, The Netherlands'
 website: 'https://www.meetup.com/Software-Circus/events/267877245/'
 date: 2020-02-27 00:00:00
-featured_image: 'https://secure.meetupstatic.com/photos/event/3/0/c/c/600_488952492.jpeg'
+featured_image: 'images/speaking/2020-02-27-software-circus-meetup-advanced-eventstorming-community-meetup.webp'
 ---
