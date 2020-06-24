@@ -14,5 +14,5 @@ location: 'Edé, The Netherlands'
 website: 'https://techorama.nl/'
 slides: 'https://speakerdeck.com/player/7e3d9e3be0d94b67b05dfc26fa1d6bfb'
 date: 2019-10-02 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/7e3d9e3be0d94b67b05dfc26fa1d6bfb/slide_0.jpg?13772165'
+featured_image: 'images/speaking/2019-10-02-techorama-nl-from-eventstorming-to-coddding.webp'
 ---
