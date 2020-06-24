@@ -1,7 +1,7 @@
 ---
 title: 'Remote Example Mapping - Virtual'
 subtitle: 'Virtual training to start with Example Mapping'
-date: 2020-03-01 00:00:00
+date: 2019-12-01 00:00:00
 featured_image: '/images/left-panel/home.webp'
 ---
 
