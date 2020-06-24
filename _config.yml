@@ -17,9 +17,9 @@ collections:
   speaking:
     output: true
     permalink: /speaking/:slug
-  # projects:
-  #   output: true
-  #   permalink: /project/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
   workshops:
     output: true
     permalink: /workshop/:slug
@@ -45,12 +45,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  # -
-  #   scope:
-  #     path: ""
-  #     type: "projects"
-  #   values:
-  #     layout: "project"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
   -
     scope:
       path: ""
