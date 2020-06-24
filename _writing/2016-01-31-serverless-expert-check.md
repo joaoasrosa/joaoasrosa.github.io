@@ -9,5 +9,5 @@ description: >
 type: 'interview'
 website: 'https://serverless-architecture.io/serverless-expert-check-whitepaper-2019/'
 date: 2016-01-31 00:00:00
-featured_image: 'https://serverless-architecture.io/wp-content/uploads/2019/07/SLA_Herbst19_Whitepaper_Screenshots_723x1024_52476_v1a.jpg'
+featured_image: 'images/writing/2016-01-31-serverless-expert-check.webp'
 ---
