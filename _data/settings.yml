@@ -22,8 +22,6 @@ menu_settings:
       url: '/projects/'
     - title: 'Workshops'
       url: '/workshop/'
-    - title: 'About'
-      url: '/about'
     - title: 'Contact'
       url: '/contact'
     - title: 'Credits'
