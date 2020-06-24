@@ -10,5 +10,5 @@ type: 'hands-on'
 location: 'Amsterdam, The Netherlands'
 website: 'https://dddeurope.com/2019/'
 date: 2019-01-31 00:00:00
-featured_image: 'https://res.cloudinary.com/value-object/image/upload/c_scale,h_300/v1526848980/dddeu19_site/DDDEU_logo_transparent_text_only_gray_edit.png'
+featured_image: 'images/speaking/2019-01-31-dddeu-crunching-real-life-stories-with-ddd-eventstorming-and-combining-it-with-bdd-techniques.webp'
 ---
