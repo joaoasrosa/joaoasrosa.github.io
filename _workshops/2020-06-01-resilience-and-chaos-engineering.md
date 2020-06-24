@@ -1,6 +1,6 @@
 ---
 title: 'Resilience & Chaos Engineering'
-subtitle: 'Build robust and resilience software'
+subtitle: 'Build robust and resilient software'
 date: 2020-06-01 00:00:00
 featured_image: '/images/workshops/resilience-and-chaos-engineering.webp'
 ---
