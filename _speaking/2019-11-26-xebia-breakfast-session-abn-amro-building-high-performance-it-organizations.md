@@ -13,5 +13,5 @@ type: 'talk'
 location: 'Hilversum, The Netherlands'
 website: 'https://pages.xebia.com/abn-amro-devops-journey'
 date: 2019-11-26 00:00:00
-featured_image: 'https://pages.xebia.com/hs-fs/hubfs/Copy%20of%20Breakfast%20session%20291119%20v2.png?width=2048&name=Copy%20of%20Breakfast%20session%20291119%20v2.png'
+featured_image: 'images/speaking/2019-11-26-xebia-breakfast-session-abn-amro-building-high-performance-it-organizations.webp'
 ---
