@@ -1,6 +1,5 @@
 My projects or projects where I contribute:
 
-Context Mapper CLI – CLI tool to generate diagrams based on DDD patterns
 Cake NDepend – Cake Build Addin to invoke the NDepend Code Quality tool
 Cake Build – Cake Build is a C# DSL to streamline your builds, running in a multi-OS scenario
 AWS Quickstart Magento – AWS Quickstart Magento is the bootstrap to deploy Magento 2.x on AWS infrastructure. Enhancements to installation scripts
