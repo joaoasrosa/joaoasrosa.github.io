@@ -8,5 +8,5 @@ location: 'Hilversum, The Netherlands'
 website: 'https://xke.xebia.com'
 slides: 'https://speakerdeck.com/player/3c23ea7402654148b83357b03e034cb1'
 date: 2019-01-22 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/3c23ea7402654148b83357b03e034cb1/slide_0.jpg?11583309'
+featured_image: 'images/speaking/2019-01-22-xke-cd-pipeline.webp'
 ---
