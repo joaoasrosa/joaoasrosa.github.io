@@ -1,7 +1,7 @@
 ---
 title: 'Cake NDepend'
 subtitle: 'Cake Build Addin to invoke the NDepend code quality tool'
-date: 2020-01-31 00:00:00
+date: 2020-01-30 00:00:00
 featured_image: '/images/projects/cakendepend.webp'
 ---
 
