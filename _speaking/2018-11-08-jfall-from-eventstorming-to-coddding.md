@@ -15,5 +15,5 @@ website: 'https://2018.jfall.nl/'
 slides: 'https://speakerdeck.com/player/b03f0df33a404709884972405632110a'
 video: 'g4NqI9r25B0'
 date: 2018-11-08 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/b03f0df33a404709884972405632110a/slide_0.jpg?11172538'
+featured_image: 'images/speaking/2018-11-08-jfall-from-eventstorming-to-coddding.webp'
 ---
