@@ -14,5 +14,5 @@ location: 'Amsterdam, The Netherlands'
 website: 'https://events.codemotion.com/conferences/rome/2019/'
 slides: 'https://speakerdeck.com/player/bba0477ceef34ba88c4e766ab7220a7d'
 date: 2019-09-11 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/bba0477ceef34ba88c4e766ab7220a7d/slide_0.jpg?13558012'
+featured_image: 'images/speaking/2019-09-11-q-con-abn-amro-improving-design-and-code-quality-with-property-based-testing.webp'
 ---
