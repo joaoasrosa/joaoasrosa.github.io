@@ -14,5 +14,5 @@ location: 'Amsterdam, The Netherlands'
 website: 'https://www.meetup.com/Test-Masters-Series/events/256247645/'
 slides: 'https://speakerdeck.com/player/09e228e7c9af46cdb4efb12aeb779dda'
 date: 2019-06-18 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/09e228e7c9af46cdb4efb12aeb779dda/slide_0.jpg?15259262'
+featured_image: 'images/speaking/2019-06-18-test-masters-series-meetup-observe-the-system-two-sides-of-the-same-coin.webp'
 ---
