@@ -14,5 +14,5 @@ location: 'Rome, Italy'
 website: 'https://events.codemotion.com/conferences/rome/2019/'
 slides: 'https://speakerdeck.com/player/47adc00a65a74edaae10e15aa83ef2fb'
 date: 2019-03-23 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/47adc00a65a74edaae10e15aa83ef2fb/slide_0.jpg?12804406'
+featured_image: 'images/speaking/2019-03-23-codemotion-rome-improving-design-and-code-quality-with-property-based-testing.webp'
 ---
