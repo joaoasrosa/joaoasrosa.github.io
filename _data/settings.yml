@@ -26,6 +26,8 @@ menu_settings:
       url: '/about'
     - title: 'Contact'
       url: '/contact'
+    - title: 'Credits'
+      url: '/credits'
 
 grid_settings:
   grid_spacing: 10
