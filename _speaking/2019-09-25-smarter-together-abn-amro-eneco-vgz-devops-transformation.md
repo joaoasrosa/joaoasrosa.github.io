@@ -6,5 +6,5 @@ type: 'workshop'
 location: 'Amsterdam, The Netherlands'
 website: 'https://www.cooperatievgz.nl/cooperatie-vgz/over-ons/agile-event-smarter-together'
 date: 2019-09-25 00:00:00
-featured_image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Devops.svg/1200px-Devops.svg.png'
+featured_image: 'images/speaking/2019-09-25-smarter-together-abn-amro-eneco-vgz-devops-transformation.webp'
 ---
