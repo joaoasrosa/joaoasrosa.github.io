@@ -15,5 +15,5 @@ website: 'https://skillsmatter.com/conferences/10367-p3x-people-product-process-
 slides: 'https://speakerdeck.com/player/e5c57e21a31b4c3ead6849c259c7d003'
 videoUrl: 'https://skillsmatter.com/skillscasts/12692-changing-mindsets-developers-can-understand-the-business-too'
 date: 2018-11-09 00:00:00
-featured_image: 'https://speakerd.s3.amazonaws.com/presentations/e5c57e21a31b4c3ead6849c259c7d003/slide_0.jpg?11181255'
+featured_image: 'images/speaking/2018-11-09-p3x-changing-mindsets-developers-can-understand-the-business-too.webp'
 ---
