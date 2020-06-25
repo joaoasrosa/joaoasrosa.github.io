@@ -35,7 +35,6 @@ author:
 permalink: "/2019/08/13/why-integration-tests-wont-save-you-or-your-software/"
 excerpt: Did the title tease you? Great, job is done! Today I will tell you my story about Integration Tests; it came after another knowledge share lunch with my pal Kenny.
 comments: true
-featured_image: /images/left-panel/blog.webp
 ---
 Did the title tease you? Great, job is done! Today I will tell you my story about Integration Tests; it came after another knowledge share lunch with my pal [Kenny](https://twitter.com/kenny_baas).
 

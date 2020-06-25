@@ -39,7 +39,6 @@ author:
   last_name: ''
 permalink: "/2016/09/14/update-project-json-version-number-in-appveyor/"
 comments: true
-featured_image: /images/left-panel/blog.webp
 ---
 Today was a debut using [GitHub Gist](https://help.github.com/articles/about-gists/). In one of my GitHub projects, I need a close integration between the Continuous Integration tool (in this case [AppVeyor](https://www.appveyor.com/)) and my .NET Core project, specifically in how to update the version of the DLL based on the version in AppVeyor?
 

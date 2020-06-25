@@ -34,7 +34,7 @@ author:
   last_name: ''
 permalink: "/2017/10/22/my-first-coolblue-hackathon-how-to-be-hacked/"
 comments: true
-featured_image: /images/left-panel/blog.webp
+featured_imae: /images/left-panel/blog.webp
 ---
 Last week we had our annual Hackathon, my first at Coolblue. Here we are taken to a remote location for 3 days to hack away. I joined a team who wants to build an application to measure the happiness in Coolblue. Wait, measure happiness? How?
 

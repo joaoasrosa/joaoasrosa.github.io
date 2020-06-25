@@ -45,7 +45,6 @@ author:
   last_name: ''
 permalink: "/2017/01/03/code-development-improvement-with-jetbrains-upsource-configuration-and-first-impressions/"
 comments: true
-featured_image: /images/left-panel/blog.webp
 ---
 We should seek excellence in our jobs, doesn't matter our line of work. As professionals, we should always aim to improve the quality of our outputs, either it is customer satisfaction, code quality or just faster builds and deployments.
 

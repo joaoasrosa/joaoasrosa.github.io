@@ -45,7 +45,6 @@ author:
   last_name: ''
 permalink: "/2017/02/04/create-and-push-a-docker-image-from-an-octopus-deployment/"
 comments: true
-featured_image: /images/left-panel/blog.webp
 ---
 [Docker](https://www.docker.com/) is one of the disruptive technologies within virtualization, allowing the different containers to run on the same machine, sharing resources, reducing the overhead. The technology allows DevOps teams to have another tool to develop, build and ship software. One use case for containers is the Microservices Architecture Pattern.
 

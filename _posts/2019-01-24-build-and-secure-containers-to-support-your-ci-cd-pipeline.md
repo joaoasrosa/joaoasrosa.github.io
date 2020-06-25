@@ -34,7 +34,6 @@ author:
   last_name: ''
 permalink: "/2019/01/24/build-and-secure-containers-to-support-your-ci-cd-pipeline/"
 comments: true
-featured_image: /images/left-panel/blog.webp
 ---
 There are 2 systems in any company that are critical: the payroll system, and the CI/CD system. Why? You may ask...  
 If the payroll system doesn't work, people will leave the company and the company (may) face legal problems; the CI/CD system is the gateway to production. If it is down and there is a bug in production, it will affect your business; loss of revenue, loss of customers, loss of money, just to name a few.

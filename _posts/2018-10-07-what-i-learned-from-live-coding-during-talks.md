@@ -38,7 +38,6 @@ author:
   last_name: ''
 permalink: "/2018/10/07/what-i-learned-from-live-coding-during-talks/"
 comments: true
-featured_image: /images/left-panel/blog.webp
 ---
 Last week, Kenny Baas and I, delivered 2 talks with live coding. We were at [NextBuild](http://nextbuild.nl/) (with [From EventStorming to CoDDDing](http://nextbuild.nl/sessions/from-eventstorming-to-coddding/)) and [Techorama NL](https://techorama.nl/) (with [Improving design and code quality with Property-based testing](https://sched.co/EjEe)).
 

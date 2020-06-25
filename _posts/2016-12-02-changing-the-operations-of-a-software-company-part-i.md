@@ -43,7 +43,6 @@ author:
   last_name: ''
 permalink: "/2016/12/02/changing-the-operations-of-a-software-company-part-i/"
 comments: true
-featured_image: /images/left-panel/blog.webp
 ---
 Agile is great... and sometimes painful. Do not get me wrong, I love an Agile work environment when everyone is keen to "Try, Fail, Fix, Learn and Move On". For those ones that work in the software development space, we have more tasks than develop software.
 
