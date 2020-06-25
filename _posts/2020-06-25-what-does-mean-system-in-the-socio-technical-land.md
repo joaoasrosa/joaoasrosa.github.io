@@ -8,7 +8,6 @@ password: ''
 status: publish
 permalink: "/2020/06/25/what-does-mean-system-in-the-socio-technical-land/"
 comments: true
-featured_image: /images/left-panel/blog.webp
 ---
 
 One of my interests is in socio-technical systems. However, when I discuss it, namely with IT folks, the word "system" implies that it is an IT system. Well, I believe that it is more than that, and I will try to convey my ideas in this blog post.
