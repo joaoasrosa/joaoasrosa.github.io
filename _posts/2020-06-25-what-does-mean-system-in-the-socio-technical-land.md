@@ -26,7 +26,7 @@ Before going into the nuts and bolts of the term "system", I want to clarify wha
 
 Getting to the point of this post (I know, a lengthy introduction), the "system" is the combination of *people*, *processes* and *technology*. These three aspects are paramount in the social-technical system, and we should pay attention to the relationships between them. It is easy to overlook the social aspect, focusing only on the technical one. Also, when problems arise, it is common to enforce processes to fix a symptom, but we don't take into account the cause.
 
-#### Why did I wrote this post
+#### Why did I write this post
 
 **We need a new generation of leaders**. And in this generation, we need two critical traits: (1) ability to give structure and (2) ability to create a safe place. Combining these traits with the ability to recognise the different patterns in a socio-technical system, it is sturdy and will help organisations to be successful. We are on the verge of new organisational design, so-called Teal organisations. These organisations are learning ecosystems, where the decision making power is distributed and closer to the information. 
 
