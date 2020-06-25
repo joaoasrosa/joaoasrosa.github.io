@@ -8,6 +8,7 @@ password: ''
 status: publish
 permalink: "/2020/02/10/my-experience-during-ddd-europe-2020/"
 comments: true
+featured_image: /images/left-panel/blog.webp
 ---
 First blog of the year. And I decided to blog about my experience during [DDD Europe 2020](https://dddeurope.com/2020/). Is there anything better? :)
 

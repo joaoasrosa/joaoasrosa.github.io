@@ -91,6 +91,7 @@ author:
   last_name: ''
 permalink: "/2018/05/21/life-of-a-c-developer-how-to-build-and-test-an-aws-lambda-locally/"
 comments: true
+featured_image: /images/left-panel/blog.webp
 ---
 Today Serverless is a thing. Although everyone can write a blog post about how Serverless run on servers, I share the same visions as [Mathias Verraes](https://twitter.com/mathiasverraes):
 

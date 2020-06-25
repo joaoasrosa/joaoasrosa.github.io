@@ -48,6 +48,7 @@ author:
   last_name: ''
 permalink: "/2017/10/18/abstract-from-your-ci-use-cake/"
 comments: true
+featured_image: /images/left-panel/blog.webp
 ---
 Here at [Coolblue](https://www.coolblue.nl), we can choose our tools from a range of technologies. A while ago, our team started moving from Microsoft MSTest to xUnit.
 

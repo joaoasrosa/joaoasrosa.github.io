@@ -48,6 +48,7 @@ author:
   last_name: ''
 permalink: "/2017/01/10/create-an-aws-lambda-function-from-an-octopus-deployment/"
 comments: true
+featured_image: /images/left-panel/blog.webp
 ---
 [AWS Lambda](https://aws.amazon.com/lambda/) is one of the AWS Compute Services, alongside with [Amazon EC2](https://aws.amazon.com/ec2/) or [Amazon EC2 Container Service](https://aws.amazon.com/ecs/). In a nutshell, AWS Lambda is the serverless offer from AWS, allowing "you run code without provisioning or managing servers"\[1\].
 
