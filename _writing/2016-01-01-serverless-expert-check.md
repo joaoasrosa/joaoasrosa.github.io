@@ -8,6 +8,6 @@ description: >
  Expand your knowledge with the help of our Serverless Architecture Whitepaper. Stay on top of the latest trends in the field of knative, kubernetes, serverless testing as well as their drawbacks and advantages.'
 type: 'interview'
 website: 'https://serverless-architecture.io/serverless-expert-check-whitepaper-2019/'
-date: 2016-01-31 00:00:00
+date: 2016-01-01 00:00:00
 featured_image: 'images/writing/2016-01-31-serverless-expert-check.webp'
 ---
