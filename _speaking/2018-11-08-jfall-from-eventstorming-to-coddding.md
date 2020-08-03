@@ -13,7 +13,7 @@ type: 'talk'
 location: 'Edé, The Netherlands'
 website: 'https://2018.jfall.nl/'
 slides: 'https://speakerdeck.com/player/b03f0df33a404709884972405632110a'
-video: 'g4NqI9r25B0'
+videoYoutube: 'g4NqI9r25B0'
 date: 2018-11-08 00:00:00
 featured_image: 'images/speaking/2018-11-08-jfall-from-eventstorming-to-coddding.webp'
 ---
