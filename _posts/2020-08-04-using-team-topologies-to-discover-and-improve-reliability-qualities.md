@@ -37,5 +37,19 @@ Using the insights from the Context Map and the Team Topologies, we can reason a
 
 In my experience, taking a look at how the teams interact and how we layout our solutions is a great start to discover and improve service reliability qualities, before changing the technical aspects. As an organisation grows, the complexity increases, and it is important to make design decisions to cope with the complexity. The essential one!
 
+#### Let's visualise one example
+Using a fictional case, where a company provides a SaaS solution to analyse sales leads (I don't have an idea is this exists or not, maybe a business idea). Analysing the Team Gold, responsible to over the service that qualifies a lead, we can have the following Team Topologies:
+![Team Topologies for Team Gold](/images/assets/2020-08-04-using-team-topologies-to-discover-and-improve-reliability-qualities.png)
+
+As you can see, I placed the Team Gold is the middle of the diagram. Also the rest of the teams have names related to their porpuse, and I will let your imagination to fill the technology details. Now, in this fictional case, Team Gold is asked to improve the *cycle time* of features to production, since they are losing their differentiative features to the competition. Based on Team Topologies we can see that there are different interaction modes with different teams that **might** affect the feature cycle time.
+
+Although we can see some hotspots here, using a Context Map also can indicate what is the level of flexibility on the relationships between bounded contexts, and by extension the teams who own those:
+TODO add diagram!
+
+Doing a quick analysis we can spot that although the relationships between the Team Gold and Team Document Management is X-as-a-Service, in reality the Team Gold BC is conformist to the document management.
+
+Some conclusion?!
+
+
 #### A readers note
 I mainly operate in complex environments, highly regulated, with hundreds of teams. If you have a smaller context, take my experience with a pinch of salt!
