@@ -1,0 +1,64 @@
+ContextMap CustomerInteractionEnablingDigitizationContextMap {
+	type = SYSTEM_LANDSCAPE
+	state = AS_IS
+	
+	contains LeadInformation
+	contains QualifiedLeads
+	contains LeadAnalytics
+	contains CustomerInformation
+	contains CustomerAnalytics
+
+	LeadInformation [U,OHS,PL]->[D,CF] QualifiedLeads {
+        implementationTechnology = "RESTful HTTP"
+    }
+    LeadInformation [U,S]->[D,C] LeadAnalytics {
+        implementationTechnology = "Message Bus"
+    }
+    QualifiedLeads [U,S]->[D,C] LeadAnalytics {
+        implementationTechnology = "Message Bus"
+    }
+    QualifiedLeads Partnership CustomerInformation {
+        implementationTechnology = "RESTful HTTP"
+    }
+    CustomerInformation [U,S]->[D,C] CustomerAnalytics {
+        implementationTechnology = "Message Bus"
+    }
+    LeadAnalytics Partnership CustomerAnalytics {
+        implementationTechnology = "Message Bus"
+    }
+}
+
+BoundedContext LeadInformation implements LeadInformationDomain
+BoundedContext QualifiedLeads implements QualifiedLeadsDomain
+BoundedContext LeadAnalytics implements LeadAnalyticsDomain
+BoundedContext CustomerInformation implements CustomerInformationDomain
+BoundedContext CustomerAnalytics implements CustomerAnalyticsDomain
+
+Domain LeadDomain {
+	Subdomain LeadInformationDomain {
+		type = SUPPORTING_DOMAIN
+		domainVisionStatement = "Subdomain for the lead information."
+	}
+
+	Subdomain QualifiedLeadsDomain {
+		type = CORE_DOMAIN
+		domainVisionStatement = "Subdomain for the qualified leads."
+	}
+
+	Subdomain LeadAnalyticsDomain {
+		type = CORE_DOMAIN
+		domainVisionStatement = "Subdomain for the lead analytics."
+	}
+}
+
+Domain CustomerDomain {
+	Subdomain CustomerInformationDomain {
+		type = SUPPORTING_DOMAIN
+		domainVisionStatement = "Subdomain for the customer information."
+	}
+
+	Subdomain CustomerAnalyticsDomain {
+		type = CORE_DOMAIN
+		domainVisionStatement = "Subdomain for the lead analytics."
+	}
+}
