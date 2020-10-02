@@ -28,4 +28,10 @@ But what are the practices that can a manager embrace?
 The *Dynamic Safety Model* was described by Jens Rasmussen in his paper titled [Risk management in a dynamic society: a modelling problem](https://www.sciencedirect.com/science/article/pii/S0925753597000520). It can be ilustrated by the following picture:
 ![Ilustration of the Dynamic Safety Model](/images/assets/2020-09-04-chaos-engineering-as-management-practice-dynamic-safety-model.png)
 
-[Casey Rosenthal](https://twitter.com/caseyrosenthal) and [Nora Jones](https://twitter.com/nora_js) in the book [Chaos Engineering, System Resiliency in Practice](https://www.oreilly.com/library/view/chaos-engineering/9781492043850/) summarises the *DYnamic Safety Model* in ... Engineers... What left for the managers?!
+[Casey Rosenthal](https://twitter.com/caseyrosenthal) and [Nora Jones](https://twitter.com/nora_js) in the book [Chaos Engineering, System Resiliency in Practice](https://www.oreilly.com/library/view/chaos-engineering/9781492043850/) summarises the *Dynamic Safety Model* in Economics, Workload and Safety, where software engineers are good into understand the limits and trade-offs with economics and workload, but we often miss the limits and trade-offs in safety. I agree with the analysis, and I learned in my career the same. Sometimes I underestimate my decisions towards safety, and others I overestimate. Which made me to retrospect based on the learnings of the past decade.
+
+I believe that managers can create safety, and coach and mentor engineers to improve their decision making process regarding the safety limits.
+
+
+
+... Engineers... What left for the managers?!
