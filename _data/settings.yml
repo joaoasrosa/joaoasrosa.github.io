@@ -63,6 +63,8 @@ social_settings:
   spotify_url: ''
   bandcamp_url: ''
   linkedin_url: 'https://www.linkedin.com/in/joaoasrosa/'
+
+technical_settings:
   feed_url: 'https://joaorosa.io/feed.xml'
 
 color_settings:
