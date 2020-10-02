@@ -65,7 +65,7 @@ social_settings:
   linkedin_url: 'https://www.linkedin.com/in/joaoasrosa/'
 
 technical_settings:
-  feed_url: 'https://joaorosa.io/feed.xml'
+  rss_url: 'https://joaorosa.io/feed.xml'
 
 color_settings:
   background_color: '#ffffff'
