@@ -49,3 +49,5 @@ Well, we get back to the title of this blog post. Chaos Engineering! Not only as
 We can adopt Chaos Engineering as a management practice to lead the organisation to an anti-fragile state, creating a safe environment for people and teams to excel. As some organisations demonstrate, when the environment is safe, people unleash their superpowers.
 
 How do you create a safe environment? 
+
+Small events in a adaptative systems. Avoid the flood. From Jabe Bloom metaphor of the bank account for the skillful coping
