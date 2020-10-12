@@ -60,3 +60,6 @@ We can adopt Chaos Engineering as a management practice to lead the organisation
 
 How do you create a safe environment? 
 >> Note: unclear, would expect additional text here or teaser to next blog or article
+
+
+Skillful coping from Jabe bloom. Using Chaos Engineering to increase the resileince. Smaller events that doesn't flood.
