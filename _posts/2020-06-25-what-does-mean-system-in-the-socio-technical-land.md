@@ -6,6 +6,11 @@ parent_id: '0'
 published: true
 password: ''
 status: publish
+categories:
+- Sociotechnical systems
+tags:
+- Sociotechnical systems
+- Teams
 permalink: "/2020/06/25/what-does-mean-system-in-the-socio-technical-land/"
 comments: true
 ---

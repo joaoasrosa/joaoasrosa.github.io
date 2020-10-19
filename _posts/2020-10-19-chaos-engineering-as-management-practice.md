@@ -8,6 +8,12 @@ password: ''
 status: draft
 permalink: "/2020/10/19/chaos-engineering-as-management-practice/"
 comments: true
+categories:
+- Sociotechnical systems
+tags:
+- Chaos Engineering
+- Complexity
+- Leadership
 ---
 
 Chaos Engineering is a practice that has its roots at Netflix. It born from the challenges of moving their workloads from the data centre to the cloud; the transient nature of the cloud affected the way that they build and operate a system at scale. The initial project was call [Chaos Monkey](https://netflixtechblog.com/the-netflix-simian-army-16e57fbab116), and it has almost 10 years.

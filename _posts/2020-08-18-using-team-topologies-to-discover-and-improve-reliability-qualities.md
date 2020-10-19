@@ -8,6 +8,12 @@ password: ''
 status: publish
 permalink: "/2020/08/18/using-team-topologies-to-discover-and-improve-reliability-qualities/"
 comments: true
+categories:
+- Sociotechnical systems
+tags:
+- Team Topologies
+- Domain-Driven Design
+- Context Map
 excerpt: Team Topologies is the work of Matthew Skelton and Manuel Pais, and I use it as part of my job. From a sociotechnical perspective, a team-first approach is paramount for any organisation and helps to decrease the accidental complexity. As such, I'm often asked 'How can we operate in DevOps?' or 'How can I have a reliable service to deliver value to my customer?'.
 ---
 
