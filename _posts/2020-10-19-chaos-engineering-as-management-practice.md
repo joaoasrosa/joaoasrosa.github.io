@@ -69,14 +69,14 @@ I hope that you can relate to this example. There is a bigger and broader array 
 > Note: However, in an outage scenario, => for me reading this, it reduces the scope back significantly, which is fine for this blog (e.g. focussing on a specific aspect: Hero culture. While I believe "change quosient of people (e.g. their ability to change and how they are supported in that my management) is a wider theme and they capability you want to nurture (continuous learning and learnings adoption).
 > Reply to note: Added a punch line with your name on it! :)
 
-In the previous example, stress is introduced into the system. And teams tend to overestimate their decisions in the short time (e.g., when the event is still present in their memory), and underestimate in the medium and long time (e.g. when the event is a foggy memory). It matches with Casey and Nora analysis on the safety boundaries. Also relates to what Jabe Bloom describes as skillful coping. I believe that managers can create safety, and coach and mentor engineers to improve their decision-making process regarding the safety limits. At the same time, having a positive effect on the organisation culture towards an open and trustworthy culture. 
+In the previous example, stress is introduced into the system. And teams tend to overestimate their decisions in the short time (e.g., when the event is still present in their memory), and underestimate in the medium and long time (e.g. when the event is a foggy memory). It matches with Casey and Nora analysis on the safety boundaries. Also relates to what [Ben Mosior](https://twitter.com/hiredthought) and [Jabe Bloom](https://twitter.com/cyetain) describes as skillful coping. I believe that managers can create safety, and coach and mentor people to improve their decision-making process regarding the safety limits. At the same time, having a positive effect on the organisation culture towards an open and trustworthy culture. 
 
 > Note: you might want to help the readers with connecting stressors to safety and safety limits. Define safety limits (e.g. in context of this blog).
 > Reply to note: added 
 
 #### Chaos Engineering and management
 
-Well, we get back to the title of this blog post. Chaos Engineering! Not only as technical practice for the resilience of the technical system but more critical to the ability of a organisation to by truly adaptative, e.g., anti-fragile. As I mentioned before, a system is the intersection of people, processes and technology, and a manager has a tool to induce controlled experiments into the system to teams and individuals practice their ability to cope with that event (skillful coping as described by [Ben Mosior](https://twitter.com/hiredthought) and [Jabe Bloom](https://twitter.com/cyetain)). Not only if the software has the right measures in place, but if the process (whatever process an organisation adopts) is adequate for the context of the organisation. It is very similar to the way of working of first responders, namely firefighters: 80% of their time is practising, and 20% of the time are in action. 
+Well, we get back to the title of this blog post. Chaos Engineering! Not only as technical practice for the resilience of the technical system but more critical to the ability of a organisation to by truly adaptative, e.g., anti-fragile. A sociotechnical system has people and technology interacting, and as a manager that is responsabile for part of the system, they have a tool to induce controlled experiments into the system to teams and individuals practice their ability to cope with a event (skillful coping). Not only if the techniocal system (software, infrastructure and everything in between) has the right measures in place, but if the process (whatever process an organisation adopts) is adequate for the context at paly. It is very similar to the way of working of first responders, namely firefighters: 80% of their time is practising, and 20% of the time are in action. 
 
 > Note: a manager was a tool. I would put this into better context, e.g. "one of the goals of ", if I am a manager reading this, I would strongly disagree with this manager definition.
 > Reply to note: mistach -> not was: has! 
@@ -92,8 +92,3 @@ We can adopt Chaos Engineering as a management practice to lead the organisation
 
 How do you create a safe environment? 
 >> Note: unclear, would expect additional text here or teaser to next blog or article
-
-
-Skillful coping from Jabe bloom. Using Chaos Engineering to increase the resileince. Smaller events that doesn't flood.
-
-Look at the image from Jabe Bloom.
