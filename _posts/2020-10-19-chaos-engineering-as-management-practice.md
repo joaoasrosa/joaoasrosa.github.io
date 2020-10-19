@@ -12,7 +12,7 @@ categories:
 - Sociotechnical systems
 tags:
 - Chaos Engineering
-- Complexity
+- Complexity theory
 - Leadership
 ---
 
@@ -38,9 +38,9 @@ But what are other practices a manager should embrace?
 
 ##### Options and costs of events, and their stabilisation
 
-[Jabe Bloom](https://twitter.com/cyetain) distilled a model for events. By event, it means anything that might affect the sociotechnical system. You can think about a spike in usage of your service because it hits the social media, acquire and merge of companies, or the current pandemic. And everything in between.
+[Jabe Bloom](https://twitter.com/cyetain) distilled a model for events. By event, it means anything that might affect the sociotechnical system. You can think about a spike in usage of your service because it hits the social media, holiday season, acquire and merge of companies, or the current pandemic. And everything in between. Some of the events are known upfront, others can be labelled as "unexpected".
 
-![Options and costs of events, and their stabilisation. Copywrite Jabe Bloom](/images/assets/2020-10-15-chaos-engineering-as-management-practice-event-jabe-bloom.jpg)
+![Options and costs of events, and their stabilisation. Copywrite Jabe Bloom](/images/assets/2020-10-19-chaos-engineering-as-management-practice-event-jabe-bloom.jpg)
 
 <center>Options and costs of events, and their stabilisation. Copywrite Jabe Bloom</center>
 
@@ -54,7 +54,7 @@ Now, let's go to the next piece of theory...
 
 The *Dynamic Safety Model* was described by Jens Rasmussen in his paper titled [Risk management in a dynamic society: a modelling problem](https://www.sciencedirect.com/science/article/pii/S0925753597000520). It can be illustrated by the following picture:
 
-![Ilustration of the Dynamic Safety Model. Copywrite https://risk-engineering.org/concept/Rasmussen-practical-drift](/images/assets/2020-10-15-chaos-engineering-as-management-practice-dynamic-safety-model.svg)
+![Ilustration of the Dynamic Safety Model. Copywrite https://risk-engineering.org/concept/Rasmussen-practical-drift](/images/assets/2020-10-19-chaos-engineering-as-management-practice-dynamic-safety-model.svg)
 
 <center>Ilustration of the Dynamic Safety Model. Copywrite https://risk-engineering.org/concept/Rasmussen-practical-drift</center>
 
@@ -83,14 +83,18 @@ In the previous example, stress is introduced into the system. And teams tend to
 
 #### Chaos Engineering and management
 
-Well, we get back to the title of this blog post. Chaos Engineering! Not only as technical practice for the resilience of the technical system but more critical to the ability of a organisation to by truly adaptative, e.g., anti-fragile. A sociotechnical system has people and technology interacting, and as a manager that is responsabile for part of the system, they have a tool to induce controlled experiments into the system to teams and individuals practice their ability to cope with a event (skillful coping). Not only if the techniocal system (software, infrastructure and everything in between) has the right measures in place, but if the process (whatever process an organisation adopts) is adequate for the context at paly. It is very similar to the way of working of first responders, namely firefighters: 80% of their time is practising, and 20% of the time are in action. 
+Well, we get back to the title of this blog post. Chaos Engineering! Not only as technical practice for the resilience of the technical system but more critical to the ability of a organisation to by truly adaptative, e.g., anti-fragile. A sociotechnical system has people and technology interacting, and as a manager that is responsabile for part of the system, you have a tool to induce controlled experiments into the system; allowing teams and individuals to practice their ability to cope with a event (skillful coping). Not only if the technical system (software, infrastructure and everything in between) has the right measures in place, but if the processes (whatever processes an organisation adopts) is adequate for the context at paly. It is very similar to the way of working of first responders, namely firefighters: 80% of their time is practising, and 20% of the time are in action. 
 
 > Note: a manager was a tool. I would put this into better context, e.g. "one of the goals of ", if I am a manager reading this, I would strongly disagree with this manager definition.
 > Reply to note: mistach -> not was: has! 
 > Note: "the proces is adequate", which proces are you referring to?
 > Reply to note: added which process :p
 
+And maybe you are wondering: "So what?". Getting back to the theory chapter of this blog post, the lifespan of a company is full of events. Some with a bigger impact than others:
 
+![Cost of events over time. Copywrite João Rosa](/images/assets/2020-10-19-chaos-engineering-as-management-practice-events-001-joao-rosa.svg)
+
+<center>Cost of events over time.</center>
 
 TODO: add  my idea of big events vs small events, and how chaos engineering can help with stabilisation.
 
