@@ -98,7 +98,7 @@ And maybe you are wondering: "So what?". Getting back to the theory chapter of t
 
 Based on my experience, and using Jabe's model, the costs of an event and the period after stabilisation have higher costs. Bureaucracy to "prevent" events of the same type, leading to loss of productivity; healthy issues, such as anxiety and burn-out; people are leaving the organisation due to an unstable environment. And so on... However, using Chaos Engineering as a regular practice, the cost of events tend to decrease:
 
-![Cost of events over time when using Chaos Engineering. Copywrite João Rosa](/images/assets/2020-10-19-chaos-engineering-as-management-practice-events-003-joao-rosa.svg)
+![Cost of events over time when using Chaos Engineering. Copywrite João Rosa](/images/assets/2020-10-19-chaos-engineering-as-management-practice-events-002-joao-rosa.svg)
 
 <center>Cost of events over time when using Chaos Engineering.</center>
 
