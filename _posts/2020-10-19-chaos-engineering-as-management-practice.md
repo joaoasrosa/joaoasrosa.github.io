@@ -39,7 +39,9 @@ But what are other practices a manager should embrace?
 
 In a nutshell, in the *pre-event* phase there are several options and their associated costs. As time goes by, and the event will happen, the options decrease, and the costs increase, until the point where the event starts. Note that you might be aware of the event or not. It depends on the ability to interpret the signals (weak or strong) and map those to create awareness. In the *post-event* phase, it tends to stabilise, both in terms of options and costs. You might hear the saying, "never waste a good crisis". Organisations learn (I hope so), and can use different strategies to handle future events of the same type. 
 
-I'm providing a simple explanation of the model, and I don't intend to go into complexity theory. It is a topic (several books maybe) on itself. My point here is that events can be costly if managers are not able to interpret the signals and create sound options. Back to pandemic examples, there are cases that organisations did the transition to working from home more manageable than others. I challenge you to map some hypothesis why. Also, the ones that are struggling with the change are incurring in higher costs, and it can be related to loss of productivity, market share, amongst others. 
+I'm providing a simple explanation of the model, and I don't intend to go into complexity theory. It is a topic (several books maybe) on itself. My point here is that events can be costly if managers are not able to interpret the signals and create sound options. Back to pandemic example, there are cases that organisations did the transition to working from home more manageable than others. I challenge you to map some hypothesis why. Also, the ones that are struggling with the change are incurring in higher costs, and it can be related to loss of productivity, market share, amongst others.
+
+Now, let's go to the next piece of theory...
 
 ##### Dynamic Safety Model
 
@@ -56,7 +58,7 @@ The *Dynamic Safety Model* was described by Jens Rasmussen in his paper titled [
 > Note: add intro sentence that you have performed different roles
 > Reply: Added a sentence
 
-During my career, I performed different roles. As a software engineer, I often focus on solving the problem at hand, and as a manager trying to optimise for maximising the value delivering. And as interim CTO and consultant, I help organisations to change their operating models to accommodate a fast-changing world. As part of my retrospective, I discover that we try to induced change into an organisation, even when we take into [consideration human aspects](https://www.joaorosa.io/2020/08/18/using-team-topologies-to-discover-and-improve-reliability-qualities/), and when a stressful event happens in the new operating model, people (and teams) usually fall back to the old behaviour. 
+During my career, I performed different roles. As a software engineer, I often focus on solving the problem at hand, and as a manager trying to optimise the system environment for maximising the value delivering. And as interim CTO and consultant, I help organisations to change their operating models to accommodate a fast-changing world. As part of my retrospective, I discover that we try to induced change into an organisation, even when we take into [consideration human aspects](https://www.joaorosa.io/2020/08/18/using-team-topologies-to-discover-and-improve-reliability-qualities/), and when a stressful event happens in the new operating model, people (and teams) usually fall back to the old behaviour. 
 
 Let's have a scoped and narrowed example for the article sake. As a trivial example, I observed and worked together with organisations that moved from a siloed environment to end-to-end responsible teams. Where the responsibilities of creating and operating software are in different teams and/or departments, to end-to-end responsibly teams (we can call them teams working according to [DevOps principles](https://www.devopsagileskills.org/dasa-devops-principles/)), where they need to design, build, release and operate the software in production. However, in an outage scenario, the teams have problems to react and fix the issue, due to the fact they are not used to operate in the new context. Hero culture often arises, where individual contributors are the ones solving the problems. In the long run, it is not sufficient and can lead to a dysfunctional and toxic culture.
 
@@ -67,16 +69,10 @@ I hope that you can relate to this example. There is a bigger and broader array 
 > Note: However, in an outage scenario, => for me reading this, it reduces the scope back significantly, which is fine for this blog (e.g. focussing on a specific aspect: Hero culture. While I believe "change quosient of people (e.g. their ability to change and how they are supported in that my management) is a wider theme and they capability you want to nurture (continuous learning and learnings adoption).
 > Reply to note: Added a punch line with your name on it! :)
 
-In the previous example, stress is introduced into the system. And teams tend to overestimate their decisions in the short time (e.g., when the event is still present in their memory), and underestimate in the medium and long time (e.g. when the event is a foggy memory). It matches with Casey and Nora analysis on the safety boundaries. I believe that managers can create safety, and coach and mentor engineers to improve their decision-making process regarding the safety limits. At the same time, having a positive effect on the organisation culture towards an open and trustworthy culture. 
+In the previous example, stress is introduced into the system. And teams tend to overestimate their decisions in the short time (e.g., when the event is still present in their memory), and underestimate in the medium and long time (e.g. when the event is a foggy memory). It matches with Casey and Nora analysis on the safety boundaries. Also relates to what Jabe Bloom describes as skillful coping. I believe that managers can create safety, and coach and mentor engineers to improve their decision-making process regarding the safety limits. At the same time, having a positive effect on the organisation culture towards an open and trustworthy culture. 
 
 > Note: you might want to help the readers with connecting stressors to safety and safety limits. Define safety limits (e.g. in context of this blog).
 > Reply to note: added 
-
-#### Declare your intents
-
-As system thinker, declared intention in a system is crucial. Together with colleagues, we are exploring a concept called Intent Oriented Architecture, where from social and technical angles are explicit about the intentions of a team and the solution (often software). I'm not trying to predict behaviour, but rather be explicit about my intentions, and the software that I (want to) produce. It is valid at all layers of the organisation. It is also the base of any operating model. But based on my experience declaring intent is not enough. We need to verify and test our assumptions, namely on the safety limits of the sociotechnical system. 
-
-Based on the role of a manager in today's world, how can we help individuals and teams to test the safety of the system (people, processes and technology)?
 
 #### Chaos Engineering and management
 
