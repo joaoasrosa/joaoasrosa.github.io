@@ -21,26 +21,9 @@ tags:
 - Linux
 - NDepend
 - Windows
-meta:
-  _wpcom_is_markdown: '1'
-  _wpas_skip_15487188: '1'
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '13069378625'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/fDHYkxdSRqw
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6353287575322521601&type=U&a=Hc-y
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2017/12/31/when-cake-meets-ndepend/"
 comments: true
+excerpt: As a developer, I'm a big fan of automation. I can't create software where I need to push buttons and run manual scripts, to test & deploy it. To help me automate my software development tasks, I use Cake, "a cross platform build automation system with a C# DSL".
 ---
 As a developer, I'm a big fan of automation. I can't create software where I need to push buttons and run manual scripts, to test & deploy it. To help me automate my software development tasks, I use [Cake](https://anotherlookontech.wordpress.com/2017/10/18/abstract-from-your-ci-use-cake/), "a cross platform build automation system with a C# DSL".
 

@@ -25,29 +25,9 @@ tags:
 - Linux
 - TravisCI
 - Windows
-meta:
-  _wpcom_is_markdown: '1'
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '10449975814'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/eacqRYCL518
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/920540881828155392";}}
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6326306575438876672&type=U&a=YlCS
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2017/10/18/abstract-from-your-ci-use-cake/"
 comments: true
+excerpt: Here at Coolblue, we can choose our tools from a range of technologies. A while ago, our team started moving from Microsoft MSTest to xUnit.
 ---
 Here at [Coolblue](https://www.coolblue.nl), we can choose our tools from a range of technologies. A while ago, our team started moving from Microsoft MSTest to xUnit.
 

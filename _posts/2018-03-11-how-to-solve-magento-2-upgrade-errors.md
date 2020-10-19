@@ -15,37 +15,6 @@ categories:
 tags:
 - Linux
 - Magento2
-meta:
-  _wpcom_is_markdown: '1'
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '15609200966'
-  timeline_notification: '1520769261'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/8btbv89ZeT7
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/972802946042867713";}}
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6378568641138421760&type=U&a=71My
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-  _oembed_a2fb2f0e69076690c87567fab3364dd7: '<div class="embed-twitter"><blockquote
-    class="twitter-tweet" data-width="500" data-dnt="true"><p lang="en" dir="ltr">If
-    you want to tweet or blog about how serverless actually runs on servers, let me
-    save you some time: Nobody thinks that serverless doesn&#39;t run on servers.
-    Nobody. You&#39;re just taking cheap shots at a catchy name.</p>&mdash; Mathias
-    Verraes (@mathiasverraes) <a href="https://twitter.com/mathiasverraes/status/995317295072382976?ref_src=twsrc%5Etfw">May
-    12, 2018</a></blockquote><script async src="https://platform.twitter.com/widgets.js"
-    charset="utf-8"></script></div>'
-  _oembed_time_a2fb2f0e69076690c87567fab3364dd7: '1526479963'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2018/03/11/how-to-solve-magento-2-upgrade-errors/"
 comments: true
 ---

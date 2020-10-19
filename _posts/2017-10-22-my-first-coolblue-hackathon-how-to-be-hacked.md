@@ -11,27 +11,6 @@ categories:
 - Code Development
 tags:
 - Hackathon
-meta:
-  _wpcom_is_markdown: '1'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/AJsGSdoA1xX
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '10599193547'
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/922040353733177344";}}
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6327806050770653184&type=U&a=PRUo
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2017/10/22/my-first-coolblue-hackathon-how-to-be-hacked/"
 comments: true
 featured_imae: /images/left-panel/blog.webp

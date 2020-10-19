@@ -13,28 +13,6 @@ tags:
 - AWS
 - Magento
 - Magento2
-meta:
-  _publicize_job_id: '13594271913'
-  _rest_api_client_id: "-1"
-  _rest_api_published: '1'
-  timeline_notification: '1515956206'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/R29dWKBD4Dq
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/952615509987680256";}}
-  _wpcom_is_markdown: '1'
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6358381204122714112&type=U&a=XIJz
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2018/01/14/migrate-magento-from-on-premises-to-the-cloud/"
 comments: true
 ---

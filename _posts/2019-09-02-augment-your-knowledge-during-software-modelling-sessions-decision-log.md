@@ -14,19 +14,6 @@ tags:
 - EventStorming
 - Example Mapping
 - Software Modelling
-meta:
-  _wpcom_is_markdown: '1'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:57:"https://twitter.com/joaoasrosa/status/1168615245046276096";}}
-  _publicize_job_id: '34858542426'
-  timeline_notification: '1567454559'
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-author:
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: 'João'
-  last_name: 'Rosa'
 permalink: "/2019/09/02/augment-your-knowledge-during-software-modelling-sessions-decision-log/"
 comments: true
 ---

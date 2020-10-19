@@ -13,22 +13,8 @@ categories:
 tags:
 - Bounded Context
 - EventStorming
-meta:
-  _wpcom_is_markdown: '1'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:57:"https://twitter.com/joaoasrosa/status/1171156054782164993";}}
-  timeline_notification: '1568060335'
-  _publicize_job_id: '35111867428'
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: 'João'
-  last_name: 'Rosa'
-permalink: "/2019/09/09/my-eventstorming-learning-use-visual-anchors-before-the-discover-of-bounded-contexts/"
 comments: true
+excerpt: EventStorming is a visual collaboration technique, invented by Alberto Brandolini. This post will not go into the details of EventStorming, and you can find useful resources on the web. Instead, I will share learning from the many sessions that I facilitated!
 ---
 [EventStorming](https://www.eventstorming.com/) is a visual collaboration technique, invented by [Alberto Brandolini](https://twitter.com/ziobrando). This post will not go into the details of EventStorming, and you can find useful resources on the web. Instead, I will share learning from the many sessions that I facilitated!
 

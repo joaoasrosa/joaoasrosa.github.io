@@ -16,26 +16,9 @@ tags:
 - Gist
 - GitHub
 - PowerShell
-meta:
-  _wpcom_is_markdown: '1'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/895581765506662400";}}
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '8122770253'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/g2HZDC5hkC4
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2017/08/10/build-a-net-core-2-0-application-in-appveyor/"
 comments: true
+excerpt: AppVeyor is one of the Continuous Integration Services in the cloud, ready to use, with minimal configuration. It provides a Windows Server image with tooling to build, test and deploy ours .NET applications. Among the baseline software is .NET Core, however, the version is 1.0.4 (at the time of writing this post).
 ---
 [AppVeyor](//www.appveyor.com/) is one of the Continuous Integration Services in the cloud, ready to use, with minimal configuration. It provides a Windows Server image with tooling to build, test and deploy ours .NET applications. Among the baseline software is .NET Core, however, the version is 1.0.4 (at the time of writing this post).
 

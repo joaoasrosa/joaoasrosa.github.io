@@ -23,28 +23,9 @@ tags:
 - Octopus
 - PowerShell
 - VCS
-meta:
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/MKqz2S6jUcZ
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '1489352023'
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/827819826349486081";}}
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6233585522502041600&type=U&a=PADf
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2017/02/04/create-and-push-a-docker-image-from-an-octopus-deployment/"
 comments: true
+excerpt: Docker is one of the disruptive technologies within virtualization, allowing the different containers to run on the same machine, sharing resources, reducing the overhead. The technology allows DevOps teams to have another tool to develop, build and ship software. One use case for containers is the Microservices Architecture Pattern.
 ---
 [Docker](https://www.docker.com/) is one of the disruptive technologies within virtualization, allowing the different containers to run on the same machine, sharing resources, reducing the overhead. The technology allows DevOps teams to have another tool to develop, build and ship software. One use case for containers is the Microservices Architecture Pattern.
 

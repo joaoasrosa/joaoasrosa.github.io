@@ -8,6 +8,7 @@ password: ''
 status: publish
 permalink: "/2020/08/18/using-team-topologies-to-discover-and-improve-reliability-qualities/"
 comments: true
+excerpt: Team Topologies is the work of Matthew Skelton and Manuel Pais, and I use it as part of my job. From a sociotechnical perspective, a team-first approach is paramount for any organisation and helps to decrease the accidental complexity. As such, I'm often asked 'How can we operate in DevOps?' or 'How can I have a reliable service to deliver value to my customer?'.
 ---
 
 [Team Topologies](https://teamtopologies.com/) is the work of [Matthew Skelton](https://twitter.com/matthewpskelton) and [Manuel Pais](https://twitter.com/manupaisable), and I use it as part of my job. From a sociotechnical perspective, a team-first approach is paramount for any organisation and helps to decrease the accidental complexity. As such, I'm often asked "How can we operate in DevOps?" or "How can I have a reliable service to deliver value to my customer?".
