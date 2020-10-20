@@ -2,6 +2,8 @@
 title: 'Implementing Domain-Driven Design Bounded Context with Ports and Adapters architecture'
 description: >
  Congratulations, you just designed your first potential bounded context for a complex domain, a Domain-Driven Design pattern that can increase your teams' autonomy for gaining faster feedback. But now what? How do we start modelling? How do we implement that model? How can we keep the model and language consistent with the business? How do we protect our domain model? And how do microservices fit in? In this workshop, you will hands-on learn how to implement a bounded context with ports and adapter architecture in Java or .NET Core.
+
+ You can find the code <a href="https://github.com/xebia/CoDDDing-labs/" target="_blank">here</a>.
 conference: 'Codemotion online'
 type: 'hands-on'
 location: 'Online'
