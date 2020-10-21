@@ -53,9 +53,9 @@ Now, let's go to the next piece of theory...
 
 The *Dynamic Safety Model* was described by Jens Rasmussen in his paper titled [Risk management in a dynamic society: a modelling problem](https://www.sciencedirect.com/science/article/pii/S0925753597000520). It can be illustrated by the following picture:
 
-![Ilustration of the Dynamic Safety Model. Copywrite https://risk-engineering.org/concept/Rasmussen-practical-drift](/images/assets/2020-10-21-chaos-engineering-as-management-practice-dynamic-safety-model.svg)
+![Illustration of the Dynamic Safety Model. Copywrite https://risk-engineering.org/concept/Rasmussen-practical-drift](/images/assets/2020-10-21-chaos-engineering-as-management-practice-dynamic-safety-model.svg)
 
-<center>Ilustration of the Dynamic Safety Model. Copywrite https://risk-engineering.org/concept/Rasmussen-practical-drift</center>
+<center>Illustration of the Dynamic Safety Model. Copywrite https://risk-engineering.org/concept/Rasmussen-practical-drift</center>
 
 [Casey Rosenthal](https://twitter.com/caseyrosenthal) and [Nora Jones](https://twitter.com/nora_js) in the book [Chaos Engineering, System Resiliency in Practice](https://www.oreilly.com/library/view/chaos-engineering/9781492043850/) summarises the *Dynamic Safety Model* in Economics, Workload and Safety, where software engineers are good into understanding the limits and trade-offs with economics and workload. Still, we often miss the limits and trade-offs in safety. I agree with the analysis, and I learned in my career the same. Sometimes I underestimate my decisions towards safety, and other times I overestimate. Which made me retrospect based on the learnings of the past decade.
 
