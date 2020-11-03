@@ -41,6 +41,12 @@ layout: default
 			</p>
 		{% endif %}
 
+		{% if page.miroBoard %}
+			<p>
+				{% include miroboard-player.html slides=page.miroBoard %}
+			</p>
+		{% endif %}
+
 		<h3>Abstract</h3>
 		<p>{{ page.description }}</p>
 
