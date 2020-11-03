@@ -12,7 +12,7 @@ conference: 'Agile-Lean Ireland'
 type: 'workshop'
 location: 'Online'
 website: 'https://sched.co/YePk'
-slides: 'https://miro.com/app/board/o9J_khN_xlo=/'
+miroBoard: 'https://miro.com/app/board/o9J_khN_xlo=/'
 videoVimeo: '474657611'
 date: 2020-10-30 00:00:00
 featured_image: '/images/speaking/2020-10-30-ali-online-eventstorming-continuous-learning-between-multiple-disciplines.webp'
