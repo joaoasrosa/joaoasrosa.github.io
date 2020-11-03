@@ -13,7 +13,7 @@ type: 'workshop'
 location: 'Online'
 website: 'https://sched.co/YePk'
 slides: 'https://miro.com/app/board/o9J_khN_xlo=/'
-videoVimeo: 'https://player.vimeo.com/video/474657611'
+videoVimeo: '474657611'
 date: 2020-10-30 00:00:00
 featured_image: '/images/speaking/2020-10-30-ali-online-eventstorming-continuous-learning-between-multiple-disciplines.webp'
 ---
