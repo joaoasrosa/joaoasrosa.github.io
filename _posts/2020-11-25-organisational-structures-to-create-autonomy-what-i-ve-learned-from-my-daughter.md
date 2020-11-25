@@ -27,6 +27,8 @@ Recently I was looking at one of the structures that we created to help our daug
 
 <center>A tower, allowing my daughter to execute her tasks</center>
 
+
+
 Yes, you are seeing it right, we have what so-called a climbing tower, allowing kids to achieve higher heights. They can climb and reach the countertops, with a high degree of safety. This one is on our bathroom, and she uses it to brush the teeth.
 
 #### What the heck is the relationship to organisational design?!
