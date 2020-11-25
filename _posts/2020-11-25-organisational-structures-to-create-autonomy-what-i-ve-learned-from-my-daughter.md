@@ -31,7 +31,7 @@ Recently I was looking at one of the structures that we created to help our daug
 
 Yes, you are seeing it right, we have what so-called a climbing tower, allowing kids to achieve higher heights. They can climb and reach the countertops, with a high degree of safety. This one is on our bathroom, and she uses it to brush the teeth.
 
-#### What the heck is the relationship to organisational design?!
+### What the heck is the relationship to organisational design?!
 I can imagine that is the question in your head. Well, I will continue to tell the story... We built the towers after she started to walk without our help. My wife saw this concept in a parenting community, and we applied it. In the beginning, we asked our daughter is she wants to be in the tower, and if she said yes, we put her there. It was a "show and tell" type of style, given that it was a new concept to her. She used it for tasks such as brush the teeth, wash her hands, watches us cook, makes a beverage. You can imagine the type of tasks.
 
 What I observed across time, is that the brain embraced the concept, and when we nudge her for a task, let's say, dinner, she would go to near the tower. It is a sign that she recognises the patterns, and knows the tools that can help her achieve the goal. Lately, she is proactive: we wake in the morning, and she goes to the bathroom, climbs the tower and asks for her toothbrush. Most of the times, we don't need to nudge her.
