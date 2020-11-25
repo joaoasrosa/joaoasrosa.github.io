@@ -36,7 +36,7 @@ I can imagine that is the question in your head. Well, I will continue to tell t
 
 What I observed across time, is that the brain embraced the concept, and when we nudge her for a task, let's say, dinner, she would go to near the tower. It is a sign that she recognises the patterns, and knows the tools that can help her achieve the goal. Lately, she is proactive: we wake in the morning, and she goes to the bathroom, climbs the tower and asks for her toothbrush. Most of the times, we don't need to nudge her.
 
-## Applicability to organisations
+### Applicability to organisations
 With this story, I hope that I sparked your imagination. The bottom line is that as a manager, in a sociotechnical system, we should create structures that help people and teams to achieve their autonomy and agency. There is a wide range of practices, rituals and tools that can help, and all of them are context-dependent. To make it tangible, let's say that you are a company with 375 people, and you are an online photo printing solution. The solution is in the cloud, and you take care of producing and deliver the photos worldwide. You have a diverse landscape, with custom software and standard hardware (printers). We rely on partners for the logistics operations, and you have a distributed workforce across the globe, to be close to the customers. You can picture other details... As director of software, you are responsible for the custom software that your customers are delighted for. 
 
 You can think about different practices, rituals and tools to help autonomy and agency within the company. Let' explore some very concreate scenarios, which I hope you can relate with.
@@ -58,7 +58,7 @@ The company is leveraging cloud services for the last 7 years, but recently they
 
 Having these templates, a team reduce their lead time to create a new service. The templates and documentation allow them to understand how things are wired and how cloud-native can be leveraged. Once again, the teams can maintain their agency, reducing the burned over the platform team for the creation of new services. Also, there is a change for evolution, as teams can contribute to the templates, co-evolving them as new insights are generated.
 
-#### Organisations are complex sociotechnical systems
+### Organisations are complex sociotechnical systems
 My goal with the examples is to provide some relatable scenarios, and I believe that stories are a great vehicle to convey a message. However, stories are context bounded, and the way that people or teams achieve something might not be feasible in a different context. Thus, my statement that ** organisations are complex sociotechnical systems**, and as a manager, we need to be aware of the complexity theory and how to navigate the inherent complexity.
 
 I'm a student of complexity theory, and Cynefin, the work of [Dave Snowden](https://twitter.com/snowded). Cynefin framework is a sense-making framework, allowing us to make sense of the world. I will not go into the details of Cynefin, this is not the goal of the blog post, nor I'm a specialist. I'm just a student.
