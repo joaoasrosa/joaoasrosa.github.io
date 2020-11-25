@@ -1,5 +1,5 @@
 ---
-title: 'Organisational structures to create autonomy: what I've learned from my daughter'
+title: "Organisational structures to create autonomy: what I've learned from my daughter"
 date: 2020-11-25 00:00:00.000000000 +02:00
 type: post
 parent_id: '0'
