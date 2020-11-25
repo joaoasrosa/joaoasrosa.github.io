@@ -16,7 +16,7 @@ tags:
 - Team
 - Organisational design
 - Management
-excerpt: As a parent I have the gift to see my daughter grow. I'm learning every single day, and I want to share what I'm doing to allow my daugther to have her autonomy
+excerpt: As a parent I have the gift to see my daughter grow. I'm learning every single day, and I've some learnings taht are applicable to organisations, allowing people and teams to be autonomous
 ---
 
 I'm grateful to learn from my daughter. Be able to see how the brain develops and picks new concepts, skills and words. Nowadays, I enjoy to sit and see her playing. As a parent, I also need to help her to achieve her autonomy: emotionally, mentally and physically. It is the job, and my wife and I are navigating through it. There is not a guide on how to parent, and we discuss what is working and what is not working. Sometimes is just not the time for a new skill, other times our daughter doesn't develop an interest for a particular activity. Well, we are all different, and that is what makes the world colourful!
