@@ -25,7 +25,7 @@ Recently I was looking at one of the structures that we created to help our daug
 
 ![A tower, allowing my daughter to execute her tasks](/images/assets/2020-11-25-organisational-structures-to-create-autonomy-what-i-ve-learned-from-my-daughter.jpg)
 
-<center>A tower, allowing my daughter to execute her tasks</center>
+<center>A learning tower, allowing my daughter to execute her tasks</center>
 
 
 
