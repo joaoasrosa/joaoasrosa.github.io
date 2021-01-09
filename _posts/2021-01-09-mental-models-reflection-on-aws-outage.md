@@ -22,7 +22,7 @@ tags:
 excerpt: My reflection on the recent AWS outage (November 2020). Rather than focus on the technical aspects, and how technical dependencies can be managed, I will deep dive into social aspects; namely the mental models, and how they play in a sociotechnical system under stress. I will share my experiences in how to escape from the reliability trap
 ---
 
-In November 2020 AWS had a major outage, which started with their Kinesis service, having a cascading failure over several services. Several articles and analyses of the outage, including the [official note](https://aws.amazon.com/message/11201/) from AWS. This blog post reflects the outage, but rather focus on the technical aspects, I will deep dive into the social ones, namely mental models.
+In November 2020 AWS had a major outage, which started with their Kinesis service, having a cascading failure over some services. Several articles and analyses of the outage, including the [official note](https://aws.amazon.com/message/11201/) from AWS. This blog post reflects the outage, but rather focus on the technical aspects, I will deep dive into the social ones, namely mental models.
 
 ### Pre-refection, what is a mental model?
 
