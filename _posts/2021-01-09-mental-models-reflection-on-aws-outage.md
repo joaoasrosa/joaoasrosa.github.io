@@ -48,7 +48,7 @@ My assumption is that AWS services are stable (actual top of the line, a *fact*)
 
 ### How to escape from the reliability trap?
 
-During my years as an engineer, architect, consultant and CTO, I "developed" ladders to get out of the trap and increased my awareness of the trap, avoiding falling into it. I will summarise those and why I use it.
+During my years as an engineer, architect, consultant and CTO, I "developed" ladders to get out of the trap and increased my awareness of it. My goal is to avoid falling into the reliability trap again. I will summarise my learnings and why I use it.
 
 First and foremost, I use [Wardley Maps](https://medium.com/wardleymaps) to model the components that underpin the scope of the company which I work with; It helps me to develop an awareness of the landscape, and I can generate different options for the various components (think about what-if type of scenarios). Next to it, and because we operate in sociotechnical systems, I practice and use sense-making, which I borrowed from [Cynefin](https://hbr.org/2007/11/a-leaders-framework-for-decision-making). Rather than draw my own conclusions, based on my mental models (which are highly influenced by my bias and assumptions), I use the sense-making practices and tools to generate insights. Having those two practices and steps together helped me reason how people perceive their roles and the processes around it.
 
