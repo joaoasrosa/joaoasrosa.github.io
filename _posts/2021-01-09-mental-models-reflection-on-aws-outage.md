@@ -44,9 +44,9 @@ On the [AWS official note](https://aws.amazon.com/message/11201/), towards the e
 
 I was drawn to this paragraph, and it is the reason for this blog post; mental models and the ripple effects on a sociotechnical system. As stated in the paragraph, AWS service operators have a backup procedure to update the Service Health Dashboard. I notice the delays, where the publicly available information was reporting that everything was fine, but services running on top of the AWS cloud where down. And the well known [DownDetector](https://downdetector.com/) was reporting the outage.
 
-My assumption is that AWS services are stable (actual top of the line, a *fact*), and people got used to the reliability of the services; people don't factor in their mental models, in this case, the secondary processes during an outage (this is my *assumption*). From my industry experience, we don't test the incident procedures (whatever the type of incident); we still have a road to learn from other industries, where they mature the practices to decrease the risks during an outage. I felt into this trap and saw my peers do the same (this is the start of my *reflection*). I call it the **reliability trap**.
+My assumption is that AWS services are stable (actual top of the line, a *fact*), and people got used to the reliability of the services; people don't factor in their mental models, in this case, the secondary processes during an outage (this is my *assumption*). From my experience in the industry, we don't test the incident procedures (whatever the type of incident); we still have a road to learn from other industries, where they mature the practices to decrease the risks during an outage. I felt into this trap and saw my peers do the same (this is the start of my *reflection*). I call it the **reliability trap**.
 
-### How to escape of the reliability trap?
+### How to escape from the reliability trap?
 
 During my years as an engineer, architect, consultant and CTO, I "developed" ladders to get out of the trap and increased my awareness of the trap, avoiding falling into it. I will summarise those and why I use it.
 
