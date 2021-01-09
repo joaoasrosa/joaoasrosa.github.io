@@ -1,12 +1,12 @@
 ---
-title: "Mental models: reflection on AWS outage"
+title: "Mental models: a reflection on AWS outage"
 date: 2021-01-09 00:00:00.000000000 +02:00
 type: post
 parent_id: '0'
 published: false
 password: ''
 status: draft
-permalink: "/2021/01/09/mental-models-reflection-on-aws-outage/"
+permalink: "/2021/01/09/mental-models-a-reflection-on-aws-outage/"
 comments: true
 categories:
 - Sociotechnical systems
@@ -16,10 +16,13 @@ tags:
 - Team
 - Chaos Engineering
 - Management
-excerpt: My reflection on the recent AWS outage (November 2020). Rather than focus on the technical aspects, and how technical dependencies can be managed, I will deep dive into social aspects; namely the mental models, and how they play in a sociotechnical system that is under stress. I will share my experiences in how to escape from the reliability trap
+- Complexity theory
+- Cynefin
+- Wardley Maps
+excerpt: My reflection on the recent AWS outage (November 2020). Rather than focus on the technical aspects, and how technical dependencies can be managed, I will deep dive into social aspects; namely the mental models, and how they play in a sociotechnical system under stress. I will share my experiences in how to escape from the reliability trap
 ---
 
-In November 2020 AWS had a major outage, which started with their Kinesis service, having a cascading failure over several services. There are several analysis of the outage, including the [official note](https://aws.amazon.com/message/11201/) from AWS. This blog post is a refletion on the outage, but rather focus on the technical aspects, I will deep dive into the social ones, namely mental models.
+In November 2020 AWS had a major outage, which started with their Kinesis service, having a cascading failure over several services. Several articles and analyses of the outage, including the [official note](https://aws.amazon.com/message/11201/) from AWS. This blog post reflects the outage, but rather focus on the technical aspects, I will deep dive into the social ones, namely mental models.
 
 ### Pre-refection, what is a mental model?
 
@@ -31,16 +34,30 @@ And the second one from Jay Wright Forrester, where he defines general mental mo
 
 > The image of the world around us, which we carry in our head, is just a model. Nobody in his head imagines all the world, government or country. He has only selected concepts, and relationships between them, and uses those to represent the real system.
 
-I can say that a *mental model* is a representation of concepts and their relationships, which help us to reason about a problem/challenge/whatever needs meantl capacity. It is influenced by our bias, past experiences, knwonledge and information. We use theses models to try to anticipate future events, and it shapes our behaviour. Our mental moels are not static, they evolve, although most of the times we are not aware of it. Note that I'm not a specialist in behavioral or cognitive sciense, and there is more behind it, but for now we can stick with these definitions and my own spin.
+I can say that a *mental model* is a representation of concepts and their relationships, which help us to reason about a problem/challenge/whatever needs mental capacity. It is influenced by our bias, past experiences, knowledge and information. We use these models to try to anticipate future events, and it shapes our behaviour. Our mental models are not static, they evolve, although we are not aware of it most of the time. Note that I'm not a specialist in behavioural or cognitive science, and there is more behind it, but we can stick with these definitions and my own spin for now.
 
 ### My reflection
 
 On the [AWS official note](https://aws.amazon.com/message/11201/), towards the end of the message, it states:
 
-> Outside of the service issues, we experienced some delays in communicating service status to customers during the early part of this event. We have two ways of communicating during operational events – the Service Health Dashboard, which is our public dashboard to alert all customers of broad operational issues, and the Personal Health Dashboard, which we use to communicate directly with impacted customers. With an event such as this one, we typically post to the Service Health Dashboard. During the early part of this event, we were unable to update the Service Health Dashboard because the tool we use to post these updates itself uses Cognito, which was impacted by this event. We have a back-up means of updating the Service Health Dashboard that has minimal service dependencies. While this worked as expected, we encountered several delays during the earlier part of the event in posting to the Service Health Dashboard with this tool, as it is a more manual and less familiar tool for our support operators. To ensure customers were getting timely updates, the support team used the Personal Health Dashboard to notify impacted customers if they were impacted by the service issues. We also posted a global banner summary on the Service Health Dashboard to ensure customers had broad visibility into the event. During the remainder of event, we continued using a combination of the Service Health Dashboard, both with global banner summaries and service specific details, while also continuing to update impacted customers via Personal Health Dashboard. Going forward, we have changed our support training to ensure that our support engineers are regularly trained on the backup tool for posting to the Service Health Dashboard.
+> Outside of the service issues, we experienced some delays in communicating service status to customers during the early part of this event. We have two ways of communicating during operational events – the Service Health Dashboard, which is our public dashboard to alert all customers of broad operational issues, and the Personal Health Dashboard, which we use to communicate directly with impacted customers. With an event such as this one, we typically post to the Service Health Dashboard. During the early part of this event, we were unable to update the Service Health Dashboard because the tool we use to post these updates itself uses Cognito, which was impacted by this event. We have a back-up means of updating the Service Health Dashboard that has minimal service dependencies. While this worked as expected, we encountered several delays during the earlier part of the event in posting to the Service Health Dashboard with this tool, as it is a more manual and less familiar tool for our support operators. To ensure customers were getting timely updates, the support team used the Personal Health Dashboard to notify impacted customers if they were impacted by the service issues. We also posted a global banner summary on the Service Health Dashboard to ensure customers had broad visibility into the event. During the remainder of the event, we continued using a combination of the Service Health Dashboard, both with global banner summaries and service-specific details, while also continuing to update impacted customers via Personal Health Dashboard. Going forward, we have changed our support training to ensure that our support engineers are regularly trained on the backup tool for posting to the Service Health Dashboard.
 
-I was draw to this paragraph, and it is the reason for this blog post; mental models and the ripple effects on a sociotechnical system. As stated in the paragraph, AWS service operators have a backup procedure, where they can update the Service Health Dashboard. I notice the delays, where the public available information was reporting that everything was fine, but services running on top of the AWS cloud where down. And the well known [DownDetector](https://downdetector.com/) was reporting the outage.
+I was drawn to this paragraph, and it is the reason for this blog post; mental models and the ripple effects on a sociotechnical system. As stated in the paragraph, AWS service operators have a backup procedure to update the Service Health Dashboard. I notice the delays, where the publicly available information was reporting that everything was fine, but services running on top of the AWS cloud where down. And the well known [DownDetector](https://downdetector.com/) was reporting the outage.
 
-My assumption is that the AWS are stable (actual top of the line, and it is a *fact*), and people got used to the reliability, that they don't factor in their mental models the secondary processes during an outage (this is my *assumption*). From my experience in our industry, we don't test the incident procedures (whatever the type of incident); we still have a road to learn from other industries, where they mature the practices to decrease the risks during an outage. I felt into this trap, and saw my peers do the same (this is the start of my *reflection*).
+My assumption is that AWS services are stable (actual top of the line, a *fact*), and people got used to the reliability of the services; people don't factor in their mental models, in this case, the secondary processes during an outage (this is my *assumption*). From my industry experience, we don't test the incident procedures (whatever the type of incident); we still have a road to learn from other industries, where they mature the practices to decrease the risks during an outage. I felt into this trap and saw my peers do the same (this is the start of my *reflection*). I call it the **reliability trap**.
 
 ### How to escape of the reliability trap?
+
+During my years as an engineer, architect, consultant and CTO, I "developed" ladders to get out of the trap and increased my awareness of the trap, avoiding falling into it. I will summarise those and why I use it.
+
+First and foremost, I use [Wardley Maps](https://medium.com/wardleymaps) to model the components that underpin the scope of the company which I work with; It helps me to develop an awareness of the landscape, and I can generate different options for the various components (think about what-if type of scenarios). Next to it, and because we operate in sociotechnical systems, I practice and use sense-making, which I borrowed from [Cynefin](https://hbr.org/2007/11/a-leaders-framework-for-decision-making). Rather than draw my own conclusions, based on my mental models (which are highly influenced by my bias and assumptions), I use the sense-making practices and tools to generate insights. Having those two practices and steps together helped me reason how people perceive their roles and the processes around it.
+
+After it, we practice [Chaos Engineering](https://principlesofchaos.org/) at ** organisation level**. In a nutshell, we apply the Chaos Engineering principles at a technical level. We are also interested in how the sociotechnical system behaves, how people and teams engage, and if the processes are followed. You can find more details in a [previous post](https://joaorosa.io/2020/10/21/chaos-engineering-as-management-practice/). It is helpful because it provides a safe space to verify the assumptions and mental models; if there are reliable systems, and people got used to it, it will uncover potential risks in a real-life scenario (a real outage). Having these insights and experiences firsthand, people can challenge their mental models, and the organisation can provide support to mitigate the risks (think about training programs and adjust processes that are not useful, that only generate hindrance).
+
+In the aftermath of the chaos experiments, and as part of the retrospectives, I tend to use the [Maturity Mapping](https://maturitymapping.com/), a variant of Wardley Maps that blends *Meaning*, *Material* and *Competence* (more on the concepts and the why [here](https://maturitymapping.com/2020/02/17/why-mapping-maturity/)). It allows people to visualise the delta from a sociotechnical point of view, strength the agency of the different teams. Also, as a CTO, I can support the organisation with the proper training, facilitation, coaching and mentoring, since we have a common ground. People can also challenge me to improve since my own behaviour influences the sociotechnical system; I can look for training, coaching, and mentoring to close the gap.
+
+### In summary
+
+Today, in a world that moves faster than we ever experienced, where we are not fully aware of the all the connections (it is a complex challenge, beyond our ability to have accurate mental models), it is paramount that organisations are empowered to keep their options open. Also, before executing a strategy, we have a body of knowledge that allows us to test and verify the direction of the strategy, minimising the impact, and avoiding sunken costs fallacies, that can disastrous results (in the extreme, a company can fall).
+
+I used these practices, and I'm still learning. :) For the challenges that I faced, those practices were able to deliver the expected results. However, there is a big world out there, and I'm interested in your experiences in this field. How do you recover and avoid the reliability trap?
