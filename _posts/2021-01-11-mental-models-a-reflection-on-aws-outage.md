@@ -1,11 +1,11 @@
 ---
 title: "Mental models: a reflection on AWS outage"
-date: 2021-01-1 00:00:00.000000000 +02:00
+date: 2021-01-11 00:00:00.000000000 +02:00
 type: post
 parent_id: '0'
-published: false
+published: true
 password: ''
-status: draft
+status: publish
 permalink: "/2021/01/11/mental-models-a-reflection-on-aws-outage/"
 comments: true
 categories:
@@ -24,7 +24,7 @@ excerpt: My reflection on the recent AWS outage (November 2020). Rather than foc
 
 In November 2020 AWS had a major outage, which started with their Kinesis service, having a cascading failure over some services. Several articles and analyses of the outage, including the [official note](https://aws.amazon.com/message/11201/) from AWS. This blog post reflects the outage, but rather focus on the technical aspects, I will deep dive into the social ones, namely mental models.
 
-### Pre-refection, what is a mental model?
+### Pre-reflection, what is a mental model?
 
 I will borrow two definitions for the mental models; the first one from Kenneth Craik:
 
@@ -48,13 +48,13 @@ My assumption is that AWS services are stable (actual top of the line, a *fact*)
 
 ### How to escape from the reliability trap?
 
-The reliability trap is common in our industry. I describe the reliability trap when people, teams and organisations take IT systems and processes as granted, leading to simplified versions of their mental models. It is common when organisations have outstanding engineering practices, and the IT systems are high reliability (Amazon example) or when the IT systems and processes didn't suffer from a diversity of use cases (increase in the load or people using those for other porpuses that are not the initial intent).
+The reliability trap is common in our industry. I describe the reliability trap when people, teams and organisations take IT systems and processes as granted, leading to simplified versions of their mental models. It is common when organisations have outstanding engineering practices, and the IT systems are highly reliability (Amazon example) or when the IT systems and processes didn't suffer from a diversity of use cases (increase in the load or people using those for other porpuses that are not the initial intent).
 
 During my years as an engineer, architect, consultant and CTO, I "developed" ladders to get out of the trap and increased my awareness of it. My goal is to avoid falling into the reliability trap again. I will summarise my learnings and why I use it.
 
 First and foremost, I use [Wardley Maps](https://medium.com/wardleymaps) to model the components that underpin the scope of the company which I work with; It helps me to develop an awareness of the landscape, and I can generate different options for the various components (think about what-if type of scenarios). Next to it, and because we operate in sociotechnical systems, I practice and use sense-making, which I borrowed from [Cynefin](https://hbr.org/2007/11/a-leaders-framework-for-decision-making). Rather than drawing my own conclusions, based on my mental models (which are highly influenced by my bias and assumptions), I use the sense-making practices and tools to generate insights. Having those two practices and steps together helped me reason how people perceive their roles and the processes around them.
 
-To verify the potential conseuqneces from the options generated, I practice[Chaos Engineering](https://principlesofchaos.org/). Although Chaos Engineering borned at technical level, I also use it at **processes** and **organisational levels**. The principles are the same, but we don't have the same tools available. We are humans, and we can leverage our creativity to design experiments to verify our assumptions at a broader scope. The goal is to verify how the sociotechnical system behaves, how people and teams engage, and if the processes are followed or are outdated. You can find more details in a [previous post](https://joaorosa.io/2020/10/21/chaos-engineering-as-management-practice/). It is helpful because it provides a safe space to verify the assumptions and mental models; if there are reliable systems, and people got used to it, it will uncover potential risks in a real-life scenario (a real outage). Having these insights and experiences firsthand, people can challenge their mental models, and the organisation can provide support to mitigate the risks (think about training programs and adjust processes that are not useful, that only generate hindrance).
+To verify the potential consequences from the options generated, I practice [Chaos Engineering](https://principlesofchaos.org/). Although Chaos Engineering borned at technical level, I also use it at **processes** and **organisational levels**. The principles are the same, but we don't have the same tools available. We are humans, and we can leverage our creativity to design experiments to verify our assumptions at a broader scope. The goal is to verify how the sociotechnical system behaves, how people and teams engage, and if the processes are followed or are outdated. You can find more details in a [previous post](https://joaorosa.io/2020/10/21/chaos-engineering-as-management-practice/). It is helpful because it provides a safe space to verify the assumptions and mental models; if there are reliable systems, and people got used to it, it will uncover potential risks in a real-life scenario (a real outage). Having these insights and experiences firsthand, people can challenge their mental models, and the organisation can provide support to mitigate the risks (think about training programs and adjust processes that are not useful, that only generate hindrance).
 
 In the aftermath of the chaos experiments, and as part of the retrospectives, I tend to use the [Maturity Mapping](https://maturitymapping.com/), a variant of Wardley Maps that blends *Meaning*, *Material* and *Competence* (more on the concepts and the why [here](https://maturitymapping.com/2020/02/17/why-mapping-maturity/)). Enhancing the initial Wardley Maps with the result of the chaos experiments allows people to discuss the delta; as delta, I'm referring to the landscape's mental models and the result of the chaos experiments. Having the delta in a map, namely a Maturity Map, captures the different perspectives in a sociotechnical system, and has the benefit to discuss the agency of teams and purpose of teams, on top of the different mental models. As a CTO, I can support the organisation with the proper training, facilitation, coaching and mentoring, since we have a common ground. People can also challenge me to improve since my own behaviour and mental models influence the sociotechnical system; I can look for training, coaching, and mentoring to close the gap.
 
