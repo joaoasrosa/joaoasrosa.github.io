@@ -1,12 +1,12 @@
 ---
 title: "Mental models: a reflection on AWS outage"
-date: 2021-01-09 00:00:00.000000000 +02:00
+date: 2021-01-1 00:00:00.000000000 +02:00
 type: post
 parent_id: '0'
 published: false
 password: ''
 status: draft
-permalink: "/2021/01/09/mental-models-a-reflection-on-aws-outage/"
+permalink: "/2021/01/11/mental-models-a-reflection-on-aws-outage/"
 comments: true
 categories:
 - Sociotechnical systems
