@@ -48,7 +48,7 @@ My assumption is that AWS services are stable (actual top of the line, a *fact*)
 
 ### How to escape from the reliability trap?
 
-TODO: Explain reliability trap, Krisztina
+The reliability trap is common in our industry. I describe the reliability trap when people, teams and organisations take IT systems and processes as granted, leading to simplified versions of their mental models. It is common when organisations have outstanding engineering practices, and the IT systems are high reliability (Amazon example) or when the IT systems and processes didn't suffer from a diversity of use cases (increase in the load or people using those for other porpuses that are not the initial intent).
 
 During my years as an engineer, architect, consultant and CTO, I "developed" ladders to get out of the trap and increased my awareness of it. My goal is to avoid falling into the reliability trap again. I will summarise my learnings and why I use it.
 
