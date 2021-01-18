@@ -8,5 +8,5 @@ location: 'Online'
 slides: https://speakerdeck.com/joaoasrosa/panel-practical-open-agile-architecture-standard-and-domain-driven-design-at-xebia-academy-webinar-week-2020
 website: https://community.xebia.academy/events/panel-practical-open-agile-architecture-standard-and-domain-driven-design
 date: 2020-12-08 00:00:00
-featured_image: 'https://speakerdeck.com/joaoasrosa/panel-practical-open-agile-architecture-standard-and-domain-driven-design-at-xebia-academy-webinar-week-2020.webp'
+featured_image: '/images/speaking/2020-12-08-xebia-academy-webinar-week-panel-practical-open-agile-architecture-standard-and-domain-driven-design.webp'
 ---
