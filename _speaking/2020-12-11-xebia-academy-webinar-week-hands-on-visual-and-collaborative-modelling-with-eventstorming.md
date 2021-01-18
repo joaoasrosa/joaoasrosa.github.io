@@ -6,6 +6,6 @@ conference: 'Xebia Academy Webinar Week'
 type: 'panel'
 location: 'Online'
 website: https://community.xebia.academy/events/hands-on-visual-and-collaborative-modelling-with-eventstorming
-date: 2020-12-08 00:00:00
+date: 2020-12-11 00:00:00
 featured_image: '/images/speaking/2020-12-11-xebia-academy-webinar-week-hands-on-visual-and-collaborative-modelling-with-eventstorming.webp'
 ---
