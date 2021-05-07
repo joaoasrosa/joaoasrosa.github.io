@@ -23,4 +23,6 @@ Traps: EventStorming exposes the current way of doing things, and Context Maps o
 Solution: Use Wardley Maps, telling people not to think that organisation exists. Just map the purpose space (former problem space). On top of that do a context map, and then compare with the previous one.
 CAT: people see the differences, and figure out the path to move between the current situation to a possible future. They even use it to refactor the software architecture, and combines with Team Topologies to enable the organisation to move
 
+Don't forget to add the visuals in each step. In the end is about visual collaboration!
+
 Follow-up post: How team topoloiges helps in this case
