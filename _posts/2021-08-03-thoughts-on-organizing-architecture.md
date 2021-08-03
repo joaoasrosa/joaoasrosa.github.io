@@ -12,8 +12,6 @@ categories:
 - Architecture
 tags:
 - Organisational model
-excerpt: When being part of an enterprise, you will meet different architects on any given day. The first one introduces itself as a solution architect, the other calls itself the enterprise architect, and they both mention a domain architect. It might feel like different names for the same thing, and perhaps even a bigger question, do we even need all of these different architects? Should the team not be able to make all of these architectural decisions by themselves?
-Do we need architects anyway?
 ---
 
 When being part of an enterprise, you will meet different architects on any given day. The first one introduces itself as a solution architect, the other calls itself the enterprise architect, and they both mention a domain architect. It might feel like different names for the same thing, and perhaps even a bigger question, do we even need all of these different architects? Should the team not be able to make all of these architectural decisions by themselves?
