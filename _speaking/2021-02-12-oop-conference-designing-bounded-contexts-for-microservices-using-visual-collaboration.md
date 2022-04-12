@@ -15,6 +15,7 @@ conference: 'OOP'
 type: 'conference'
 location: 'Online'
 website: https://www.oop-konferenz.de/oop-2021/programm/konferenzprogramm
+miroBoard: https://miro.com/app/board/o9J_lWJdRtQ=/
 date: 2021-02-12 00:00:00
 featured_image: '/images/speaking/2021-02-12-oop-conference-designing-bounded-contexts-for-microservices-using-visual-collaboration.webp'
 ---
