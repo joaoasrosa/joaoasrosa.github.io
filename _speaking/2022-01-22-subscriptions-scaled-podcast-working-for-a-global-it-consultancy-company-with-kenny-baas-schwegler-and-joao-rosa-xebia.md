@@ -80,6 +80,6 @@ conference: 'Subscriptions: Scaled'
 type: 'podcast'
 location: 'Online'
 website: https://www.subscriptionsscaled.com/episodes/56
-date: 2021-01-22 00:00:00
+date: 2022-01-22 00:00:00
 featured_image: '/images/speaking/2022-01-22-subscriptions-scaled-podcast-working-for-a-global-it-consultancy-company-with-kenny-baas-schwegler-and-joao-rosa-xebia.webp'
 ---
