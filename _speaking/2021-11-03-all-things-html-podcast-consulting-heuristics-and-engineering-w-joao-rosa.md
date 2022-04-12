@@ -7,6 +7,5 @@ type: 'podcast'
 location: 'Online'
 website: https://podcast.htmlallthethings.com/e/consulting-heuristics-and-engineering-w-joao-rosa/
 date: 2021-11-03 00:00:00
-featured_image: '/images/speaking/2021-11-03-all-things-html-podcast-consulting-heuristics-and-engineering-w-joao-rosa
-.webp'
+featured_image: '/images/speaking/2021-11-03-all-things-html-podcast-consulting-heuristics-and-engineering-w-joao-rosa.webp'
 ---
