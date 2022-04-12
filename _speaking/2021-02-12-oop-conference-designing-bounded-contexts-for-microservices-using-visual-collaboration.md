@@ -1,5 +1,5 @@
 ---
-title: 'Designing Bounded Contexts for Microservices Using Visual Collaboration '
+title: 'Designing Bounded Contexts for Microservices Using Visual Collaboration'
 description: >
  There is an industry trend where businesses are moving towards autonomous product teams. These teams aim to be end-to-end responsible for the product they are building and maintaining. With the help of Continuous Delivery, teams have faster feedback cycles in which they can probe if a certain feature works. To achieve end-to-end team autonomy, companies move towards a microservices architecture to successfully inspect and adapt. To be effective with a microservices architecture, we require Conway's alignment, engineering teams aligned to business models/products; to achieve Conway’s alignment it’s required to design and model the domain. Domain-Driven Design’s bounded context is the essential pattern that helps to create Conway’s alignment.
  
