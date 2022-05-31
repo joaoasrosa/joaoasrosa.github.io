@@ -19,7 +19,7 @@ description: >
  <li>Build insightful and relevant dashboards</li>
  </ul>
 type: 'book'
-website: 'https://leanpub.com/visualcollaborationtools/'
+website: 'https://www.oreilly.com/library/view/software-architecture-metrics/9781098112226/'
 date: 2022-05-18 00:00:00
 featured_image: 'images/writing/2022-05-18-software-architecture-metrics.webp'
 ---
