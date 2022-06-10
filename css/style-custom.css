@@ -18,5 +18,5 @@
 
   blockquote p {
     font-size: 20px !important;
-    max-width: 67%;
+    max-width: 67% !important;
   }
