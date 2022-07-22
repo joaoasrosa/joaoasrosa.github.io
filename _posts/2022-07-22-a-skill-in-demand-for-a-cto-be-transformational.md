@@ -21,8 +21,10 @@ Today, most companies have a CTO. Title, responsibilities, and expectations of t
 From my experience as interim CTO and consultant, I have observed an emerging pattern in the industry. Given the critical role of software and data in an organisation's strategy and the ever-changing environment in which companies operate, the organisation will have a competitive advantage if the CTO also has **transformational skills**. It becomes more apparent in digital-native companies whose business model centres on selling a software-powered digital product.
 
 ![Do Something Great](/images/assets/2022-07-13-skills-of-a-cto-be-transformational.jpg)
+
 {:.image-caption}
 *Photo by [Clark Tibbs](https://unsplash.com/@clarktibbs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/digital?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+
 
 The concept is not new. In the book Accelerate, Dr. Nicole Forsgren, Gene Kim and Jez Humble found in their research that in high-performing organisations, the leadership is transformational instead of servant. They explore the premise that a high-performing organisation needs to be constantly evolving since the user needs shift, and transformational leadership can give direction and guide the organisation's evolution.
 
