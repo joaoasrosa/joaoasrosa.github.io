@@ -30,6 +30,7 @@ By [this](https://en.m.wikipedia.org/wiki/Integration_testing) definition an Int
 Sounds pretty waterfall, right? It is! also, the implementation approaches that I observed creates huge dependencies between teams, coupling the software release process.
 
 ![Two different fluids integrating in each other](/images/assets/adrien-ledoux-mbhuekka5wm-unsplash.jpg)  
+
 {:.image-caption}
 *Photo by [Adrien Ledoux](https://unsplash.com/@adrienl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/integration-tests?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
