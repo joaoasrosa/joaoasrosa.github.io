@@ -22,7 +22,8 @@ From my experience as interim CTO and consultant, I have observed an emerging pa
 
 ![Do Something Great](/images/assets/2022-07-13-skills-of-a-cto-be-transformational.jpg)
 
-Photo by <a href="https://unsplash.com/@clarktibbs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clark Tibbs</a> on <a href="https://unsplash.com/s/photos/digital?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+{:.image-caption}
+*Photo by [Clark Tibbs](https://unsplash.com/@clarktibbs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/digital?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
 The concept is not new. In the book Accelerate, Dr. Nicole Forsgren, Gene Kim and Jez Humble found in their research that in high-performing organisations, the leadership is transformational instead of servant. They explore the premise that a high-performing organisation needs to be constantly evolving since the user needs shift, and transformational leadership can give direction and guide the organisation's evolution.
 
