@@ -1,6 +1,6 @@
 ---
 title: "Skills required for a CTO - be transformational"
-date: 2022-07-22 12:00:00.000000000 +02:00
+date: 2022-07-22 00:00:00.000000000 +02:00
 type: post
 parent_id: '0'
 published: true
