@@ -13,6 +13,7 @@ categories:
 tags:
 - CTO
 - Operating model
+excerpt: Today, most companies have a CTO. Title, responsibilities, and expectations of the job may vary per company, as there is no singular definition of a “CTO”. But what I notice from various assignments in the software and technology industry is a convergence of the skills required to fill the role of a CTO.
 ---
 
 Today, most companies have a CTO. Title, responsibilities, and expectations of the job may vary per company, as there is no singular definition of a “CTO”. But what I notice from various assignments in the software and technology industry is a convergence of the skills required to fill the role of a CTO. [Communication and technology vision](https://www.forbes.com/sites/forbestechcouncil/2018/03/26/13-skills-you-should-still-practice-and-hone-as-a-cto/) are frequently mentioned as critical skills. Werner Vogels wrote a [blog post](https://www.allthingsdistributed.com/2007/07/the_different_cto_roles.html) in which he describes the CTO role history and the different CTO archetypes.
