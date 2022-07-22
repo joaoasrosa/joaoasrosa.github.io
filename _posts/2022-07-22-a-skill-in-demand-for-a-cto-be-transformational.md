@@ -21,7 +21,6 @@ Today, most companies have a CTO. Title, responsibilities, and expectations of t
 From my experience as interim CTO and consultant, I have observed an emerging pattern in the industry. Given the critical role of software and data in an organisation's strategy and the ever-changing environment in which companies operate, the organisation will have a competitive advantage if the CTO also has **transformational skills**. It becomes more apparent in digital-native companies whose business model centres on selling a software-powered digital product.
 
 ![Do Something Great](/images/assets/2022-07-13-skills-of-a-cto-be-transformational.jpg)
-
 {:.image-caption}
 *Photo by [Clark Tibbs](https://unsplash.com/@clarktibbs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/digital?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
 
