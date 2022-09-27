@@ -20,9 +20,9 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
-  workshops:
-    output: true
-    permalink: /workshop/:slug
+  # workshops:
+  #   output: true
+  #   permalink: /workshop/:slug
   writing:
     output: true
     permalink: /writing/:slug
@@ -51,12 +51,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  -
-    scope:
-      path: ""
-      type: "workshops"
-    values:
-      layout: "workshop"
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "workshops"
+  #   values:
+  #     layout: "workshop"
   -
     scope:
       path: ""
