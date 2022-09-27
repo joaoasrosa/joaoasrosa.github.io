@@ -51,12 +51,6 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  # -
-  #   scope:
-  #     path: ""
-  #     type: "workshops"
-  #   values:
-  #     layout: "workshop"
   -
     scope:
       path: ""
