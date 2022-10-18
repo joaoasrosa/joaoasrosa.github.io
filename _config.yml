@@ -20,9 +20,9 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
-  workshops:
-    output: true
-    permalink: /workshop/:slug
+  # workshops:
+  #   output: true
+  #   permalink: /workshop/:slug
   writing:
     output: true
     permalink: /writing/:slug
@@ -51,12 +51,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  -
-    scope:
-      path: ""
-      type: "workshops"
-    values:
-      layout: "workshop"
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "workshops"
+  #   values:
+  #     layout: "workshop"
   -
     scope:
       path: ""
@@ -82,16 +82,10 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-analytics
   - jekyll-seo-tag
 
 paginate: 6
-paginate_path: "/blog/page:num/"
-
-jekyll_analytics:
-  GoogleAnalytics:          
-    id: UA-163111697-1          
-    anonymizeIp: false      
+paginate_path: "/blog/page:num/"  
 
 webmaster_verifications:
   bing: 5BA0004617293DE5A880E58CCABED582
