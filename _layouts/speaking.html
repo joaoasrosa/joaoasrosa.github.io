@@ -17,9 +17,15 @@ layout: default
 
 	<div class="wrap">
 
-		{% if page.video %}
+		{% if page.videoYoutube %}
 			<p>
-				{% include youtube-player.html id=page.video %}
+				{% include youtube-player.html id=page.videoYoutube %}
+			</p>
+		{% endif %}
+
+		{% if page.videoVimeo %}
+			<p>
+				{% include vimeo-player.html id=page.videoVimeo %}
 			</p>
 		{% endif %}
 
@@ -32,6 +38,12 @@ layout: default
 		{% if page.slides %}
 			<p>
 				{% include speakerdeck-player.html slides=page.slides %}
+			</p>
+		{% endif %}
+
+		{% if page.miroBoard %}
+			<p>
+				{% include miroboard-player.html miroBoard=page.miroBoard %}
 			</p>
 		{% endif %}
 

@@ -7,6 +7,7 @@ type: 'talk'
 location: 'Online'
 website: 'https://www.agilealliance.org/xp2020/'
 slides: 'https://speakerdeck.com/player/0a5b3827edc34ad299531da6e81abc50'
+videoVimeo: '440553991'
 date: 2020-06-10 00:00:00
 featured_image: '/images/speaking/2020-06-10-xp-2020-devops-transformation-abn-amro.webp'
 ---

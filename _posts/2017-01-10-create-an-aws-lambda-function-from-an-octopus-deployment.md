@@ -24,32 +24,11 @@ tags:
 - Octopus
 - PowerShell
 - Visual Studio
-meta:
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/KTpJMW2yTdY
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '602035564'
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_external: a:2:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/818796469658517505";}s:8:"facebook";a:1:{i:15487197;s:38:"https://facebook.com/10155143202503287";}}
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6224562163344777216&type=U&a=liFo
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-  _publicize_done_15638104: '1'
-  _wpas_done_15487197: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2017/01/10/create-an-aws-lambda-function-from-an-octopus-deployment/"
 comments: true
+excerpt: AWS Lambda is one of the AWS Compute Services, alongside with Amazon EC2 or Amazon EC2 Container Service. In a nutshell, AWS Lambda is the serverless offer from AWS, allowing "you run code without provisioning or managing servers".
 ---
-[AWS Lambda](https://aws.amazon.com/lambda/) is one of the AWS Compute Services, alongside with [Amazon EC2](https://aws.amazon.com/ec2/) or [Amazon EC2 Container Service](https://aws.amazon.com/ecs/). In a nutshell, AWS Lambda is the serverless offer from AWS, allowing "you run code without provisioning or managing servers"\[1\].
+[AWS Lambda](https://aws.amazon.com/lambda/) is one of the AWS Compute Services, alongside with [Amazon EC2](https://aws.amazon.com/ec2/) or [Amazon EC2 Container Service](https://aws.amazon.com/ecs/). In a nutshell, AWS Lambda is the serverless offer from AWS, allowing "you run code without provisioning or managing servers".
 
 In the DevOps spirit, and using [Octopus](https://octopus.com/) as the Continuous Deployment tool, I couldn't find a step template to create an AWS Lambda function. If it doesn't exist, create it and give it away!
 

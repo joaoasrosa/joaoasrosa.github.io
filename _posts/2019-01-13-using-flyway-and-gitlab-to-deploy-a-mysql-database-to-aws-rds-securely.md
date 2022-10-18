@@ -19,26 +19,6 @@ tags:
 - GitLab
 - MySQL
 - RDS
-meta:
-  _wpcom_is_markdown: '1'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:57:"https://twitter.com/joaoasrosa/status/1084444405623386117";}}
-  timeline_notification: '1547386664'
-  _publicize_job_id: '26486211107'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/gYAcHE314uy
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: www.linkedin.com/updates?topic=6490210098873409536
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2019/01/13/using-flyway-and-gitlab-to-deploy-a-mysql-database-to-aws-rds-securely/"
 comments: true
 ---

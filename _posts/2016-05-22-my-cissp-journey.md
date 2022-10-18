@@ -14,28 +14,9 @@ tags:
 - Certification
 - CISSP
 - ISC2
-meta:
-  _publicize_job_id: '27188657783'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/QiXrn3UzQfh
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_external: a:2:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/779984645651705856";}s:8:"facebook";a:1:{i:15487197;s:38:"https://facebook.com/10154763407093287";}}
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6185750338113409024&type=U&a=7v6V
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-  _publicize_done_15638104: '1'
-  _wpas_done_15487197: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2016/05/22/my-cissp-journey/"
 comments: true
+excerpt: In this post I'm writing about my CISSP journey. For those who aren't aware of what CISSP stand for, it's (probably) the most respectful security certification. It's under (ISC)2 portfolio and you can find more information here.
 ---
 In this post I'm writing about my CISSP journey. For those who aren't aware of what CISSP stand for, it's (probably) the most respectful security certification. It's under (ISC)2 portfolio and you can find more information [here](https://www.isc2.org/cissp/default.aspx).
 

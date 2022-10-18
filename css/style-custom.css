@@ -15,3 +15,8 @@
     width: 100%;
     height: 100%;
   }
+
+  blockquote p {
+    font-size: 20px !important;
+    max-width: 67% !important;
+  }

@@ -14,31 +14,11 @@ tags:
 - Live coding
 - Public speaking
 - Soft skills
-meta:
-  _wpcom_is_markdown: '1'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/YRv9XQU9WKo
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:57:"https://twitter.com/joaoasrosa/status/1048996884965199872";}}
-  timeline_notification: '1538935314'
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '22939087869'
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: www.linkedin.com/updates?topic=6454762581943943168
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2018/10/07/what-i-learned-from-live-coding-during-talks/"
 comments: true
+excerpt: Last week, Kenny Baas and I, delivered 2 talks with live coding. We were at NextBuild (with From EventStorming to CoDDDing) and Techorama NL (with Improving design and code quality with Property-based testing).
 ---
+
 Last week, Kenny Baas and I, delivered 2 talks with live coding. We were at [NextBuild](http://nextbuild.nl/) (with [From EventStorming to CoDDDing](http://nextbuild.nl/sessions/from-eventstorming-to-coddding/)) and [Techorama NL](https://techorama.nl/) (with [Improving design and code quality with Property-based testing](https://sched.co/EjEe)).
 
 ![Badges](/images/assets/img_20181007_193500_01-e1538933946611.jpg) 

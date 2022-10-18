@@ -14,21 +14,6 @@ tags:
 - Continuous Improvement
 - DDD
 - Team
-meta:
-  _wpas_skip_15487191: '1'
-  _publicize_job_id: '13639328010'
-  _wpas_skip_15487188: '1'
-  _wpas_skip_15420870: '1'
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  timeline_notification: '1516050341'
-  _wpcom_is_markdown: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2017/12/10/learning-ddd-as-a-team/"
 comments: true
 ---

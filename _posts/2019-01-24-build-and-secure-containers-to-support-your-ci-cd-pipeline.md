@@ -18,20 +18,6 @@ tags:
 - Google Container Structure Tests
 - Snyk
 - Testing
-meta:
-  _wpcom_is_markdown: '1'
-  _wpas_skip_15487188: '1'
-  _wpas_skip_15487191: '1'
-  _publicize_job_id: '26892149487'
-  timeline_notification: '1548361141'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/CYvb2rcQeNN
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-author:
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2019/01/24/build-and-secure-containers-to-support-your-ci-cd-pipeline/"
 comments: true
 ---

@@ -17,21 +17,6 @@ tags:
 - Health Testing
 - Integration Testing
 - Quality
-meta:
-  _wpcom_is_markdown: '1'
-  _thumbnail_id: '1930'
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:15487188;s:57:"https://twitter.com/joaoasrosa/status/1161643751011422210";}}
-  _publicize_job_id: '34076424460'
-  timeline_notification: '1565792425'
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2019/08/13/why-integration-tests-wont-save-you-or-your-software/"
 excerpt: Did the title tease you? Great, job is done! Today I will tell you my story about Integration Tests; it came after another knowledge share lunch with my pal Kenny.
 comments: true

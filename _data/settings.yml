@@ -20,8 +20,8 @@ menu_settings:
       url: '/writing/'
     - title: 'Projects'
       url: '/projects/'
-    - title: 'Workshops'
-      url: '/workshops/'
+    # - title: 'Workshops'
+    #   url: '/workshops/'
     - title: 'Contact'
       url: '/contact'
     - title: 'Credits'
@@ -63,6 +63,9 @@ social_settings:
   spotify_url: ''
   bandcamp_url: ''
   linkedin_url: 'https://www.linkedin.com/in/joaoasrosa/'
+
+technical_settings:
+  rss_url: 'https://joaorosa.io/feed.xml'
 
 color_settings:
   background_color: '#ffffff'

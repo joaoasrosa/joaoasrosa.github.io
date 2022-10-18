@@ -14,30 +14,9 @@ tags:
 - Deployment
 - DevOps
 - Octopus
-meta:
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/5YG2UPn5kbN
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '29695751377'
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_external: a:2:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/806183770172686336";}s:8:"facebook";a:1:{i:15487197;s:38:"https://facebook.com/10155012788498287";}}
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6211949463594889216&type=U&a=g-3f
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-  _publicize_done_15638104: '1'
-  _wpas_done_15487197: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2016/12/06/changing-the-operations-of-a-software-company-part-ii/"
 comments: true
+excerpt: In the previous post, I wrote about my experience changing the operations of a Software Company, improving the development process.
 ---
 In the previous [post](https://joaorosa.io/2016/12/02/changing-the-operations-of-a-software-company-part-i/), I wrote about my experience changing the operations of a Software Company, improving the development process.
 

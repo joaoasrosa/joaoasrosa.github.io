@@ -6,9 +6,15 @@ parent_id: '0'
 published: true
 password: ''
 status: publish
+categories:
+- Domain-Driven Design
+tags:
+- Conferences
 permalink: "/2020/02/10/my-experience-during-ddd-europe-2020/"
 comments: true
+excerpt: First blog of the year. And I decided to blog about my experience during DDD Europe 2020. Is there anything better? :)
 ---
+
 First blog of the year. And I decided to blog about my experience during [DDD Europe 2020](https://dddeurope.com/2020/). Is there anything better? :)
 
 I want to share my experience during the event, as well, some trends.

@@ -13,30 +13,9 @@ tags:
 - Docker
 - Linux
 - Windows 10
-meta:
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '30229744901'
-  publicize_google_plus_url: https://plus.google.com/105879670784970671735/posts/SFUwgwFFQCL
-  _publicize_done_15567246: '1'
-  _wpas_done_15420870: '1'
-  _publicize_done_external: a:2:{s:7:"twitter";a:1:{i:15487188;s:56:"https://twitter.com/joaoasrosa/status/811582997531160580";}s:8:"facebook";a:1:{i:15487197;s:38:"https://facebook.com/10155076857243287";}}
-  _publicize_done_15638091: '1'
-  _wpas_done_15487188: '1'
-  publicize_twitter_user: joaoasrosa
-  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=27794317&stype=M&topic=6217348691129298944&type=U&a=QuYP
-  _publicize_done_15638097: '1'
-  _wpas_done_15487191: '1'
-  _publicize_done_15638104: '1'
-  _wpas_done_15487197: '1'
-author:
-  login: joaoasrosa
-  email: joaoasrosa@gmail.com
-  display_name: João Rosa
-  first_name: ''
-  last_name: ''
 permalink: "/2016/12/21/running-docker-sql-server-linux-container-in-windows-10/"
 comments: true
+excerpt: Microsoft is doing a huge effort to bring SQL Server 2016 to Linux. Back in the summer, during the Dublin 2016 SQL Saturday 501, Mark Souza presented the SQL Server history. One of the major features is the ability to run SQL Sever 2016 on Linux.
 ---
 Microsoft is doing a huge effort to bring SQL Server 2016 to Linux. Back in the summer, during the [Dublin 2016 SQL Saturday #501](http://www.sqlsaturday.com/501/eventhome.aspx), [Mark Souza](https://twitter.com/mark_azurecat) [presented the SQL Server history](https://onedrive.live.com/view.aspx?resid=56E37AA660DF4C78!370&ithint=file%2cpptx&app=PowerPoint&authkey=!AE6OLiox4aT1bNs). One of the major features is the ability to run SQL Sever 2016 on Linux.
 

@@ -7,7 +7,7 @@ type: 'talk'
 location: 'Online'
 website: 'https://community.xebia.academy/share/dCn5e1BP4avKPt9v'
 slides: 'https://speakerdeck.com/player/bb751a75c89e4b8a9a9d38a41cb8e7a4'
-video: '7DDaEJUGfm8'
+videoYoutube: '7DDaEJUGfm8'
 date: 2020-05-25 00:00:00
 featured_image: '/images/speaking/2020-05-25-xebia-academy-webinar-week-introduction-to-the-domain-driven-design-tactical-patterns-with-outside-in-test-driven-development.webp'
 ---

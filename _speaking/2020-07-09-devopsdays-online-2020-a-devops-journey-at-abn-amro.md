@@ -7,6 +7,7 @@ type: 'talk'
 location: 'Online'
 website: 'https://devopsdays.org/events/2020-amsterdam/welcome/'
 slides: 'https://speakerdeck.com/player/7fcf4254da1242af99c8422823de6cbd'
+videoYoutube: '1BawJ8HugIM'
 date: 2020-07-09 00:00:00
 featured_image: '/images/speaking/2020-07-09-devopsdays-online-2020-a-devops-journey-at-abn-amro.webp'
 ---
