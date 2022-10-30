@@ -28,9 +28,10 @@ featured_image: /images/left-panel/workshop.webp
 			{% for service in site.services reversed %}
 			
 			<div class="services__tiles">
-				<a href="/services/{{ service.title }}">
-					<img src="./images/homepage/consultant.png" alt="The world, representing my passion for consulting" class="centered">
-					I help organisations with their challenges; as consultant, advisor or interim CTO.
+				<a href="{{ service.url }}">
+					<img src="../images/services/{{ service.icon }}" alt="{{ service.alt }}" class="centered">
+					<p>{{ service.title }}</p>
+					{{ service.subtitle }}
 				</a>
 			</div>
 
