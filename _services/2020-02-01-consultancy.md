@@ -12,4 +12,4 @@ The consultancy services are aimed at creating sustainability within your organi
 
 ### Consultancy done right
 
-We believe in a positive impact through intentional interventions. It is done with your staff so we can amplify the good ideas that already exist in your organisation. We work with our partners, where we can offer the best solution for you. We don't have an army of people to be with you are your organisation. And we don't believe in that consultancy model. 
+I believe in a positive impact through intentional interventions. It is done with your staff so I can amplify the good ideas that already exist in your organisation. I work with my partners, where I can offer the best solution for you. I don't have an army of people to be with you at your organisation. And I don't believe in that consultancy model. 
