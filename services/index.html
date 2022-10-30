@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Services
-subtitle: The workshops where I'm involved.
-description: The workshops where I'm involved.
+subtitle: As independent consultant I provide different services.
+description: The different services that I provide. Tailored to your needs.
 featured_image: /images/left-panel/workshop.webp
 ---
 
@@ -21,7 +21,30 @@ featured_image: /images/left-panel/workshop.webp
 
 	<div class="wrap">
 
-		{% for workshop in site.workshops reversed %}
+
+		<div class="services">
+			<p>I'm passionate about technology and organisational design. This is what I do:</p>
+			<div class="services__tiles">
+				<a href="/services/">
+					<img src="./images/homepage/consultant.png" alt="The world, representing my passion for consulting" class="centered">
+					I help organisations with their challenges; as consultant, advisor or interim CTO.
+				</a>
+			</div>
+			<div class="services__tiles">
+				<a href="/speaking/">
+					<img src="./images/homepage/speak.png" alt="An audience, representing my passion for speaking" class="centered">
+					I love to share knowledge. I frequently speak at meetups and conferences.
+				</a>
+			</div>
+			<div class="services__tiles">
+				<a href="/blog/">
+					<img src="./images/homepage/book.png" alt="A book, representing my passion for writing" class="centered">
+					Writing is one of my passions. I frequently blog and have published books.
+				</a>
+			</div>
+		</div>
+
+		{% for service in site.services reversed %}
 
 		<div class="portfolio-item">
 
@@ -31,8 +54,8 @@ featured_image: /images/left-panel/workshop.webp
 
 				<div class="portfolio-item__content">
 					<div class="portfolio-item__info">
-						<h2 class="portfolio-item__title">{{ workshop.title }}</h2>
-						<p class="portfolio-item__subtitle">{{ workshop.subtitle }}</p>
+						<h2 class="portfolio-item__title">{{ service.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ service.subtitle }}</p>
 					</div>
 				</div>
 
