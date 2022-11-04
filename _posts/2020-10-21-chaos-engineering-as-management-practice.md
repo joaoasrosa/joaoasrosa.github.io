@@ -94,3 +94,5 @@ We can adopt Chaos Engineering as a management practice to lead the organisation
 Be aware that I'm not advocating for a silver bullet. There is more to it when it comes to creating a healthy organisation, where people feel safe and valued for their contribution. I will continue to explore this subject in the next blog posts.
 
 How do you create a safe environment? What are the practices and tools that you use?
+
+*This article was translated to Ukranian by Temy. You can find it here: [http://a.temy.co/temy/blog?page=67923](http://a.temy.co/temy/blog?page=67923)*
