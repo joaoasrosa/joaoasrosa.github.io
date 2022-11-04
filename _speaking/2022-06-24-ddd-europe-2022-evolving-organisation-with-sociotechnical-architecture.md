@@ -16,5 +16,5 @@ type: 'hands-on'
 location: 'Amsterdam'
 website: https://2022.dddeurope.com/program/evolving-organisations-using-sociotechnical-architecture
 date: 2022-06-24 00:00:00
-featured_image: '/images/speaking/2022-06-24-evolving-organisation-with-sociotechnical-architecture.webp'
+featured_image: '/images/speaking/2022-06-24-ddd-europer-2022-evolving-organisation-with-sociotechnical-architecture.webp'
 ---
