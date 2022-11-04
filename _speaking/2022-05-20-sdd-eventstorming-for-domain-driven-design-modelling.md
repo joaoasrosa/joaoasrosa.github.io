@@ -8,5 +8,5 @@ location: 'London'
 website: https://sddconf.com/agenda/
 miroBoard: https://miro.com/app/board/uXjVOz8cgVk=
 date: 2022-05-20 00:00:00
-featured_image: '/images/speaking/2022-05-20-eventstorming-for-domain-driven-design-modelling.webp'
+featured_image: '/images/speaking/2022-05-20-sdd-eventstorming-for-domain-driven-design-modelling.webp'
 ---
