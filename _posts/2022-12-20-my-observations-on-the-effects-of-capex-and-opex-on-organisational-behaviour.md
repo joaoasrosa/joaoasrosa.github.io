@@ -22,12 +22,12 @@ During my career, I've been involved in different digital transformations, rangi
 
 My learnings across the years, I noticed a pattern within organisations. There is a clash between the parts of the organisation that manages *capital expenditure* (CAPEX) and the others that manage *operating expenditure* (OPEX). Let's use the Wikipedia definitions to expand on those two concepts:
 
-[[@CapitalExpenditure2022|Capital expenditure from Wikipedia]]:
+[Capital expenditure from Wikipedia](https://en.wikipedia.org/w/index.php?title=Capital_expenditure&oldid=1078061511):
 ```
 Capital expenditure or capital expense (capex or CAPEX) is the money an organisation or corporate entity spends to buy, maintain, or improve its fixed assets, such as buildings, vehicles, equipment, or land. It is considered a capital expenditure when the asset is newly purchased or when money is used towards extending the useful life of an existing asset, such as repairing the roof.
 ```
 
-[[@OperatingExpense2022|Operating expenditure from Wikipedia]]:
+[Operating expenditure from Wikipedia](https://en.wikipedia.org/w/index.php?title=Operating_expense&oldid=1121391211):
 ```
 An operating expense, operating expenditure, operational expense, operational expenditure or opex is an ongoing cost for running a product, business, or system. Its counterpart, a capital expenditure (capex), is the cost of developing or providing non-consumable parts for the product or system. For example, the purchase of a photocopier involves capex, and the annual paper, toner, power and maintenance costs represent opex. For larger systems like businesses, opex may also include the cost of workers and facility expenses such as rent and utilities.
 ```
@@ -37,7 +37,7 @@ I added the definitions of CAPEX and OPEX to the article since, typically, they 
 ## What I've observed
 The organisations that I worked with have some unspoken conflict between two very different tribes: on one side, people that want to move fast, test new products or services and abandon what doesn't work. On the other side, people must maintain the different assets that underpin the company's operations. Using the accounting jargon: a group of people that manage OPEX and a separate group that manages CAPEX. It might not be a problem since companies had operating like that for decades. Or is it?
 
-![Illustration of the two factions: one wants to move faster, other needs to maintain assets](2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-001.png)
+![Illustration of the two factions: one wants to move faster, other needs to maintain assets](/images/blog/2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-001.png)
 *Figure 1 - Illustration of the two factions: one wants to move faster, other needs to maintain assets*
 
 ### Let's use an example...
@@ -48,7 +48,7 @@ Let me use an example that you might recognise. Imagine an organisation in the l
 
 It provides an interesting challenge: OPEX and CAPEX have different time horizons, and people will have different behaviours when applied to assets (such as a data centre or a marketing campaign). It can affect decision-making, risk-taking, innovation, and overall organisational culture.
 
-![Different challenges when managing OPEX (above) and CAPEX (below)](2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-002.jpeg)
+![Different challenges when managing OPEX (above) and CAPEX (below)](/images/blog/2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-002.jpeg)
 *Figure 2 - Different challenges when managing OPEX (above) and CAPEX (below)*
 
 At an organisational level, it poses a tall challenge: as time passes, the group that manages OPEX wants to move faster, and the group that manages CAPEX needs to maintain assets with a long lifecycle. In other words, organisations (as described in the example above) have IT to manage CAPEX, and sales type of groups manage OPEX. Of course, it is a simplified view, but it should give you an idea. 
@@ -60,7 +60,7 @@ The organisations that are winning in the digital space have short feedback cycl
 ## Focus on the environment, not on people
 Kurt Lewin wrote in 1936 the following equation:
 
-![Lewin's behaviour equation](2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-003.jpeg)
+![Lewin's behaviour equation](/images/blog/2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-003.jpeg)
 *Figure 3 - Lewin's behaviour equation*
 
 It means that ***behaviour** is a **function** of a **person** in their **environment***. Let that sink in for a moment.
