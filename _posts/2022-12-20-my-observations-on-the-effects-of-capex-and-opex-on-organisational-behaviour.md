@@ -23,14 +23,11 @@ During my career, I've been involved in different digital transformations, rangi
 My learnings across the years, I noticed a pattern within organisations. There is a clash between the parts of the organisation that manages *capital expenditure* (CAPEX) and the others that manage *operating expenditure* (OPEX). Let's use the Wikipedia definitions to expand on those two concepts:
 
 [Capital expenditure from Wikipedia](https://en.wikipedia.org/w/index.php?title=Capital_expenditure&oldid=1078061511):
-```
-Capital expenditure or capital expense (capex or CAPEX) is the money an organisation or corporate entity spends to buy, maintain, or improve its fixed assets, such as buildings, vehicles, equipment, or land. It is considered a capital expenditure when the asset is newly purchased or when money is used towards extending the useful life of an existing asset, such as repairing the roof.
-```
+> Capital expenditure or capital expense (capex or CAPEX) is the money an organisation or corporate entity spends to buy, maintain, or improve its fixed assets, such as buildings, vehicles, equipment, or land. It is considered a capital expenditure when the asset is newly purchased or when money is used towards extending the useful life of an existing asset, such as repairing the roof.
+
 
 [Operating expenditure from Wikipedia](https://en.wikipedia.org/w/index.php?title=Operating_expense&oldid=1121391211):
-```
-An operating expense, operating expenditure, operational expense, operational expenditure or opex is an ongoing cost for running a product, business, or system. Its counterpart, a capital expenditure (capex), is the cost of developing or providing non-consumable parts for the product or system. For example, the purchase of a photocopier involves capex, and the annual paper, toner, power and maintenance costs represent opex. For larger systems like businesses, opex may also include the cost of workers and facility expenses such as rent and utilities.
-```
+> An operating expense, operating expenditure, operational expense, operational expenditure or opex is an ongoing cost for running a product, business, or system. Its counterpart, a capital expenditure (capex), is the cost of developing or providing non-consumable parts for the product or system. For example, the purchase of a photocopier involves capex, and the annual paper, toner, power and maintenance costs represent opex. For larger systems like businesses, opex may also include the cost of workers and facility expenses such as rent and utilities.
 
 I added the definitions of CAPEX and OPEX to the article since, typically, they are not in the IT lexicon. But they are crucial for the observed behaviour. 
 
