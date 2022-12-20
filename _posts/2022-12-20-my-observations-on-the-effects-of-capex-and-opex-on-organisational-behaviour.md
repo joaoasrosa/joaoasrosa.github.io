@@ -16,7 +16,6 @@ tags:
 - CAPEX
 - OPEX
 excerpt: During my career, I've been involved in different digital transformations, ranging from financial to telco institutions. Those digital transformations aim to evolve the operating model (or parts of it) and bring digital capabilities to the forefront. As part of it, new ways of working are implemented, which leads to new practices to manage capabilities. You might recognise those digital transformations by other names, such as Agile transformation, DevOps transformation, or cloud transformation.
-featured_image: "/images/blog/2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-banner.jpg"
 ---
 
 During my career, I've been involved in different digital transformations, ranging from financial to telco institutions. Those digital transformations aim to evolve the operating model (or parts of it) and bring digital capabilities to the forefront. As part of it, new ways of working are implemented, which leads to new practices to manage capabilities. You might recognise those digital transformations by other names, such as Agile transformation, DevOps transformation, or cloud transformation.
