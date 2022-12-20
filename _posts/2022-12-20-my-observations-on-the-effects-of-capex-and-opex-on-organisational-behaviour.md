@@ -20,7 +20,7 @@ excerpt: During my career, I've been involved in different digital transformatio
 
 During my career, I've been involved in different digital transformations, ranging from financial to telco institutions. Those digital transformations aim to evolve the operating model (or parts of it) and bring digital capabilities to the forefront. As part of it, new ways of working are implemented, which leads to new practices to manage capabilities. You might recognise those digital transformations by other names, such as Agile transformation, DevOps transformation, or cloud transformation.
 
-My learnings across the years, I noticed a pattern within organisations. There is a clash between the parts of the organisation that manages *capital expenditure* (CAPEX) and the others that manage *operating expenditure* (OPEX). Let's use the Wikipedia definitions to expand on those two concepts:
+From my learnings across the years, I noticed a pattern within organisations. There is a clash between the parts of the organisation that manages *capital expenditure* (CAPEX) and the others that manage *operating expenditure* (OPEX). Let's use the Wikipedia definitions to expand on those two concepts:
 
 [Capital expenditure from Wikipedia](https://en.wikipedia.org/w/index.php?title=Capital_expenditure&oldid=1078061511):
 > Capital expenditure or capital expense (capex or CAPEX) is the money an organisation or corporate entity spends to buy, maintain, or improve its fixed assets, such as buildings, vehicles, equipment, or land. It is considered a capital expenditure when the asset is newly purchased or when money is used towards extending the useful life of an existing asset, such as repairing the roof.
