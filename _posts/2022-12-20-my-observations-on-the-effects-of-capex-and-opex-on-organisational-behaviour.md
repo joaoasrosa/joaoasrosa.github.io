@@ -63,7 +63,7 @@ Kurt Lewin wrote in 1936 the following equation:
 ![Lewin's behaviour equation](/images/blog/2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-003.jpeg)
 *Figure 3 - Lewin's behaviour equation*
 
-It means that ***behaviour** is a **function** of a **person** in their **environment***. Let that sink in for a moment.
+It means that ***behaviour*** is a **function** of a **person** in their **environment***. Let that sink in for a moment.
 
 Unfortunately, it is common in digital transformation to *tell people* how they should behave rather than actually *change the environment* where people conduct their work. And it is one of the strong reasons why those digital transformations fail. **Without the proper incentives in the organisation, the behaviour will remain the same.**
 
