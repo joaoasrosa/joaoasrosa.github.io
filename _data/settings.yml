@@ -39,10 +39,10 @@ contact_settings:
 social_settings:
   mastodon_url: 'https://mastodon.social/@joaorosa'
   linkedin_url: 'https://www.linkedin.com/in/joaoasrosa/'
-  medium_url: 'http://medium.com/@joaoasrosa'
+  medium_url: 'https://medium.com/@joaoasrosa'
   github_url: 'https://github.com/joaoasrosa/'
   facebook_url: ''
-  twitter_url: ''
+  twitter_url: 'https://twitter.com/joaoasrosa'
   instagram_url: ''
   snapchat_url: ''
   youtube_url: ''
