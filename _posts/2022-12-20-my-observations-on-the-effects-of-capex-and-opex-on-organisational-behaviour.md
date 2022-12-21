@@ -35,7 +35,8 @@ I added the definitions of CAPEX and OPEX to the article since, typically, they 
 The organisations that I worked with have some unspoken conflict between two very different tribes: on one side, people that want to move fast, test new products or services and abandon what doesn't work. On the other side, people must maintain the different assets that underpin the company's operations. Using the accounting jargon: a group of people that manage OPEX and a separate group that manages CAPEX. It might not be a problem since companies had operating like that for decades. Or is it?
 
 ![Illustration of the two factions: one wants to move faster, other needs to maintain assets](/images/blog/2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-001.png)
-*Figure 1 - Illustration of the two factions: one wants to move faster, other needs to maintain assets*
+
+<center>*Figure 1 - Illustration of the two factions: one wants to move faster, other needs to maintain assets*</center>
 
 ### Let's use an example...
 Let me use an example that you might recognise. Imagine an organisation in the logistics domain. They own warehouses and a fleet of trucks. The business proposition is focused on small businesses, who can act as end-to-end logistic partners, helping the small businesses to have a more significant geographic footprint. They have been operating since the 1980s when business transactions were done via salespeople (in-person), phone or fax. Back then, the company set up an IT department to manage the technical assets, such as phones and faxes. As the company evolved and software became the norm, the IT department now manages physical assets such as the data centre, phones and laptops and digital assets such as software and software licenses. The IT department mainly manages CAPEX, given that most assets are physical. They also have a sales and marketing department, where they transitioned from in-person sales to digital sales. They target the same small businesses, but these small businesses are leveraging the internet to sell their goods. This department manages OPEX since they spend the budget on marketing campaigns, such as social media ads. 
@@ -46,7 +47,8 @@ Let me use an example that you might recognise. Imagine an organisation in the l
 It provides an interesting challenge: OPEX and CAPEX have different time horizons, and people will have different behaviours when applied to assets (such as a data centre or a marketing campaign). It can affect decision-making, risk-taking, innovation, and overall organisational culture.
 
 ![Different challenges when managing OPEX (above) and CAPEX (below)](/images/blog/2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-002.jpeg)
-*Figure 2 - Different challenges when managing OPEX (above) and CAPEX (below)*
+
+<center>*Figure 2 - Different challenges when managing OPEX (above) and CAPEX (below)*</center>
 
 At an organisational level, it poses a tall challenge: as time passes, the group that manages OPEX wants to move faster, and the group that manages CAPEX needs to maintain assets with a long lifecycle. In other words, organisations (as described in the example above) have IT to manage CAPEX, and sales type of groups manage OPEX. Of course, it is a simplified view, but it should give you an idea. 
 
@@ -58,7 +60,8 @@ The organisations that are winning in the digital space have short feedback cycl
 Kurt Lewin wrote in 1936 the following equation:
 
 ![Lewin's behaviour equation](/images/blog/2022-12-20-my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour-003.jpeg)
-*Figure 3 - Lewin's behaviour equation*
+
+<center>*Figure 3 - Lewin's behaviour equation*</center>
 
 It means that <span style="text-decoration:underline">**behaviour** is a **function** of a **person** in their **environment**</span>. Let that sink in for a moment.
 
