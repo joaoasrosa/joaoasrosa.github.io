@@ -41,3 +41,6 @@ This workshop is tailored for managers (engineering, product or other) looking t
 - Directors of engineering
 - Directors of product
 - Directors of software
+
+### Note of terms & conditions and privacy policy
+The workshop is sold via [Impactfulness B.V.](https://www.impactfulness.nl). Don't worry, it is my company. The workshop [terms & conditions](https://www.impactfulness.nl/terms) and the [privacy policy](https://www.impactfulness.nl/privacy) can be found in [Impactfulness website](https://www.impactfulness.nl). If you click in any of these links, you will be redirected.
