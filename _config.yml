@@ -11,12 +11,15 @@ collections:
   pages:
     output: true
     permalink: /:name
-  services:
-    output: true
-    permalink: /service/:slug
   posts:
     output: true
     permalink: /blog/:slug
+  workshops:
+    output: true
+    permalink: /workshop/:slug
+  services:
+    output: true
+    permalink: /service/:slug
   speaking:
     output: true
     permalink: /speaking/:slug
@@ -33,6 +36,12 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "workshops"
+    values:
+      layout: "workshop"
   -
     scope:
       path: ""
