@@ -9,6 +9,7 @@ type: 'talk'
 location: 'London'
 website: https://fastflowconf.com/
 slides: https://speakerdeck.com/joaoasrosa/an-enabling-approach-to-an-organisation-transformation-at-fastflowconf-london-2023
+videoYoutube: 'efXtQ9bIBsM'
 date: 2023-05-25 00:00:00
 featured_image: '/images/speaking/2023-05-25-fastflowconf-an-enabling-approach-to-an-organisation-transformation.webp'
 ---
