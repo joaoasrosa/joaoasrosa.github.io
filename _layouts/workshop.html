@@ -18,6 +18,7 @@ layout: default
 	<div class="wrap">
 
 		<div style="border-color: #b7b7b7; border-style: solid; padding: 30px 20px 30px 20px; margin: 0px 15% 20px 20px; float: right;" class="col-12 col-sm-12 col-md-8 col-lg-4">
+			{% if page.workshopSingleLocation %}
 			<h4>Information:</h4>
 			<ul style="list-style: disc;">
 				<li><strong>Date:</strong> {{ page.workshopDate }}</li>
@@ -28,6 +29,9 @@ layout: default
 			<br />
 			<a href="{{ page.workshopTickets }}" class="button" style="margin-left: 10%;">Buy now</a>
 			<a href="/contact" class="button" style="text-transform: none;">Contact for in-company</a>
+			{% else %}
+			Latter aligator
+			{% endif %}
 		</div>
 
 		{{ page.content }}
