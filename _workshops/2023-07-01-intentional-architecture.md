@@ -1,5 +1,6 @@
 ---
 title: 'Intentional Architecture'
+subtitle: 'Evolving organisations with open sociotechnical systems thinking'
 date: 2023-07-01T00:00:00+00:00
 featured_image: '/images/workshops/ddd-for-managers.webp'
 workshopSingleLocation: false
