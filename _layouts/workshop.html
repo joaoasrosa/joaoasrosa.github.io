@@ -30,7 +30,19 @@ layout: default
 			<a href="{{ page.workshopTickets }}" class="button" style="margin-left: 10%;">Buy now</a>
 			<a href="/contact" class="button" style="text-transform: none;">Contact for in-company</a>
 			{% else %}
-			Latter aligator
+				{% for workshop in page.workshopLocations %}
+				<h5><b>{{ workshop.location }}</b></h5>
+				<ul style="list-style: disc;">
+					<li><strong>Date:</strong> {{ workshop.date }}</li>
+					<li><strong>Time:</strong> {{ workshop.time }}</li>
+					<li><strong>Location:</strong> <a href="{{ workshop.venueLink }}" target="_blank">{{ workshop.venue }}</a></li>
+					<li><strong>Price:</strong> {{ workshop.price }}</li>
+				</ul>
+				<br />
+				<a href="{{ workshop.tickets }}" class="button" style="margin-left: 10%;">Buy now</a>
+				<a href="/contact" class="button" style="text-transform: none;">Contact for in-company</a>
+				<br /><br />
+				{% endfor %}
 			{% endif %}
 		</div>
 
