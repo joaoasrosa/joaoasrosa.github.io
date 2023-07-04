@@ -3,7 +3,7 @@ title: 'Domain-Driven Design for managers'
 subtitle: 'Empowering teams and thriving in complexity'
 date: 2023-01-01 00:00:00
 featured_image: '/images/workshops/ddd-for-managers.webp'
-workshopSingleLocation: false
+workshopSingleLocation: true
 workshopDate: '27th and 28th of March 2023'
 workshopTime: '13:30 to 17:30 Central Europe Summer Time (CEST)'
 workshopLocation: 'Online (Zoom)'
