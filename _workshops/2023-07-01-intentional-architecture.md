@@ -8,7 +8,7 @@ workshopLocations:
 - location: Dublin, Ireland
   date: '30th and 31st of August 2023'
   time: '09:00 to 17:00  Irish Standard Time (IST)'
-  venue: 'Phorest Salon Software, Anglesea Mills, 9 Anglesea Row, Dublin 7, D07 K7KF, Ireland'
+  venue: 'Phorest Salon Software, Dublin, Ireland'
   venueLink: 'https://goo.gl/maps/Boo44b9jiXiY1pPJ9'
   price: '999 to 1249 euro (excl. VAT)'
   tickets: 'https://ti.to/impactfulness/shipitcon-2023-intentional-architecture-workshop'
