@@ -41,6 +41,7 @@ contact_settings:
 social_settings:
   mastodon_url: 'https://mastodon.social/@joaorosa'
   linkedin_url: 'https://www.linkedin.com/in/joaoasrosa/'
+  threads_url: 'https://www.threads.net/@joaorosa.consulting'
   twitter_url: 'https://twitter.com/joaoasrosa'
   medium_url: 'https://medium.com/@joaoasrosa'
   github_url: 'https://github.com/joaoasrosa/'
