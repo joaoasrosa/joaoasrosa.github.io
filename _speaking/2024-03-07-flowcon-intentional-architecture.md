@@ -11,6 +11,6 @@ type: 'talk'
 location: 'Paris, France'
 website: https://flowcon2024.sched.com/event/1ZAmL/intentional-architecture
 slides: https://speakerdeck.com/joaoasrosa/intentional-architecture-at-flowcon-2024
-date: 2023-03-07 00:00:00
+date: 2024-03-07 00:00:00
 featured_image: '/images/speaking/2024-03-07-flowcon-intentional-architecture.webp'
 ---
