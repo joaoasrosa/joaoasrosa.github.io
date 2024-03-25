@@ -78,7 +78,7 @@ description: >
  Catch Kenny and João on Twitter at @kenny_baas and @joaoasrosa to hear more about their expertise and roles at Xebia.
 conference: 'Subscriptions: Scaled'
 type: 'podcast'
-location: 'Online'
+location: 'online'
 website: https://www.subscriptionsscaled.com/episodes/56
 date: 2022-01-22 00:00:00
 featured_image: '/images/speaking/2022-01-22-subscriptions-scaled-podcast-working-for-a-global-it-consultancy-company-with-kenny-baas-schwegler-and-joao-rosa-xebia.webp'

@@ -10,7 +10,7 @@ description: >
  If your role is architect, line manager or you just want to gain experience in modelling at the enterprise level, then this is the right spot. We will model a use case, and walk through several scenarios where we apply the different modelling techniques. Previous knowledge of Strategic Domain-Driven Design and Enterprise Architecture is welcomed, but not required. You will leave the hands-on with a toolset that will allow you to apply to your product portfolio, creating sensible boundaries.
 conference: 'DDD Europe 2021'
 type: 'conference'
-location: 'Online'
+location: 'online'
 website: https://2021.dddeurope.com/program/2021/program/18
 miroBoard: https://miro.com/app/board/o9J_lddBouU=/
 date: 2021-02-12 00:00:00

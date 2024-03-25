@@ -13,7 +13,7 @@ description: >
  This hands-on will take you through evolving an organisation by using different visualisations such as Wardley Maps, Context Maps, and Team Topologies. We will start with a Wardley Map to create the context for everyone and have a series of exercises to evolve the organisation using other visualisations such as Context Map and Team Topologies. By doing it, you will be creating and evolving the sociotechnical architecture of the organisation. At the end of the session, you will have experienced the different visualisations and combined them. More importantly, how to visualise change and tame the brain.
 conference: 'KanDDDinsky'
 type: 'hands-on'
-location: 'Berlin'
+location: 'Berlin, Germany'
 website: https://kandddinsky.de/
 date: 2022-11-01 00:00:00
 featured_image: '/images/speaking/2022-11-01-kandddinsky-2022-evolving-organisation-with-sociotechnical-architecture.webp'

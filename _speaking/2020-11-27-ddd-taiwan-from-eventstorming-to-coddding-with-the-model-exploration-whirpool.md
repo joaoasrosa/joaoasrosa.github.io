@@ -8,7 +8,7 @@ description: >
  Join us in this talk where we will leverage Eric Evans model exploration whirlpool. During a live EventStorming and Example Mapping software modelling session, we will show how with that outcome you can leverage Responsibility Mapping to propose a model with Domain-Driven Design patterns. It will ultimately result in coding by doing outside in Test Driven Development! You will leave with the knowledge to go from visual collaborate modelling to coding while refining your ubiquitous language.
 conference: 'DDD Taiwan'
 type: 'talk'
-location: 'Online'
+location: 'online'
 slides: https://speakerdeck.com/joaoasrosa/from-eventstorming-to-coddding-at-ddd-taiwan
 date: 2020-11-27 00:00:00
 featured_image: '/images/speaking/2020-11-27-ddd-taiwan-from-eventstorming-to-coddding-with-the-model-exploration-whirpool.webp'

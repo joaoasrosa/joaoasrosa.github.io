@@ -6,7 +6,7 @@ description: >
  There are different approaches to organisation evolution (as opposed to transformation). Team Topologies give us a pattern language describing the expected behaviours. Namely, how to be an Enabling team. Join João in this talk, where he will share his field story about enabling a European Telco in its evolutionary journey. The organisation applied Team Topologies and Domain-Driven Design practices to reshape their boundaries and allow fast flow. Spoiler alert: no design was imposed on the organisation!
 conference: 'FastFlowConf'
 type: 'talk'
-location: 'London'
+location: 'London, United Kingdom'
 website: https://fastflowconf.com/
 slides: https://speakerdeck.com/joaoasrosa/an-enabling-approach-to-an-organisation-transformation-at-fastflowconf-london-2023
 videoYoutube: 'efXtQ9bIBsM'

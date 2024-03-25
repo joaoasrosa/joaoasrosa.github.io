@@ -6,7 +6,7 @@ description: >
  Join us in this talk, to show you how to lower your end-to-end test automation with the help of Domain-Driven Design (DDD). We introduce you to the bounded context pattern and show how it can support you in your work. With the help of EventStorming we show you how you can make your test automation visible and gain new insights helping you to decouple your application.
 conference: 'Xebia India Webinar week'
 type: 'talk'
-location: 'Online'
+location: 'online'
 website: 'https://pages.xebia.com/making-end-to-end-testing-obsolete-with-domain-driven-design'
 date: 2020-09-29 00:00:00
 featured_image: '/images/speaking/2020-09-29-xebia-india-webinar-making-end-to-end-testing-obsolete-with-domain-driven-design.webp'

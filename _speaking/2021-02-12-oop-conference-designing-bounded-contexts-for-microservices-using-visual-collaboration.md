@@ -13,7 +13,7 @@ description: >
  You leave our session understanding that to be effective with microservices, you need to start discover and design bounded contexts. You will learn heuristics that guide you in using visual tools in specific situations, and how to move on towards microservices.
 conference: 'OOP'
 type: 'conference'
-location: 'Online'
+location: 'online'
 website: https://www.oop-konferenz.de/oop-2021/programm/konferenzprogramm
 miroBoard: https://miro.com/app/board/o9J_lWJdRtQ=/
 date: 2021-02-12 00:00:00

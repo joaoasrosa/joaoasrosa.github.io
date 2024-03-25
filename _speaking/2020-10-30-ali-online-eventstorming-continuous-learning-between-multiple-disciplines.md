@@ -10,7 +10,7 @@ description: >
  Join us in this session where I will explain how visual collaborative modelling can help you write better software. Through proper preparation and facilitation, we can co-create solutions. Co-creating solutions by visual collaborative modelling make sure we have buy-in from the entire team. You will end up knowing how to start your visual collaborative modelling journey with tools like EventStorming and Example Mapping.
 conference: 'Agile-Lean Ireland'
 type: 'workshop'
-location: 'Online'
+location: 'online'
 website: 'https://sched.co/YePk'
 miroBoard: 'https://miro.com/app/board/o9J_khN_xlo=/'
 videoVimeo: '474657611'

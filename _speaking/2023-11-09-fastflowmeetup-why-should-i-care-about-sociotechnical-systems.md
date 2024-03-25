@@ -8,7 +8,7 @@ description: >
  Join me in this talk, where I will share my insights on the skills needed to design sociotechnical systems and how we, as a community, can learn from each other.
 conference: 'Fast Flow meetup'
 type: 'talk'
-location: 'Amsterdam'
+location: 'Amsterdam, The Netherlands'
 website: https://www.meetup.com/fast-flow/
 slides: https://speakerdeck.com/joaoasrosa/why-should-i-care-about-sociotechnical-systems-at-fast-flow-meetup-2023
 videoYoutube: 'Ig4tGSESHCo'

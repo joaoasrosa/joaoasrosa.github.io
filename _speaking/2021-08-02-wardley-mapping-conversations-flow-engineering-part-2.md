@@ -4,7 +4,7 @@ description: >
  Steve Pereira and João Rosa return for part 2 of our discussion on Wardley Maps and Flow Engineering!
 conference: 'Wardley Mapping Conversations'
 type: 'panel'
-location: 'Online'
+location: 'online'
 website: https://learnwardleymapping.com/event/wardley-mapping-conversations-24-flow-engineering-part-2/
 videoYoutube: 'ZFxMd0KGeVs'
 date: 2021-08-02 00:00:00

@@ -8,7 +8,7 @@ description: >
  Join us in this talk in which we show the basic principles of EventStorming. We will cover the different forms of EventStorming and in which situation they best can be applied. And, we will show how you can leverage DDD (Domain-Driven Design) patterns in an EventStorming software modeling session that will ultimately result in coding TDD (Test Driven Development) style!
 conference: 'Bucharest Tech Week 2021 - Software Architecture Summit'
 type: 'keynote'
-location: 'Online'
+location: 'online'
 slides: https://speakerdeck.com/joaoasrosa/from-eventstorming-to-coddding-at-bucharest-software-architecture-summit-2021
 website: https://myconnector.ro/virtual/bucharest-tech-week--java-summit-software-architecture-summit/741/agenda/8779
 date: 2021-05-21 00:00:00

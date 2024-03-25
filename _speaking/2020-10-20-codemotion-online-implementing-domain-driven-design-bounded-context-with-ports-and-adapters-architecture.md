@@ -6,7 +6,7 @@ description: >
  You can find the code <a href="https://github.com/xebia/CoDDDing-labs/" target="_blank">here</a>.
 conference: 'Codemotion online'
 type: 'hands-on'
-location: 'Online'
+location: 'online'
 website: 'https://events.codemotion.com/conferences/online/2020/codemotion-online-tech-conference/workshops'
 slides: 'https://speakerdeck.com/player/3c730e3ff18b42e3b0cb1a9efe90e353'
 date: 2020-10-20 00:00:00
