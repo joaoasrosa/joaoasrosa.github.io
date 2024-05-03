@@ -2,3 +2,8 @@
 from = "/book-a-meeting"
 to = "https://app.reclaim.ai/m/joao-rosa/flexible-quick-meeting"
 status = 302
+
+[[redirects]]
+from = "/effectively-manage-team-cognitive-load"
+to = "https://maven.com/forms/72c748"
+status = 302
