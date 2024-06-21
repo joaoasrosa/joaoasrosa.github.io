@@ -7,3 +7,8 @@ status = 302
 from = "/effectively-manage-team-cognitive-load"
 to = "https://maven.com/forms/72c748"
 status = 302
+
+[[redirects]]
+from = "/services/digital-transformation"
+to = "/service/consultancy/"
+status = 302
