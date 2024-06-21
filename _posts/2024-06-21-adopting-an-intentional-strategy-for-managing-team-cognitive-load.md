@@ -6,7 +6,7 @@ parent_id: '0'
 published: true
 password: ''
 status: publish
-permalink: "/2022/12/20/my-observations-on-the-effects-of-CAPEX-and-OPEX-on-organisational-behaviour/"
+permalink: "/2024/06/21/adopting-an-intentional-strategy-for-managing-team-cognitive-load/"
 comments: true
 categories:
 - Team Cognitive Load
