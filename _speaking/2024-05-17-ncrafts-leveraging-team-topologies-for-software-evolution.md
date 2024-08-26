@@ -15,5 +15,5 @@ type: 'hands-on'
 location: 'Paris, France'
 website: https://ncrafts.io/speaker/joaorosa
 date: 2024-06-17 00:00:00
-featured_image: '/images/speaking/2024-03-07-flowcon-intentional-architecture.webp'
+featured_image: '/images/speaking/2024-05-17-ncrafts-leveraging-team-topologies-for-software-evolution.webp'
 ---
