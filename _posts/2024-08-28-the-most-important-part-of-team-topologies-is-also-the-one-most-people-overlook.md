@@ -30,6 +30,7 @@ As a Team Topologies practitioner since the book's release, I frequently use the
 When you work in a smaller organization, a startup, or just focus on a structure with a couple of teams building a product, things are obvious and intuitive. The challenges emerge once you try to model organizations with dozens or hundreds of teams. Trying to map all of those teams in one diagram is not feasible, and it is also not useful for the purpose of the Team Topologies approach, as mentioned earlier. It gets messy fast as there are multiple flows of value to consider since a bigger organization would often have multiple value streams, business units, customer segments, and whatnot.
 
 ![A messy Team Interactions Modeling diagram, which doesn't follow the rules, and tries to represent the full enterprise](/images/blog/2024-08-28-the-most-important-part-of-team-topologies-is-also-the-one-most-people-overlook-diagram-1.JPEG)
+
 *Figure 1 - Trying to represent a big chunk of an imaginary organization. A bit of a messy representation, and it can be even messier for modern enterprises with even more lines of business…*
 
 I want to address this challenge in this article: **how do we make the flows of value visible in bigger organizations that have multiple lines of business and value streams?** 
@@ -44,6 +45,7 @@ This year at [FlowCon](https://joaorosa.consulting/speaking/flowcon-intentional-
 Let's explore the first use case, where the Internal IT platform supports HR and other teams within the company.
 
 ![A Team Interactions Modeling diagram where the Internal IT platforms offers services to the HR platform](/images/blog/2024-08-28-the-most-important-part-of-team-topologies-is-also-the-one-most-people-overlook-diagram-2.JPEG)
+
 *Figure 2 - Diagram of the interaction mode of the Internal IT platform when others can use the software from the enterprise catalog*
 
 Enterprises have software catalogs that different people use. Those catalogs are a way to avoid compliance and security issues. Imagine if someone uses software that is not properly licensed or verified for security flaws. It puts the organization at several compliance and security risks. The central catalogs also allow for economies of scale as organizations can get better deals for non-differentiator software, such as the productivity suite, accounting and finance suite, etc.
@@ -52,6 +54,7 @@ In this case, this organization has an Internal IT platform with several stream-
 
 ## But what if a team needs software that isn't part of the catalog (yet)?
 ![A Team Interactions modeling diagram, that has a new scope of value: discover the needs for the new Learning Management System](/images/blog/2024-08-28-the-most-important-part-of-team-topologies-is-also-the-one-most-people-overlook-diagram-3.JPEG)
+
 *Figure 3 - Diagram for the teams collaborating across the platforms to discover the needs for the new Learning Management System*
 
 As you can see in Figure 3, a team in the Internal IT platform collaborates with multiple teams in the HR platform for this specific use case: the organization requires a new Learning Management System to better support staff self-paced learning paths.  
@@ -60,17 +63,19 @@ Those teams Collaborate for a fixed period of time, during which they clarify th
 
 ## How about the services offered by HR?
 ![A Team Interactions Modeling diagram, where the HR platform offers the recruiting staff service for everyone](/images/blog/2024-08-28-the-most-important-part-of-team-topologies-is-also-the-one-most-people-overlook-diagram-4.JPEG)
+
 *Figure 4 - HR typically offers recruitment services, where they streamline processes and connections to recruitment agencies and recruitment platforms*
 
 This diagram represents a different use case: recruiting staff. It shows the HR platform at the bottom, since it offers services for everyone in the company. Remember the rules of Team Interaction Modeling: platforms provide their services “up” for others to consume. You can imagine the typical services offered by HR, such as a streamlined recruitment process, where they manage the different commercial relationships with recruitment agencies, recruitment platforms, and such.
 
 ## What if the Internal IT platform needs different content from the Learning Management System?
 ![A Team Interactions Modeling diagram, where the HR platform collaborates with a different team to discover what content is needed in the Learning Management System](/images/blog/2024-08-28-the-most-important-part-of-team-topologies-is-also-the-one-most-people-overlook-diagram-5.JPEG)
+
 *Figure 5 - Team Interactions Modeling diagram when the Internal IT platform needs new learning content*
 
 Well, the answer is the same. The teams collaborate for a fixed period of time to discover the user's needs. Imagine that the folks from the Internal IT platform have different needs, such as managing Large Language Model (LLM) tools at an enterprise level. They need to identify the best way to discover and acquire the content to be present in the Learning Management System. That content could be helpful for other teams in the organization; who knows. This is also a positive side effect of considering platforms as boundaries for groups of services and treating your platforms as products.
 
-## Sum it up
+# Sum it up
 As you can see, what I'm proposing to improve within Team Interaction Modeling is to be explicit about the use case within the “Flow of value” arrow. By starting to agree on what we are modeling, we can have a visual anchor that allows us to contextualize and frame the discussion. Other important bits and pieces can emerge from the use case, and they should. I've been testing this approach for more than a while now, and it helps groups to focus on the challenge at hand and, at the same time, capture eventual scenarios to be modeled later.
 
 Remember that Team Interaction Modeling diagrams are not only **bounded in time** but also **bounded in scope**!
