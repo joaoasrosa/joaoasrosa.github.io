@@ -15,7 +15,6 @@ tags:
 - Organization Design
 excerpt: We sometimes hear criticism that the Team Topologies approach is incomplete, as it doesn't allow people to map the whole organizational chart. People like to create maps and charts, and there will probably always be ideas and approaches trying to map the entire universe of an enterprise. Team Topologies is not one of those.
 ---
-# The most important part of Team Topologies is also the one most people overlook
 
 Last year, during [FastFlowConf](https://www.youtube.com/watch?v=qHBQm1vKKXQ), Matthew Skelton answered questions about what had changed/evolved since the Team Topologies book was published. In his own words, they (both authors) should have emphasized the team interactions and the evolution of the topologies over time as central themes for achieving a fast flow of value.
 
@@ -26,7 +25,6 @@ People should look at Team Topologies as a way of thinking or a pattern language
 The [Team Topologies](https://teamtopologies.com/book) book was released in 2019, and the approach has continued to evolve. The community is creating new techniques and practices to help practitioners looking to adapt their organizations for fast flow. Those new techniques typically combine the Team Topologies approach with other methods and ideas, e.g., Wardley Mapping or Domain-Driven Design. The common denominator of all is the focus on accelerating the flow of value at scale. If you take a closer look at one of the new techniques of the Team Topologies approach, [Team Interaction Modeling](https://teamtopologies.com/key-concepts-content/team-interaction-modeling-with-team-topologies), you can see how central the “Flow of value” is. This is one of the evolutions pointed out by Matthew at FastFlowConf, where the flow of value in the book’s diagrams is implicit. Team Interaction Modeling makes the flow of value explicit by having a dedicated shape, the “Flow of value” arrow.
 
 ## So, what is the new idea here, João?
-
 As a Team Topologies practitioner since the book's release, I frequently use the Team Topologies approach as a pattern language to discuss organization evolution with customers. Based on the customers' strategic ambitions, we explore the options to evolve the organization so that the teams can achieve these ambitions and simultaneously have a humane organization. As [Team Topologies is hitting the “Slope of Enlightenment”](https://www.linkedin.com/feed/update/urn:li:activity:7211313895955668992/) in one of the Gartner Hype Cycles, I see more and more organizations asking to be a “Team Topologies organization”. Well, I think the goal is not to be a “Team Topologies organization” but rather leverage the patterns and principles of Team Topologies (and other fitting pattern languages, approaches, and techniques) ***to safely evolve the organization***!
 
 When you work in a smaller organization, a startup, or just focus on a structure with a couple of teams building a product, things are obvious and intuitive. The challenges emerge once you try to model organizations with dozens or hundreds of teams. Trying to map all of those teams in one diagram is not feasible, and it is also not useful for the purpose of the Team Topologies approach, as mentioned earlier. It gets messy fast as there are multiple flows of value to consider since a bigger organization would often have multiple value streams, business units, customer segments, and whatnot.
@@ -41,7 +39,6 @@ The solution starts with *being explicit about the flow of value* that we are ma
 There is nothing better than a deep dive into examples that I hope most of us can relate to. This was the subject of a discussion with [Matthew Skelton](https://www.linkedin.com/in/matthewskelton/) in March this year (2024) in Cork, Ireland.
 
 ## How to overcome the challenge of mapping multiple flows of value
-
 This year at [FlowCon](https://joaorosa.consulting/speaking/flowcon-intentional-architecture) in Paris, I presented how organizations deliver value (as networks - a topic for a whole separate post) and how we can be explicit when discussing use cases. For the purpose of illustration, let's use an example of the common functions inside an organization - Human Resources (HR) and Internal Information Technology (IT), which can each be platforms on their own.
 
 Let's explore the first use case, where the Internal IT platform supports HR and other teams within the company.
@@ -54,7 +51,6 @@ Enterprises have software catalogs that different people use. Those catalogs are
 In this case, this organization has an Internal IT platform with several stream-aligned teams. One of those teams is responsible for the internal software catalog, streamlining the process for the rest of the staff to use it. Using the Team Topologies patterns, the internal platform offers its services as X-as-a-Service, where others can self-serve it.
 
 ## But what if a team needs software that isn't part of the catalog (yet)?
-
 ![[Diagram 3.JPEG]]
 *Figure 3 - Diagram for the teams collaborating across the platforms to discover the needs for the new Learning Management System*
 
@@ -63,14 +59,12 @@ As you can see in Figure 3, a team in the Internal IT platform collaborates with
 Those teams Collaborate for a fixed period of time, during which they clarify the requirements, risks, costs, and migration path between the different Learning Management Systems. After the new system is live and the stabilization period is over, the Collaboration ends, and they return to the previous (Figure 2) Team Topologies' interaction mode.
 
 ## How about the services offered by HR?
-
 ![[Diagram 4.JPEG]]
 *Figure 4 - HR typically offers recruitment services, where they streamline processes and connections to recruitment agencies and recruitment platforms*
 
 This diagram represents a different use case: recruiting staff. It shows the HR platform at the bottom, since it offers services for everyone in the company. Remember the rules of Team Interaction Modeling: platforms provide their services “up” for others to consume. You can imagine the typical services offered by HR, such as a streamlined recruitment process, where they manage the different commercial relationships with recruitment agencies, recruitment platforms, and such.
 
 ## What if the Internal IT platform needs different content from the Learning Management System?
-
 ![[Diagram 5.JPEG]]
 *Figure 5 - Team interactions diagram when the Internal IT platform needs new learning content*
 
